@@ -1,0 +1,54 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+**/secrets/
+
+# OS / IDE junk
+Thumbs.db
+.DS_Store
+Desktop.ini
+ehthumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# Python / Node caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+node_modules/
+.pytest_cache/
+.mypy_cache/
+
+# Generated media (source of truth is transcript/EDL, not binaries)
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.aac
+*.flac
+*.m4a
+*.aiff
+
+# Pipeline outputs
+projects/*/source/
+projects/*/previews/
+projects/*/outputs/
+
+# Keep folder placeholders
+!raw/.gitkeep
+!music/.gitkeep
+!brand/assets/.gitkeep
+!projects/.gitkeep
