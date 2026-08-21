@@ -8,12 +8,14 @@
 
 | Entry | When to open | Path |
 |---|---|---|
-| Assets | PNG/SVG (mascote, logo) | [assets/](assets/) |
+| Assets | Logo, mascote, fonte (PNG/SVG/TTF/OTF) | [assets/](assets/) |
+| References | Prints e exemplos de vídeos (identidade / gráficos) | [references/](references/) |
 
 ## Gaps
 
-Cores, “cor Claude”, fontes (Coolvetica), logo, mascote: `INFORMAÇÃO AUSENTE` (P4, P6). Pasta `assets/` existe vazia de propósito.
+Cores, “cor Claude”, fontes (Coolvetica), logo, mascote: ainda podem estar vazios (P4, P6). Pastas existem para o Igor soltar arquivos.
 
 ## Children
 
-- `assets/` (placeholder only)
+- `assets/`
+- `references/`
