@@ -13,9 +13,9 @@
 
 ## Gaps
 
-Cores, “cor Claude”, fontes (Coolvetica), logo, mascote: ainda podem estar vazios (P4, P6). Pastas existem para o Igor soltar arquivos.
+Cores, logo, mascote: ainda `INFORMAÇÃO AUSENTE` (P6). Coolvetica `.otf` está em `brand/` (P4 resolvido). Prints de estilo em `references/` (2026-08-21).
 
 ## Children
 
 - `assets/`
-- `references/`
+- `references/` (inclui [references/README.md](references/README.md))

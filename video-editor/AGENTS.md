@@ -42,18 +42,23 @@ The transcript **is** the timeline. Cuts, captions, and graphics sync to it. Wit
 - Tools do the heavy work. You decide and fire; WhisperX transcribes, FFmpeg cuts, HyperFrames renders.
 - Detect silence on the audio. WhisperX stretches a word timestamp until the next silence — cutting only on the transcript leaves dead air.
 - Silence threshold is relative to the take’s volume, never a fixed −35 dB.
-- Accept `.mp4` and `.mov`; normalize to mp4 on ingest.
+- Accept `.mp4`, `.mov`, and `.mkv`; normalize to mp4 on ingest.
 - Rough cut locked before graphics. Cut changed after graphics? Warn the cost and ask for confirmation.
 - Partial render is mandatory on second pass. Full render only on 1st graphics pass, on export, or if Igor asks.
 - Feedback becomes a rule in a skill / `AGENTS.md`, not a fix for one clip only.
-- Brand kit in `brand/` owns color, type, logo. Do not improvise identity.
-- Do not spend a paid API (B-roll, TTS, Veo) without proposing and waiting for ok.
+- Brand kit in `brand/` owns color, type, logo. Visual examples live in `brand/references/`. Do not improvise identity.
+- Paid internet services (B-roll, TTS, Veo, HyperFrames cloud, WhisperX diarization) stay **off** until Igor types an explicit ok in chat. Default: everything on this PC.
+- Speak **Portuguese** with Igor. He is not a programmer. See `documentation/como-usar.md`.
 - Definition of done for media = real footage went end to end. A green unit test is not enough.
 - First render is draft. Goal: “pretty good”, then iterate.
 
 ## How to work with Igor
 
-On intake, if format, cut aggressiveness, brand kit, or spend policy is missing, ask. Then execute the **current stage** until there is a preview in `previews/`. Show what changed, the file path, and the next stage. One stage at a time unless Igor asks for the full pipeline.
+He is not a programmer. Portuguese, short, no jargon dump. Explorer paths, not only repo slang.
+
+On intake, if format, cut aggressiveness, brand kit, or spend policy is missing **and this stage needs it**, ask. Else run the current stage to `previews/`. Show what changed, the file path, and the next stage. One stage at a time unless he asks for the full pipeline.
+
+Drop zones: bruto → `raw/`; logo/fonte → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); prints → `brand/references/`.
 
 Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough cut”.
 

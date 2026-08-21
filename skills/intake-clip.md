@@ -8,7 +8,7 @@ Format preset, cut aggressiveness, brand kit completeness, spend policy. If alre
 
 ## Do
 
-1. Accept `.mp4` or `.mov` only.
+1. Accept `.mp4`, `.mov`, or `.mkv`.
 2. Copy/normalize into `raw/` if the file arrived from a pasted path outside the folder.
 3. Normalize to mp4 on ingest with FFmpeg ([`documentation/services/ffmpeg.md`](../documentation/services/ffmpeg.md)). If `ffmpeg` is not callable, stop; do not fake an ingest.
 4. Create `projects/<clip>/` with:

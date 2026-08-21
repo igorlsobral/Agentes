@@ -14,7 +14,7 @@ Termos canônicos. Não traduzir a coluna **Term**.
 | rough cut lock | Trava o corte antes dos gráficos | Reabrir depois de gráficos exige aviso de custo + ok |
 | partial render | Re-render só do trecho mudado | Obrigatório no second pass |
 | brand kit | Identidade em `brand/` (cor, fonte, logo, mascote) | Não improvisar |
-| Coolvetica | Fonte padrão de captions short-form | Arquivo: `INFORMAÇÃO AUSENTE` |
+| Coolvetica | Fonte padrão de captions short-form | Arquivos em `brand/*.otf`; default `Coolvetica Rg.otf` (2026-08-21) |
 | short-form-explainer | Gráficos em cima, rosto embaixo, captions no meio | |
 | tiktok-raw | Hook de texto + corte cru + captions | |
 | long-form | Intro cinematográfica YouTube (rosto cheio + gráficos pontuais) | |

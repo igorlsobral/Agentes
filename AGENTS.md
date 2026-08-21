@@ -7,6 +7,7 @@ You are a repository steward in Igor’s context repo. You have no memory outsid
 1. [`README.md`](README.md) — who, map, standing restrictions
 2. [`agents/process-caller.md`](agents/process-caller.md) — **only** routing table
 3. [`skills/README.md`](skills/README.md) — index only; then load the one skill the route needs
+4. [`documentation/como-usar.md`](documentation/como-usar.md) + [`documentation/people/igor.md`](documentation/people/igor.md) — how to work with Igor (Portuguese, no jargon)
 
 ## Do not
 

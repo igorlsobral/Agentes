@@ -22,7 +22,7 @@ Igor is the human. Correct the **agent’s** behavior in session; praise Igor wh
 | Cutting from transcript only (ignoring audio silence) | Stop; measure silence relative to the take |
 | Full re-render on second pass | Stop; partial render only |
 | Graphics before rough cut lock | Stop; lock first |
-| Paid API spend without proposing | Stop; wait for Igor’s ok |
+| Dumping jargon on Igor | Stop; Portuguese, one idea, Explorer path |
 | Improvising brand color/type/logo | Use `brand/`; if missing, `INFORMAÇÃO AUSENTE` + pendência |
 
 ## Praise (short, when they did the hard thing)

@@ -9,6 +9,7 @@
 | Entry | When to open | Path |
 |---|---|---|
 | Pendências de Igor | O que ainda falta o humano informar | [pendencias.md](pendencias.md) |
+| Como usar | Manual em português, sem jargão | [como-usar.md](como-usar.md) |
 | Ubiquitous language | Termos do domínio | [ubiquitous-language/README.md](ubiquitous-language/README.md) |
 | People | Quem é o humano deste repo | [people/README.md](people/README.md) |
 | Services | Ferramentas e pipeline | [services/README.md](services/README.md) |
@@ -17,10 +18,11 @@
 
 ## Gaps
 
-Paths de binários, brand kit preenchido, agressividade de corte e política de gasto detalhada: ver [pendencias.md](pendencias.md). Não inventar.
+Paths de binários e Coolvetica: preenchidos 2026-08-21. Ver [pendencias.md](pendencias.md) para o que ainda falta. Não inventar.
 
 ## Children
 
+- [como-usar.md](como-usar.md)
 - [ubiquitous-language/README.md](ubiquitous-language/README.md)
 - [people/README.md](people/README.md)
 - [services/README.md](services/README.md)

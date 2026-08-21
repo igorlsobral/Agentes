@@ -23,7 +23,11 @@ PowerShell may not have `git` on PATH; use `C:\Program Files\Git\cmd\git.exe` wh
 
 ## Spend
 
-Do not call paid APIs (B-roll, TTS, Veo, HyperFrames cloud/Lambda, WhisperX diarization/HF token, unnamed others) without a proposal and Igor’s ok. Catalog of which APIs he even has: `INFORMAÇÃO AUSENTE` (P9).
+Default **2026-08-21:** no paid calls. Local FFmpeg + WhisperX CPU + HyperFrames + Chrome only.
+
+Do not call paid APIs (B-roll, TTS, Veo, HyperFrames cloud/Lambda, WhisperX diarization/HF token, unnamed others) without a **proposal in chat** and Igor’s explicit ok. He is not expected to open developer accounts. Tokens never go in Git.
+
+Catalog of accounts he even has: none recorded (P9 still open as “none until he says otherwise”).
 
 ## Runtime folders
 

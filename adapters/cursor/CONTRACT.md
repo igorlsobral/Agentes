@@ -11,6 +11,7 @@
 | `AGENTS.md` (repo root) | Process Caller + indexes |
 | `.cursor/rules/context-repo-bootstrap.mdc` | Always-on pointers |
 | `.cursor/rules/video-editor-pipeline.mdc` | Pipeline pointers |
+| `.cursor/rules/speak-to-igor.mdc` | Portuguese, no jargon |
 | `.cursor/skills/*/SKILL.md` | Matching `skills/*.md` |
 
 ## Rules

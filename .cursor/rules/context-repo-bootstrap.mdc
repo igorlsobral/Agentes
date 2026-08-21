@@ -11,5 +11,6 @@ Read, do not copy:
 - `agents/process-caller.md` — **only** routing table
 - `skills/README.md` — index, then one skill
 - `documentation/pendencias.md` — gaps only Igor can fill
+- `documentation/como-usar.md` + `documentation/people/igor.md` — Portuguese, no jargon
 
 Igor is the creator and only approver. Do not invent stubs (`INFORMAÇÃO AUSENTE`). Do not grep outside the allowlist. Do not auto-run `validate-task`. After skill/agent/index changes: `skills/maintain-repo-index.md` + `agents/auditor.md`. After a meaningful change in this repo: commit, then `git push` to `origin` (never force-push, never secrets). After a meaningful change: commit, then push `origin`. Never force-push. Never commit secrets.

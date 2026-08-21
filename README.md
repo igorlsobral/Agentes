@@ -34,12 +34,13 @@ Do not ask Igor to waive these.
 | Tools do heavy work | WhisperX transcribes, FFmpeg cuts/joins/mixes/exports, HyperFrames renders graphics. The agent decides and fires tools. |
 | Transcript is the timeline | No word-level `transcript.json` → no cut. |
 | Silence from audio | Measure dB relative to the take. Never a fixed −35 dB. WhisperX stretches word timestamps into following silence — transcript-only cuts leave dead air. |
-| Ingest | Accept `.mp4` and `.mov`; normalize to mp4 on ingest. |
+| Ingest | Accept `.mp4`, `.mov`, and `.mkv`; normalize to mp4 on ingest. |
 | Rough cut lock | Lock before graphics. If the cut must change after graphics, warn cost and wait for confirmation. |
 | Partial render | Mandatory on second pass. Full render only on first graphics pass, export, or explicit ask. |
 | Feedback | Standing taste becomes a skill / `AGENTS.md` rule, not a one-clip patch. |
-| Brand kit | `brand/` owns color, type, logo. Do not improvise identity. |
-| Paid APIs | Do not spend (B-roll, TTS, Veo, or other) without proposing and waiting for ok. |
+| Brand kit | `brand/` owns color, type, logo. Prints in `brand/references/`. Do not improvise identity. |
+| Paid APIs | Default **off** (this PC only). Propose first; wait for explicit ok in chat. Never put tokens in Git. |
+| Talk to Igor | Portuguese, didactic. He is not a programmer. |
 | Definition of done | Real footage through the pipeline. A green unit test is not enough. |
 | First render | Draft. Target “pretty good”, then iterate. |
 | Whisk | Do not use Google Whisk. “Whisk X” means WhisperX. |
@@ -55,6 +56,7 @@ Do not ask Igor to waive these.
 | Adapters | [`adapters/README.md`](adapters/README.md) |
 | Activities | [`documentation/.activities/README.md`](documentation/.activities/README.md) |
 | Pendências (Igor) | [`documentation/pendencias.md`](documentation/pendencias.md) |
+| Como usar | [`documentation/como-usar.md`](documentation/como-usar.md) |
 | Video editor runtime | [`video-editor/README.md`](video-editor/README.md) |
 | Presets | [`presets/README.md`](presets/README.md) |
 | Brand | [`brand/README.md`](brand/README.md) |
@@ -97,7 +99,7 @@ See [`documentation/services/pipeline.md`](documentation/services/pipeline.md). 
 
 ## Gaps
 
-Tool binaries are installed (2026-08-20). Remaining: Coolvetica, a real bruto, brand kit, default format, cut aggressiveness, spend catalog, extra allowlist — [`documentation/pendencias.md`](documentation/pendencias.md). Do not invent those values. Git for **this** repo is decided: commit then push.
+Tool binaries and Coolvetica are on disk (2026-08-21). A `.mkv` bruto is in `raw/` (gitignored). Remaining: full brand kit, default format, cut feel, spend catalog if he ever wants paid extras — [`documentation/pendencias.md`](documentation/pendencias.md).
 
 ## Children
 

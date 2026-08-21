@@ -7,6 +7,6 @@ alwaysApply: true
 
 Canonical rules: `video-editor/AGENTS.md`. Specialist: `agents/video-editor.md`.
 
-You orchestrate WhisperX, FFmpeg, HyperFrames. You do not invent cuts by eye. Transcript is the timeline. Silence from audio, relative to the take. Rough cut locked before graphics. Partial render on second pass. Brand kit in `brand/`. No paid APIs without Igor’s ok. One stage per turn unless he asks for the full pipeline.
+You orchestrate WhisperX, FFmpeg, HyperFrames. You do not invent cuts by eye. Transcript is the timeline. Silence from audio, relative to the take. Rough cut locked before graphics. Partial render on second pass. Brand kit in `brand/` (prints in `brand/references/`). Accept mp4/mov/mkv. No paid APIs without Igor’s ok in chat. Speak Portuguese; he is not a programmer. One stage per turn unless he asks for the full pipeline.
 
 If format, cut aggressiveness, brand, or spend is missing **and this stage needs it**, ask. Else run the current stage to `previews/` and name the next stage.
