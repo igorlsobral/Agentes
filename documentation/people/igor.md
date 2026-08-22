@@ -24,6 +24,7 @@ Exemplos de pedido dele:
 - “começa um projeto neste bruto, preset vsl, faz o rough cut”
 - “no primeiro gráfico, move para baixo, deixa menor, usa a cor Claude e o PNG do mascote em `brand/assets/`”
 - “a partir de [frase], tela cheia até [frase]” / “volta ao normal”
+- “usa as cenas” / soltar filmes em `cenas/`
 - “Salve todo o conhecimento… vou dar clear no chat” (persistir no repo, não só na conversa)
 
 ## Pastas que ele usa
@@ -34,6 +35,7 @@ Exemplos de pedido dele:
 - Fonte Coolvetica: vários `.otf` em `brand/` (P4 resolvido 2026-08-21); títulos de card usam **Coolvetica Hv Comp**
 - Música de fundo: `music/`
 - Efeitos (swoosh e event sfx: passos, toc-toc, plim, bolha): `sfx/` — pode trocar o arquivo
+- Cenas longas (repertório visual, qualquer formato): `cenas/` (Igor, 2026-08-22)
 
 ## Dados ainda ausentes
 

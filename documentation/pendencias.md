@@ -50,6 +50,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | Arquivo final e overlays de gráfico = **60 fps** (câmera pode ser 30) | 2026-08-21 |
 | Swoosh pode ser outro arquivo; biblioteca = `sfx/` | 2026-08-21 |
 | **Tela cheia** sempre disponível depois do lock; some o rosto; voz fica; **volta ao normal** no chat ou na fala; event sfx no movimento (passos, toc-toc, plim, bolha); imagens de `brand/assets/` ou pasta nomeada; sem B-roll pago | Igor, 2026-08-21 |
+| **cenas/** = repertório de cenas longas; qualquer formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia; casar o trecho com a fala | Igor, 2026-08-22 |
 | Stack, pipeline, Git commit+push, sem Whisk, música −23 dB, silêncio relativo, lock antes de gráficos, partial render | já na tabela anterior |
 
 ## Resolvidas

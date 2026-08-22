@@ -50,5 +50,7 @@ projects/*/outputs/
 # Keep folder placeholders
 !raw/.gitkeep
 !music/.gitkeep
+!sfx/.gitkeep
+!cenas/.gitkeep
 !brand/assets/.gitkeep
 !projects/.gitkeep

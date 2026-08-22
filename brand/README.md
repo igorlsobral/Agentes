@@ -13,7 +13,7 @@
 
 ## Gaps
 
-Cores, logo, mascote: ainda `INFORMAÇÃO AUSENTE` (P6). Coolvetica `.otf` está em `brand/` (P4 resolvido). Prints de estilo em `references/` (2026-08-21).
+Cores, logo, mascote: ainda `INFORMAÇÃO AUSENTE` (P6). Coolvetica `.otf` está em `brand/` (P4 resolvido). Prints de estilo em `references/` (2026-08-21). Scene library is [`cenas/`](../cenas/README.md), not this folder.
 
 ## Children
 

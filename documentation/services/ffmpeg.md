@@ -42,5 +42,6 @@ Or `ffmpeg` / `ffprobe` after PATH refresh.
 | Music bed | mix at **−23 dB** until Igor adjusts |
 | Whoosh / swoosh | file from `sfx/`; mix quietly under speech |
 | Event sfx (tela cheia) | one-shot timed to the motion (passos, toc-toc, plim, bolha); quieter than speech; synthesize if missing |
+| Cut a stretch from `cenas/` | scene-detect + stills; copy in/out into `projects/<clip>/graphics/assets/`; mute library audio |
 | Silence | measure on **audio**, relative to this take — never a fixed −35 dB |
 | Export 60 fps | `-r 60` / HyperFrames `--fps 60` on the publishable file |

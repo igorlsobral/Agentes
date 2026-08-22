@@ -17,8 +17,8 @@ Do not use Google Whisk. “Whisk X” in this conversation is WhisperX.
 
 1. **Intake** — receive bruto in `raw/` (or a pasted path) and create `projects/<clip>/`
 2. **Rough cut** — WhisperX → `transcript.json`; silence measured on **AUDIO** (dB relative to the take, not transcript-only); EDL in `edl.json`; FFmpeg builds the assembly. Always keep the last/best take. **Lock** the rough cut before graphics.
-3. **Graphics (1st pass)** — one graphic per segment via HyperFrames + format preset. Overlay **60 fps**. Draft look is “pretty good”, then iterate. A marked **tela cheia** stretch is full-frame (skill [`full-screen-visual.md`](../skills/full-screen-visual.md)); it is always available after lock, not a separate stage.
-4. **Second pass** — Igor directs in natural language. Partial render: re-render only the changed stretch. This is where the video stops being “AI slop”. “tela cheia” / “volta ao normal” / event sfx on that stretch use the same skill.
+3. **Graphics (1st pass)** — one graphic per segment via HyperFrames + format preset. Overlay **60 fps**. Draft look is “pretty good”, then iterate. A marked **tela cheia** stretch is full-frame (skill [`full-screen-visual.md`](../skills/full-screen-visual.md)); it is always available after lock, not a separate stage. A spoken beat that names a concrete visual may use a stretch from [`cenas/`](../cenas/README.md) on **any** format (skill [`match-cenas.md`](../skills/match-cenas.md); Igor, 2026-08-22).
+4. **Second pass** — Igor directs in natural language. Partial render: re-render only the changed stretch. This is where the video stops being “AI slop”. “tela cheia” / “volta ao normal” / event sfx on that stretch use full-screen-visual. A matching scene from `cenas/` uses match-cenas.
 5. **Captions** — short-form only. Reuse the WhisperX transcript (do not retranscribe). Word-pop, Coolvetica, black box behind the word, unless the preset says otherwise.
 6. **Music** — file path + level in dB (default **−23 dB** until Igor adjusts). One-shots from `sfx/`.
 7. **Export** — MP4 **60 fps** in `projects/<clip>/outputs/` and a copy in Downloads. Never delete the project on export.
@@ -32,11 +32,13 @@ Do not use Google Whisk. “Whisk X” in this conversation is WhisperX.
 
 If format is unclear, ask before generating graphics.
 
-**Tela cheia** (Igor, 2026-08-21): always available after lock. On a marked stretch, cover the entire frame with visuals that follow the speech (text, diagrams, images from `brand/assets/` or a folder he names). Talking-head hidden; voice stays. Ends when he says **volta ao normal** (chat or a clear spoken cue). Event **sfx** from `sfx/` timed to the motion (passos, toc-toc, plim, bolha, etc.); synthesize a short discreet hit on this PC if the file is missing. Outside the stretch: cards on the right, do not cover the face.
+**Tela cheia** (Igor, 2026-08-21): always available after lock. On a marked stretch, cover the entire frame with visuals that follow the speech (text, diagrams, images from `brand/assets/` or a folder he names, or a matching stretch from `cenas/`). Talking-head hidden; voice stays. Ends when he says **volta ao normal** (chat or a clear spoken cue). Event **sfx** from `sfx/` timed to the motion (passos, toc-toc, plim, bolha, etc.); synthesize a short discreet hit on this PC if the file is missing. Outside the stretch: cards on the right, do not cover the face.
+
+**cenas** (Igor, 2026-08-22): standing scene library in `cenas/`. Use whenever a spoken beat needs a matching visual, on **every** format (`long-form`, `short-form-explainer`, `tiktok-raw`, `vsl`) — not only tela cheia. Do not invent a match. Do not wallpaper every sentence. Keep the assembly voice.
 
 ## Files that matter
 
-`video-editor/` `AGENTS.md` `.cursor/rules/` `.cursor/skills/` `presets/` `brand/` `scripts/` `raw/` `music/` `sfx/` `projects/<clip>/{source, transcript.json, edl.json, composition.html, previews/, outputs/}`
+`video-editor/` `AGENTS.md` `.cursor/rules/` `.cursor/skills/` `presets/` `brand/` `scripts/` `raw/` `music/` `sfx/` `cenas/` `projects/<clip>/{source, transcript.json, edl.json, composition.html, previews/, outputs/}`
 
 The transcript **is** the timeline. Cuts, captions, and graphics sync to it. Without word-level `transcript.json`, do not cut.
 
@@ -61,12 +63,14 @@ He is not a programmer. Portuguese, short, no jargon dump. Explorer paths, not o
 
 On intake, if format, cut aggressiveness, brand kit, or spend policy is missing **and this stage needs it**, ask. Else run the current stage to `previews/`. Show what changed, the file path, and the next stage. One stage at a time unless he asks for the full pipeline.
 
-Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); prints → `brand/references/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`.
+Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); prints → `brand/references/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`; scene library → `cenas/`.
 
 Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough cut”.
 
 Typical second pass: “no primeiro gráfico, move para baixo, deixa menor, usa a cor Claude e o PNG do mascote em `brand/assets/`”.
 
 Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”. Tela cheia in the **3D reel** taste (Igor, 2026-08-22): dark space, huge type, 3D object, 1–2 s beats; accent color from the spoken context, not a fixed neon green.
+
+Typical cenas: drop long clips in `cenas/`; the agent matches a spoken beat (example: padre entrega o livro) to a stretch in that folder, on any format.
 
 Long-form and VSL talking-head (Igor, 2026-08-21): graphics on the **right**, not over the face — **except** a marked tela cheia stretch. Headlines ALL CAPS heavy Coolvetica; supporting text sentence case. Cards must differ visually (not four identical text boxes). Overlay motion and the **final file always 60 fps** even when the camera is 30 fps. Swoosh may be any file in `sfx/`. Event sfx on tela cheia match the visual (see [`skills/full-screen-visual.md`](../skills/full-screen-visual.md)).

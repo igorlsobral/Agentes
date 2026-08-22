@@ -15,7 +15,7 @@
 
 ## Gaps
 
-P1–P3 locais resolvidos em 2026-08-20 (ffmpeg, whisperx, node+hyperframes+chrome). Coolvetica e primeiro clipe no disco (P4–P5). Export/gráficos a 60 fps. `sfx/` para whoosh e event sfx. **Tela cheia** local (sem B-roll pago).
+P1–P3 locais resolvidos em 2026-08-20 (ffmpeg, whisperx, node+hyperframes+chrome). Coolvetica e primeiro clipe no disco (P4–P5). Export/gráficos a 60 fps. `sfx/` para whoosh e event sfx. **cenas/** repertório local (2026-08-22). **Tela cheia** local (sem B-roll pago).
 
 ## Children
 

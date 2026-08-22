@@ -64,13 +64,14 @@ Do not ask Igor to waive these.
 | Raw | [`raw/README.md`](raw/README.md) |
 | Music | [`music/README.md`](music/README.md) |
 | Sfx | [`sfx/README.md`](sfx/README.md) |
+| Cenas | [`cenas/README.md`](cenas/README.md) |
 | Projects | [`projects/README.md`](projects/README.md) |
 
 ## Pipeline (do not skip a stage)
 
 1. Intake — bruto in `raw/` (or a pasted path) → `projects/<clip>/`
 2. Rough cut — WhisperX → `transcript.json`; silence on audio; EDL in `edl.json`; FFmpeg assembly; keep last/best take; **lock**
-3. Graphics (1st pass) — one graphic per segment via HyperFrames + format preset. Draft, not final. A marked **tela cheia** stretch is full-frame (always available after lock)
+3. Graphics (1st pass) — one graphic per segment via HyperFrames + format preset. Draft, not final. A marked **tela cheia** stretch is full-frame (always available after lock). A spoken beat that names a concrete visual may use a stretch from `cenas/` on **any** format (Igor, 2026-08-22)
 4. Second pass — Igor directs in natural language. Partial render only. “tela cheia” / “volta ao normal” / event sfx on that stretch
 5. Captions — short-form only. Reuse WhisperX transcript. Word-pop, Coolvetica, black box behind the word unless the preset says otherwise
 6. Music — file path + level in dB (default **−23 dB** until Igor adjusts). One-shots from `sfx/`
@@ -82,6 +83,8 @@ Typical second pass: “no primeiro gráfico, move para baixo, deixa menor, usa 
 
 Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”.
 
+Typical cenas: drop long clips in `cenas/`; the agent matches a spoken beat (example: padre entrega o livro) to a stretch in that folder.
+
 ## Format presets
 
 - `short-form-explainer` — graphics on top, face below, captions in the middle
@@ -91,7 +94,7 @@ Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volt
 
 If format is unclear, ask before generating graphics.
 
-**Tela cheia** is always available after lock: full-frame visuals + event sfx until **volta ao normal**. Images from `brand/assets/` or a folder Igor names. Not paid B-roll.
+**Tela cheia** is always available after lock: full-frame visuals + event sfx until **volta ao normal**. Images from `brand/assets/` or a folder Igor names. Scene library: `cenas/` on every format, not only tela cheia (Igor, 2026-08-22). Not paid B-roll.
 
 ## Allowlist
 
@@ -105,7 +108,7 @@ See [`documentation/services/pipeline.md`](documentation/services/pipeline.md). 
 
 ## Gaps
 
-Tool binaries, Coolvetica, first clip, **60 fps final**, `sfx/`, preset **VSL**, and **tela cheia** (always available after lock) are on disk (2026-08-21). Remaining: full brand kit, default format if he forgets to say, cut feel as standing default, VSL offer/end-card layout, spend catalog, better event-sfx wavs — [`documentation/pendencias.md`](documentation/pendencias.md).
+Tool binaries, Coolvetica, first clip, **60 fps final**, `sfx/`, preset **VSL**, **tela cheia** (always available after lock), and **cenas/** (scene library, 2026-08-22) are on disk. Remaining: full brand kit, default format if he forgets to say, cut feel as standing default, VSL offer/end-card layout, spend catalog, better event-sfx wavs, files in `cenas/` — [`documentation/pendencias.md`](documentation/pendencias.md).
 
 ## Children
 

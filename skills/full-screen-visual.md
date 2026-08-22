@@ -12,7 +12,7 @@ Always available after the rough cut is locked. Not a new pipeline stage — a g
    - Also accept a clear spoken cue in `transcript.json` if he said it on camera.
    - Do not invent the range. If start or end is missing, ask once.
 3. For that range, cover the **entire frame**. Hide the talking-head. Keep the assembly voice.
-4. Visuals follow what he actually said. Transcript is the timeline. Allowed: text, diagrams, and images from [`brand/assets/`](../brand/README.md) or a folder he names (including `projects/<clip>/graphics/assets/`). Animate images (enter, slide, swap) when it helps the sentence. One visual beat per spoken idea.
+4. Visuals follow what he actually said. Transcript is the timeline. Allowed: text, diagrams, images from [`brand/assets/`](../brand/README.md) or a folder he names (including `projects/<clip>/graphics/assets/`), and a matching stretch from [`cenas/`](../cenas/README.md) (skill [`match-cenas.md`](match-cenas.md)). Animate images (enter, slide, swap) when it helps the sentence. One visual beat per spoken idea. **cenas/** is the standing scene library for every format, not only tela cheia.
    Standing **tela cheia / 3D reel** taste (Igor, 2026-08-22; file in [`brand/references/`](../brand/references/README.md)): **clone the Reel’s motion**, do not restyle the same card. One continuous 3D world: camera keeps drifting, objects fly through Z (sheets, coins, lock, cross) with depth blur, text is huge and **changes place/angle every beat**, sometimes sitting on the object (lock + words to the right). Glow + RGB fringe. Accent color **follows the spoken idea**. Do not default to neon green. Do not reuse one centered stack.
 5. **Event sfx** — when a visual needs a sound, mix a one-shot from [`sfx/`](../sfx/README.md) under the voice, timed to the motion. Not a music bed.
    Standing examples (Igor, 2026-08-21):
@@ -32,5 +32,5 @@ Always available after the rough cut is locked. Not a new pipeline stage — a g
 ## Do not
 
 - Start tela cheia without a marked range.
-- Pull paid B-roll, Veo, or stock from the internet.
+- Pull paid B-roll, Veo, or stock from the internet. Local library is [`cenas/`](../cenas/README.md).
 - Treat event sfx as the `music/` bed.

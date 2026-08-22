@@ -19,6 +19,7 @@
 | rough-cut | WhisperX + silence + EDL + assembly + lock | [rough-cut.md](rough-cut.md) | no |
 | graphics-pass | 1st HyperFrames pass (draft) | [graphics-pass.md](graphics-pass.md) | no |
 | full-screen-visual | Tela cheia + event sfx on a marked stretch | [full-screen-visual.md](full-screen-visual.md) | no |
+| match-cenas | Spoken beat → stretch from `cenas/` (any format) | [match-cenas.md](match-cenas.md) | no |
 | second-pass | Natural-language graphic/cut direction; partial render | [second-pass.md](second-pass.md) | no |
 | captions | Short-form word-pop captions from existing transcript | [captions.md](captions.md) | no |
 | music-mix | Bed music path + dB | [music-mix.md](music-mix.md) | no |
@@ -27,7 +28,7 @@
 
 ## Gaps
 
-No incident-intake skill (Igor has not described production incidents). No paid B-roll/TTS/Veo skill until spend policy is filled. Local **tela cheia** (images from our folders + event sfx) is available.
+No incident-intake skill (Igor has not described production incidents). No paid B-roll/TTS/Veo skill until spend policy is filled. Local **cenas/** library (Igor, 2026-08-22) and local **tela cheia** (images + event sfx) are available.
 
 ## Children
 

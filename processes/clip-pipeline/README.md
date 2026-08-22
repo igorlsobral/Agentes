@@ -12,7 +12,7 @@ Prescribed order. Do not skip a stage. One stage per turn unless Igor asks for t
 |---|---|---|
 | 1 Intake | New bruto | [`skills/intake-clip.md`](../../skills/intake-clip.md) |
 | 2 Rough cut + lock | Transcribe, silence, EDL, assembly | [`skills/rough-cut.md`](../../skills/rough-cut.md) |
-| 3 Graphics 1st pass | Draft HyperFrames after lock | [`skills/graphics-pass.md`](../../skills/graphics-pass.md) |
+| 3 Graphics 1st pass | Draft HyperFrames after lock; `cenas/` if the folder has files | [`skills/graphics-pass.md`](../../skills/graphics-pass.md), [`skills/match-cenas.md`](../../skills/match-cenas.md) |
 | 4 Second pass | Natural-language direction; partial render | [`skills/second-pass.md`](../../skills/second-pass.md) |
 | 5 Captions (short-form) | Word-pop from existing transcript | [`skills/captions.md`](../../skills/captions.md) |
 | 6 Music | Bed path + dB | [`skills/music-mix.md`](../../skills/music-mix.md) |
