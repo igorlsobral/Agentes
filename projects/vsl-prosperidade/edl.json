@@ -2724,7 +2724,207 @@
       "reason": "silêncio grande (respirada mantida no corte)"
     }
   ],
-  "missing_from_script": [
-    "Lead NARRATION after testimonials: « Dans un instant, vous allez pouvoir réciter la prière perdue… » — no matching file in raw/NARRAÇÃO VSL PROSPERIDADE."
-  ]
+  "missing_from_script": [],
+  "front": {
+    "order": "FALA_1..FALA_12 then hook then narration cut",
+    "prefix_duration_s": 112.559,
+    "items": [
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_1\\FALA_1.mp4",
+        "src_duration_s": 5.164,
+        "keep": [
+          [
+            0.0,
+            5.04
+          ]
+        ],
+        "out_duration_s": 5.04
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_2\\FALA_2.mp4",
+        "src_duration_s": 4.418,
+        "keep": [
+          [
+            0.0,
+            4.418
+          ]
+        ],
+        "out_duration_s": 4.418
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_3\\FALA_3.mp4",
+        "src_duration_s": 3.178,
+        "keep": [
+          [
+            0.0,
+            2.98
+          ]
+        ],
+        "out_duration_s": 3.0
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_4\\FALA_4.mp4",
+        "src_duration_s": 4.842,
+        "keep": [
+          [
+            0.0,
+            4.84
+          ]
+        ],
+        "out_duration_s": 4.84
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_5\\FALA_5.mp4",
+        "src_duration_s": 3.18,
+        "keep": [
+          [
+            0.0,
+            3.06
+          ]
+        ],
+        "out_duration_s": 3.08
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_6\\FALA_6.mp4",
+        "src_duration_s": 4.565,
+        "keep": [
+          [
+            0.0,
+            4.5
+          ]
+        ],
+        "out_duration_s": 4.52
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_7\\FALA_7.mp4",
+        "src_duration_s": 2.88,
+        "keep": [
+          [
+            0.0,
+            2.88
+          ]
+        ],
+        "out_duration_s": 2.88
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_8\\FALA_8.mp4",
+        "src_duration_s": 4.245,
+        "keep": [
+          [
+            0.0,
+            4.16
+          ]
+        ],
+        "out_duration_s": 4.16
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_9\\FALA_9.mp4",
+        "src_duration_s": 3.671,
+        "keep": [
+          [
+            0.0,
+            3.48
+          ]
+        ],
+        "out_duration_s": 3.48
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_10\\FALA_10.mp4",
+        "src_duration_s": 2.858,
+        "keep": [
+          [
+            0.0,
+            2.74
+          ]
+        ],
+        "out_duration_s": 2.76
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_11\\FALA_11.mp4",
+        "src_duration_s": 4.629,
+        "keep": [
+          [
+            0.0,
+            4.43
+          ]
+        ],
+        "out_duration_s": 4.44
+      },
+      {
+        "kind": "depoimento",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\brand\\assets\\depoimentos\\VIDEOS\\FALA_12\\FALA_12.mp4",
+        "src_duration_s": 5.802,
+        "keep": [
+          [
+            0.0,
+            5.64
+          ]
+        ],
+        "out_duration_s": 5.64
+      },
+      {
+        "kind": "gancho",
+        "src": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vídeo de Avatar_1080p.mp4",
+        "src_duration_s": 71.596,
+        "keep": [
+          [
+            0.0,
+            14.72
+          ],
+          [
+            15.74,
+            16.54
+          ],
+          [
+            17.48,
+            24.28
+          ],
+          [
+            24.8,
+            31.08
+          ],
+          [
+            31.88,
+            42.32
+          ],
+          [
+            43.03,
+            47.78
+          ],
+          [
+            48.64,
+            50.7
+          ],
+          [
+            51.23,
+            60.0
+          ],
+          [
+            60.59,
+            63.95
+          ],
+          [
+            64.55,
+            67.78
+          ],
+          [
+            68.34,
+            71.34
+          ]
+        ],
+        "out_duration_s": 64.301
+      }
+    ]
+  }
 }
