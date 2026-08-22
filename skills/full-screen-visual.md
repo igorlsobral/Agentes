@@ -13,7 +13,7 @@ Always available after the rough cut is locked. Not a new pipeline stage — a g
    - Do not invent the range. If start or end is missing, ask once.
 3. For that range, cover the **entire frame**. Hide the talking-head. Keep the assembly voice.
 4. Visuals follow what he actually said. Transcript is the timeline. Allowed: text, diagrams, and images from [`brand/assets/`](../brand/README.md) or a folder he names (including `projects/<clip>/graphics/assets/`). Animate images (enter, slide, swap) when it helps the sentence. One visual beat per spoken idea.
-   Standing **tela cheia / 3D reel** taste (Igor, 2026-08-22; file in [`brand/references/`](../brand/references/README.md)): dark space, huge centered type, 2–4 words per beat, a 3D-looking object in the scene, glow + slight color fringe, smash in/out every **1–2 seconds**. Accent color **follows the spoken idea** (sacred/gold, healing/teal, night/silver, urgency/amber, abundance/champagne). Do not default to neon green.
+   Standing **tela cheia / 3D reel** taste (Igor, 2026-08-22; file in [`brand/references/`](../brand/references/README.md)): **clone the Reel’s motion**, do not restyle the same card. One continuous 3D world: camera keeps drifting, objects fly through Z (sheets, coins, lock, cross) with depth blur, text is huge and **changes place/angle every beat**, sometimes sitting on the object (lock + words to the right). Glow + RGB fringe. Accent color **follows the spoken idea**. Do not default to neon green. Do not reuse one centered stack.
 5. **Event sfx** — when a visual needs a sound, mix a one-shot from [`sfx/`](../sfx/README.md) under the voice, timed to the motion. Not a music bed.
    Standing examples (Igor, 2026-08-21):
    - walking character → footsteps or a quieter step

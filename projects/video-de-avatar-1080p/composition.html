@@ -8,601 +8,348 @@
       @font-face {
         font-family: "Coolvetica";
         src: url("assets/Coolvetica-Rg.otf") format("opentype");
-        font-weight: 400;
       }
       @font-face {
         font-family: "CoolveticaHv";
         src: url("assets/Coolvetica-Hv.otf") format("opentype");
-        font-weight: 800;
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body {
-        margin: 0;
-        width: 1080px;
-        height: 1920px;
-        overflow: hidden;
-        background: #05060a;
+        margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #03040a;
       }
-      body { font-family: "Coolvetica", sans-serif; color: #fff; }
-      .scene { position: absolute; inset: 0; perspective: 1400px; }
-      .stage {
-        position: absolute;
-        inset: 0;
+      #world {
+        position: absolute; inset: 0;
+        perspective: 1600px;
+        perspective-origin: 50% 45%;
+      }
+      #cam {
+        position: absolute; inset: 0;
         transform-style: preserve-3d;
-        visibility: hidden;
       }
-
-      .theme-gold { --accent: #e8c45a; --soft: #fff4c8; --glow: rgba(232,196,90,0.7); }
-      .theme-antique { --accent: #c9a227; --soft: #f0d78c; --glow: rgba(180,50,40,0.45); }
-      .theme-holy { --accent: #ffe566; --soft: #fff8e0; --glow: rgba(255,230,120,0.75); }
-      .theme-white { --accent: #ffffff; --soft: #e8f0ff; --glow: rgba(255,255,255,0.65); }
-      .theme-heal { --accent: #7ed4c8; --soft: #e8fff8; --glow: rgba(80,210,195,0.55); }
-      .theme-amber { --accent: #e8a317; --soft: #ffd27a; --glow: rgba(232,163,23,0.65); }
-      .theme-copper { --accent: #e07a2f; --soft: #ffd0a8; --glow: rgba(224,122,47,0.7); }
-      .theme-steel { --accent: #9aa6b5; --soft: #e8eef4; --glow: rgba(90,100,120,0.5); }
-      .theme-silver { --accent: #d0d8e4; --soft: #ffffff; --glow: rgba(190,200,220,0.55); }
-      .theme-champagne { --accent: #e6c87a; --soft: #fff6d6; --glow: rgba(230,200,122,0.7); }
-      .theme-dawn { --accent: #e8a090; --soft: #ffe8c8; --glow: rgba(232,140,100,0.55); }
-      .theme-night { --accent: #b8c4ff; --soft: #f0e6c8; --glow: rgba(90,100,190,0.5); }
-      .theme-cream { --accent: #f0e2b8; --soft: #fffaf0; --glow: rgba(210,180,110,0.5); }
-
-      .kicker {
+      .glow {
+        position: absolute; width: 1100px; height: 1100px; left: -10px; top: 360px;
+        border-radius: 50%; pointer-events: none;
+      }
+      .g-gold { background: radial-gradient(circle, rgba(232,196,90,0.42) 0%, rgba(3,4,10,0) 70%); }
+      .g-heal { background: radial-gradient(circle, rgba(70,210,195,0.38) 0%, rgba(3,4,10,0) 70%); }
+      .g-amber { background: radial-gradient(circle, rgba(232,150,30,0.4) 0%, rgba(3,4,10,0) 70%); }
+      .g-night { background: radial-gradient(circle, rgba(90,110,210,0.38) 0%, rgba(3,4,10,0) 70%); }
+      .g-steel { background: radial-gradient(circle, rgba(140,160,190,0.32) 0%, rgba(3,4,10,0) 70%); }
+      .g-dawn { background: radial-gradient(circle, rgba(232,130,90,0.36) 0%, rgba(3,4,10,0) 70%); }
+      .flare {
+        position: absolute; width: 280px; height: 280px; left: -40px; top: 220px;
+        background: radial-gradient(circle, rgba(255,255,255,0.85) 0%, rgba(255,220,140,0.25) 38%, rgba(255,255,255,0) 70%);
+        pointer-events: none; mix-blend-mode: screen;
+      }
+      .dust {
+        position: absolute; border-radius: 50%; background: #ffe7b0;
+        box-shadow: 0 0 10px rgba(255,210,120,0.9); pointer-events: none;
+      }
+      .ribbon {
+        position: absolute; width: 900px; height: 46px; left: -200px; top: 700px;
+        background: linear-gradient(90deg, transparent, var(--rib, rgba(232,196,90,0.55)), transparent);
+        filter: blur(1.2px); transform-style: preserve-3d; pointer-events: none;
+      }
+      .sheet, .coin, .lock3d, .cross3d, .clock3d, .halo3d, .moon3d, .door3d, .book3d {
+        position: absolute; transform-style: preserve-3d; will-change: transform;
+      }
+      .sheet {
+        width: 240px; height: 130px;
+      }
+      .sheet .face {
+        width: 100%; height: 100%;
+        background: linear-gradient(145deg, #fff3c4 0%, #e0b85a 55%, #8d6918 100%);
+        border-radius: 8px;
+        box-shadow: 0 18px 28px rgba(0,0,0,0.45), 0 0 22px rgba(232,196,90,0.45);
+      }
+      .sheet .face::after {
+        content: "✝";
+        display: flex; align-items: center; justify-content: center;
+        height: 100%; font-size: 54px; color: rgba(70,45,10,0.32);
+      }
+      .coin {
+        width: 110px; height: 110px;
+      }
+      .coin .face {
+        width: 100%; height: 100%; border-radius: 50%;
+        background: radial-gradient(circle at 32% 28%, #fff6cc, #d4a017 58%, #6e520c);
+        box-shadow: 0 0 28px rgba(232,196,90,0.8), inset 0 0 0 8px rgba(255,220,120,0.25);
+      }
+      .lock3d { width: 210px; height: 300px; left: 90px; top: 620px; }
+      .lock3d .shackle {
+        width: 118px; height: 100px; margin: 0 auto;
+        border: 22px solid #f2f2f2;
+        border-bottom: none; border-radius: 70px 70px 0 0;
+        box-shadow: 0 0 24px rgba(255,255,255,0.55);
+        transform-origin: 20% 100%;
+      }
+      .lock3d .body {
+        width: 210px; height: 168px;
+        background: linear-gradient(160deg, #fff 0%, #c8c8c8 45%, #6a6a6a 100%);
+        border-radius: 22px;
+        box-shadow: 0 0 50px rgba(255,255,255,0.55), inset 0 8px 14px rgba(255,255,255,0.55);
+      }
+      .lock3d .key {
+        width: 26px; height: 42px; margin: 48px auto 0; background: #1a1a1a; border-radius: 14px 14px 7px 7px;
+      }
+      .cross3d {
+        left: 470px; top: 280px; width: 48px; height: 320px;
+        background: linear-gradient(180deg, #fff8d0, #e0b84a);
+        border-radius: 10px;
+        box-shadow: 0 0 40px rgba(255,220,120,0.85);
+      }
+      .cross3d::after {
+        content: ""; position: absolute; left: -78px; top: 78px; width: 204px; height: 48px;
+        background: linear-gradient(90deg, #fff8d0, #e0b84a); border-radius: 10px;
+        box-shadow: 0 0 40px rgba(255,220,120,0.85);
+      }
+      .clock3d {
+        width: 340px; height: 340px; left: 370px; top: 360px; border-radius: 50%;
+        border: 18px solid #e8a317;
+        background: radial-gradient(circle, #201408, #05060a);
+        box-shadow: 0 0 50px rgba(232,163,23,0.6);
+      }
+      .clock3d .hand {
+        position: absolute; left: 164px; top: 40px; width: 12px; height: 130px;
+        background: #ffd27a; border-radius: 6px; transform-origin: 6px 130px;
+      }
+      .clock3d .dot {
+        position: absolute; left: 154px; top: 154px; width: 32px; height: 32px;
+        border-radius: 50%; background: #e8a317;
+      }
+      .halo3d {
+        width: 280px; height: 280px; left: 80px; top: 480px; border-radius: 50%;
+        border: 22px solid rgba(255,236,170,0.9);
+        box-shadow: 0 0 50px rgba(255,220,140,0.75), inset 0 0 30px rgba(255,220,140,0.25);
+      }
+      .moon3d {
+        width: 280px; height: 280px; left: 70px; top: 420px; border-radius: 50%;
+        background: radial-gradient(circle at 35% 30%, #fff, #d0d6f0 60%, #7a80a8);
+        box-shadow: 0 0 70px rgba(180,196,255,0.75);
+      }
+      .door3d {
+        width: 240px; height: 380px; left: 420px; top: 420px;
+        background: linear-gradient(180deg, #f4c4a4, #c25a3a);
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 24px 40px rgba(0,0,0,0.5), 0 0 30px rgba(232,140,100,0.45);
+        transform-origin: left center;
+      }
+      .book3d {
+        width: 280px; height: 190px; left: 400px; top: 520px;
+        background: linear-gradient(90deg, #5a3014 0 22px, #f4e2b4 22px);
+        border-radius: 4px 12px 12px 4px;
+        box-shadow: 0 22px 36px rgba(0,0,0,0.5), 0 0 24px rgba(210,180,110,0.45);
+      }
+      .copy {
+        position: absolute; transform-style: preserve-3d; visibility: hidden;
+        pointer-events: none;
+      }
+      .k {
         font-family: "Coolvetica", sans-serif;
-        font-size: 42px;
-        letter-spacing: 0.06em;
-        text-align: center;
-        color: var(--accent);
-        text-shadow: 0 0 18px var(--glow), 2px 0 0 rgba(255,40,80,0.35), -2px 0 0 rgba(40,180,255,0.3);
+        font-size: 48px;
+        letter-spacing: 0.04em;
+        color: var(--accent, #e8c45a);
+        text-shadow: 0 0 18px var(--glow, rgba(232,196,90,0.75)), 3px 0 0 rgba(255,40,80,0.45), -3px 0 0 rgba(40,180,255,0.4);
       }
-      .hero {
+      .h {
         font-family: "CoolveticaHv", "Coolvetica", sans-serif;
-        font-size: 110px;
-        line-height: 1;
-        letter-spacing: 0.01em;
+        font-size: 168px;
+        line-height: 0.86;
+        letter-spacing: -0.02em;
         text-transform: uppercase;
-        text-align: center;
         color: #fff;
         text-shadow:
-          0 0 14px var(--glow),
-          0 0 40px var(--glow),
-          0 0 88px var(--glow),
-          3px 0 0 rgba(255,40,80,0.42),
-          -3px 0 0 rgba(40,180,255,0.38),
-          0 12px 0 rgba(0,0,0,0.28),
-          0 22px 28px rgba(0,0,0,0.5);
+          4px 0 0 rgba(255,40,80,0.5),
+          -4px 0 0 rgba(40,180,255,0.45),
+          0 0 18px var(--glow, rgba(232,196,90,0.85)),
+          0 0 48px var(--glow, rgba(232,196,90,0.7)),
+          0 0 110px var(--glow, rgba(232,196,90,0.45)),
+          0 16px 0 rgba(0,0,0,0.28),
+          0 28px 36px rgba(0,0,0,0.55);
       }
-      .hero.accent { color: var(--accent); }
-      .hero.sm { font-size: 86px; }
-      .hero.xs { font-size: 68px; }
-      .stack {
-        position: absolute;
-        left: 48px;
-        right: 48px;
-        top: 620px;
-      }
-      .stack > * + * { margin-top: 22px; }
-
-      .glowball {
-        position: absolute;
-        width: 900px;
-        height: 900px;
-        left: 90px;
-        top: 510px;
-        border-radius: 50%;
-        pointer-events: none;
-      }
-      .g-gold { background: radial-gradient(circle, rgba(232,196,90,0.34) 0%, rgba(5,6,10,0) 68%); }
-      .g-red { background: radial-gradient(circle, rgba(160,40,30,0.28) 0%, rgba(5,6,10,0) 68%); }
-      .g-heal { background: radial-gradient(circle, rgba(80,210,195,0.28) 0%, rgba(5,6,10,0) 68%); }
-      .g-night { background: radial-gradient(circle, rgba(70,80,180,0.32) 0%, rgba(5,6,10,0) 68%); }
-      .g-dawn { background: radial-gradient(circle, rgba(232,140,100,0.28) 0%, rgba(5,6,10,0) 68%); }
-      .g-steel { background: radial-gradient(circle, rgba(90,110,140,0.26) 0%, rgba(5,6,10,0) 68%); }
-
-      .dust {
-        position: absolute;
-        border-radius: 50%;
-        background: #ffd9a0;
-        box-shadow: 0 0 8px rgba(255,200,120,0.8);
-        pointer-events: none;
-      }
-
-      .obj { position: absolute; transform-style: preserve-3d; }
-      .scroll {
-        width: 200px; height: 268px;
-        background: linear-gradient(180deg, #f7e7b4 0%, #c9a056 100%);
-        border-radius: 10px;
-        box-shadow: 0 24px 40px rgba(0,0,0,0.5), 0 0 28px rgba(232,196,90,0.45);
-        transform: rotateY(-22deg) rotateX(10deg);
-      }
-      .scroll::before, .scroll::after {
-        content: "";
-        position: absolute; left: 18px; right: 18px; height: 8px;
-        background: rgba(90,60,20,0.25); border-radius: 4px;
-      }
-      .scroll::before { top: 36px; }
-      .scroll::after { top: 56px; }
-
-      .cross {
-        width: 36px; height: 220px;
-        background: linear-gradient(180deg, #fff6c8, #e8c45a);
-        border-radius: 8px;
-        box-shadow: 0 0 28px rgba(255,230,120,0.85);
-        transform: rotateY(-18deg);
-      }
-      .cross::after {
-        content: "";
-        position: absolute; left: -62px; top: 52px;
-        width: 160px; height: 36px;
-        background: linear-gradient(90deg, #fff6c8, #e8c45a);
-        border-radius: 8px;
-        box-shadow: 0 0 28px rgba(255,230,120,0.85);
-      }
-
-      .halo {
-        width: 220px; height: 220px;
-        border: 18px solid rgba(255,240,180,0.85);
-        border-radius: 50%;
-        box-shadow: 0 0 40px rgba(255,230,140,0.7), inset 0 0 30px rgba(255,230,140,0.25);
-      }
-
-      .star {
-        width: 0; height: 0;
-        border-left: 28px solid transparent;
-        border-right: 28px solid transparent;
-        border-bottom: 46px solid #e8a317;
-        filter: drop-shadow(0 0 18px rgba(232,163,23,0.9));
-        transform: rotateY(-20deg);
-      }
-
-      .burst {
-        width: 280px; height: 280px;
-        background: radial-gradient(circle, #fff 0%, rgba(255,230,140,0.5) 28%, rgba(255,255,255,0) 70%);
-        border-radius: 50%;
-      }
-
-      .ring {
-        width: 240px; height: 240px;
-        border: 16px solid #7ed4c8;
-        border-radius: 50%;
-        box-shadow: 0 0 36px rgba(80,210,195,0.7);
-      }
-
-      .stamp {
-        width: 620px; height: 620px; border-radius: 50%;
-        border: 22px solid #e07a2f;
-        background: radial-gradient(circle, rgba(40,18,8,0.9), rgba(8,6,6,0.95));
-        box-shadow: 0 0 60px rgba(224,122,47,0.55);
-        display: flex; align-items: center; justify-content: center;
-        text-align: center;
-      }
-
-      .clock {
-        width: 280px; height: 280px; border-radius: 50%;
-        border: 14px solid #e8a317;
-        background: radial-gradient(circle, #1a1408, #05060a);
-        box-shadow: 0 0 40px rgba(232,163,23,0.55);
-      }
-      .clock .hand {
-        position: absolute; left: 136px; top: 40px;
-        width: 8px; height: 100px;
-        background: #ffd27a;
-        border-radius: 4px;
-        transform-origin: 4px 100px;
-      }
-      .clock .dot {
-        position: absolute; left: 128px; top: 128px;
-        width: 24px; height: 24px; border-radius: 50%;
-        background: #e8a317;
-      }
-
-      .lock {
-        width: 160px;
-        filter: drop-shadow(0 0 24px rgba(255,255,255,0.55));
-      }
-      .lock .shackle {
-        width: 96px; height: 78px; margin: 0 auto;
-        border: 16px solid #e8e8e8;
-        border-bottom: none;
-        border-radius: 56px 56px 0 0;
-        background: transparent;
-      }
-      .lock .body {
-        width: 160px; height: 124px;
-        background: linear-gradient(160deg, #fff 0%, #b8b8b8 55%, #6a6a6a 100%);
-        border-radius: 18px;
-        box-shadow: inset 0 6px 10px rgba(255,255,255,0.6);
-      }
-      .lock .keyhole {
-        width: 22px; height: 36px; margin: 36px auto 0;
-        background: #222;
-        border-radius: 12px 12px 6px 6px;
-      }
-
-      .piece {
-        width: 180px; height: 180px;
-        background: linear-gradient(145deg, #e8eef6, #8a96a8);
-        border-radius: 28px;
-        box-shadow: 0 18px 30px rgba(0,0,0,0.45), 0 0 24px rgba(200,210,230,0.45);
-        transform: rotateY(-24deg) rotateX(12deg);
-      }
-      .piece::after {
-        content: "";
-        position: absolute; right: -28px; top: 58px;
-        width: 56px; height: 64px; border-radius: 50%;
-        background: linear-gradient(145deg, #e8eef6, #8a96a8);
-      }
-
-      .coin {
-        width: 96px; height: 96px; border-radius: 50%;
-        background: radial-gradient(circle at 32% 28%, #fff6c8, #d4a017 58%, #7a5a10);
-        box-shadow: 0 0 22px rgba(232,196,90,0.75);
-      }
-
-      .door {
-        width: 200px; height: 300px;
-        background: linear-gradient(180deg, #f2c2a4, #c46a4a);
-        border-radius: 8px 8px 0 0;
-        box-shadow: 0 20px 36px rgba(0,0,0,0.45), 0 0 28px rgba(232,140,100,0.4);
-        transform: rotateY(-18deg);
-      }
-      .door::after {
-        content: "";
-        position: absolute; right: 22px; top: 140px;
-        width: 18px; height: 18px; border-radius: 50%;
-        background: #ffe8c8;
-      }
-
-      .moon {
-        width: 200px; height: 200px; border-radius: 50%;
-        background: radial-gradient(circle at 35% 30%, #fff, #d5dcf5 60%, #8a90b8);
-        box-shadow: 0 0 50px rgba(184,196,255,0.7);
-      }
-
-      .book {
-        width: 220px; height: 160px;
-        background: linear-gradient(90deg, #6a3a18 0 18px, #f3e2b2 18px);
-        border-radius: 4px 10px 10px 4px;
-        box-shadow: 0 22px 36px rgba(0,0,0,0.5), 0 0 24px rgba(210,180,110,0.4);
-        transform: rotateY(-20deg) rotateX(8deg);
-      }
-
-      .dots {
-        position: absolute; inset: 0;
-      }
-      .dots span {
-        position: absolute;
-        width: 14px; height: 14px; border-radius: 50%;
-        background: #e8c45a;
-        box-shadow: 0 0 10px rgba(232,196,90,0.8);
-      }
+      .h.acc { color: var(--accent, #e8c45a); }
+      .h.md { font-size: 128px; }
+      .h.sm { font-size: 92px; }
+      .h.xl { font-size: 210px; }
+      .gold { --accent: #e8c45a; --glow: rgba(232,196,90,0.85); --rib: rgba(232,196,90,0.5); }
+      .heal { --accent: #7ed4c8; --glow: rgba(80,210,195,0.8); --rib: rgba(80,210,195,0.5); }
+      .amber { --accent: #e8a317; --glow: rgba(232,163,23,0.85); --rib: rgba(232,163,23,0.5); }
+      .copper { --accent: #e07a2f; --glow: rgba(224,122,47,0.85); --rib: rgba(224,122,47,0.5); }
+      .steel { --accent: #c5d0dc; --glow: rgba(180,196,220,0.75); --rib: rgba(160,180,210,0.45); }
+      .night { --accent: #c4ceff; --glow: rgba(140,160,255,0.8); --rib: rgba(140,160,255,0.45); }
+      .dawn { --accent: #e8a090; --glow: rgba(232,140,100,0.8); --rib: rgba(232,140,100,0.45); }
+      .holy { --accent: #ffe566; --glow: rgba(255,230,120,0.9); --rib: rgba(255,230,120,0.5); }
     </style>
   </head>
   <body>
     <div id="root" data-composition-id="main" data-start="0" data-duration="67.69" data-width="1080" data-height="1920" data-fps="60">
-      <video id="a-roll" class="clip" src="02-rough-cut.mp4" muted playsinline data-start="0" data-duration="67.69" data-track-index="0" style="position:absolute;inset:0;width:100%;height:100%;opacity:0"></video>
+      <video id="a-roll" class="clip" src="02-rough-cut.mp4" muted playsinline data-start="0" data-duration="67.69" data-track-index="0" style="position:absolute;inset:0;opacity:0"></video>
       <audio id="a-roll-audio" src="02-rough-cut.mp4" data-start="0" data-duration="67.69" data-track-index="2" data-volume="1"></audio>
-      <audio id="music" src="assets/prosperity-pad.wav" data-start="0" data-duration="67.69" data-track-index="3" data-volume="0.16"></audio>
+      <audio id="music" src="assets/prosperity-pad.wav" data-start="0" data-duration="67.69" data-track-index="3" data-volume="0.15"></audio>
 
-      <div id="world" class="clip scene" data-start="0" data-duration="67.69" data-track-index="1">
-        <div id="gGold" class="glowball g-gold"></div>
-        <div id="gRed" class="glowball g-red" style="opacity:0"></div>
-        <div id="gHeal" class="glowball g-heal" style="opacity:0"></div>
-        <div id="gNight" class="glowball g-night" style="opacity:0"></div>
-        <div id="gDawn" class="glowball g-dawn" style="opacity:0"></div>
-        <div id="gSteel" class="glowball g-steel" style="opacity:0"></div>
-        <div id="dust"></div>
-      </div>
+      <div id="world" class="clip" data-start="0" data-duration="67.69" data-track-index="1" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion>
+        <div id="cam">
+          <div id="gGold" class="glow g-gold"></div>
+          <div id="gHeal" class="glow g-heal" style="opacity:0"></div>
+          <div id="gAmber" class="glow g-amber" style="opacity:0"></div>
+          <div id="gNight" class="glow g-night" style="opacity:0"></div>
+          <div id="gSteel" class="glow g-steel" style="opacity:0"></div>
+          <div id="gDawn" class="glow g-dawn" style="opacity:0"></div>
+          <div id="flare" class="flare"></div>
+          <div id="dust"></div>
+          <div id="ribs"></div>
+          <div id="sheets"></div>
+          <div id="coins"></div>
 
-      <div id="b01" class="clip scene theme-gold" data-start="0.15" data-duration="1.90" data-track-index="4">
-        <div class="stage">
-          <div class="stack" style="top:700px" data-layout-allow-overlap>
-            <div class="kicker">Dans un</div>
-            <div class="hero accent">Instant</div>
+          <div id="halo" class="halo3d" style="visibility:hidden"></div>
+          <div id="cross" class="cross3d" style="visibility:hidden"></div>
+          <div id="clock" class="clock3d" style="visibility:hidden"><div class="hand" id="hand"></div><div class="dot"></div></div>
+          <div id="lock" class="lock3d" style="visibility:hidden"><div class="shackle" id="shackle"></div><div class="body"><div class="key"></div></div></div>
+          <div id="moon" class="moon3d" style="visibility:hidden"></div>
+          <div id="door" class="door3d" style="visibility:hidden"></div>
+          <div id="book" class="book3d" style="visibility:hidden"></div>
+
+          <div id="w01" class="copy gold" style="left:48px;top:1180px;width:980px">
+            <div class="k">Dans un</div>
+            <div class="h acc xl">Instant</div>
+          </div>
+          <div id="w02" class="copy gold" style="left:40px;top:220px;width:1000px">
+            <div class="k">Réciter</div>
+            <div class="h md">La prière</div>
+          </div>
+          <div id="w02b" class="copy gold" style="left:40px;top:1280px;width:1000px">
+            <div class="h acc xl">Perdue</div>
+          </div>
+          <div id="w03" class="copy gold" style="left:20px;top:640px;width:1040px;text-align:center">
+            <div class="k">Cachée pendant</div>
+            <div class="h acc xl" id="yearNum">0</div>
+            <div class="h sm">Ans</div>
+          </div>
+          <div id="w04" class="copy holy" style="left:360px;top:980px;width:680px">
+            <div class="h acc">Saints</div>
+          </div>
+          <div id="w05" class="copy amber" style="left:40px;top:1320px;width:1000px">
+            <div class="h acc md">Prophètes</div>
+          </div>
+          <div id="w06" class="copy holy" style="left:70px;top:1320px;width:940px">
+            <div class="h">Jésus</div>
+            <div class="h acc sm">Lui-même</div>
+          </div>
+          <div id="w07" class="copy holy" style="left:40px;top:760px;width:1000px;text-align:center">
+            <div class="h acc xl">Miracles</div>
+          </div>
+          <div id="w08" class="copy heal" style="left:40px;top:820px;width:1000px;text-align:center">
+            <div class="h acc">Guérison</div>
+          </div>
+          <div id="w09" class="copy gold" style="left:20px;top:860px;width:1040px;text-align:center">
+            <div class="h acc sm">Bénédictions</div>
+          </div>
+          <div id="w10" class="copy copper" style="left:40px;top:780px;width:1000px;text-align:center">
+            <div class="k">Sur</div>
+            <div class="h acc xl">Commande</div>
+          </div>
+          <div id="w11" class="copy gold" style="left:40px;top:240px;width:1000px">
+            <div class="k">Aujourd'hui</div>
+            <div class="h md">Des milliers</div>
+          </div>
+          <div id="w11b" class="copy gold" style="left:40px;top:1400px;width:1000px">
+            <div class="h acc sm">D'hommes et de femmes</div>
+          </div>
+          <div id="w12" class="copy holy" style="left:40px;top:700px;width:1000px;text-align:center">
+            <div class="h">Miracles</div>
+            <div class="k">Dans leur propre vie</div>
+          </div>
+          <div id="w13" class="copy amber" style="left:40px;top:1180px;width:1000px;text-align:center">
+            <div class="h acc xl">3</div>
+            <div class="h md">Minutes</div>
+          </div>
+          <div id="w14" class="copy holy" style="left:50px;top:980px;width:980px">
+            <div class="k">Les mots</div>
+            <div class="h sm">Directement</div>
+            <div class="h acc md">Au créateur</div>
+          </div>
+          <div id="w15" class="copy amber" style="left:40px;top:720px;width:1000px;text-align:center">
+            <div class="k">Et vous sentez</div>
+            <div class="h">La réponse</div>
+            <div class="h acc xl">Vite</div>
+          </div>
+          <div id="w16" class="copy steel" style="left:380px;top:720px;width:660px">
+            <div class="k">Il y a deux mois</div>
+            <div class="h acc md">Impossible</div>
+          </div>
+          <div id="w17" class="copy steel" style="left:380px;top:1100px;width:660px">
+            <div class="k">Il manquait</div>
+            <div class="h sm">La pièce</div>
+          </div>
+          <div id="w18" class="copy gold" style="left:380px;top:680px;width:660px">
+            <div class="k">Mais pour la</div>
+            <div class="h">Première</div>
+            <div class="h acc">Fois</div>
+          </div>
+          <div id="w19" class="copy gold" style="left:380px;top:1180px;width:660px">
+            <div class="h sm">La prière</div>
+            <div class="h acc">Complète</div>
+          </div>
+          <div id="w20" class="copy holy" style="left:60px;top:1280px;width:960px">
+            <div class="k">Récitée par</div>
+            <div class="h">Jésus</div>
+            <div class="h acc sm">Et ses disciples</div>
+          </div>
+          <div id="w21" class="copy gold" style="left:40px;top:800px;width:1000px;text-align:center">
+            <div class="h sm">Changer</div>
+            <div class="h acc">Des vies</div>
+          </div>
+          <div id="w22" class="copy gold" style="left:40px;top:700px;width:1000px;text-align:center">
+            <div class="k">Si vous êtes prêts</div>
+            <div class="h acc sm">Bénédictions</div>
+          </div>
+          <div id="w23" class="copy gold" style="left:40px;top:760px;width:1000px;text-align:center">
+            <div class="k">Pour votre</div>
+            <div class="h acc xl">Abondance</div>
+          </div>
+          <div id="w24" class="copy dawn" style="left:40px;top:1280px;width:1000px;text-align:center">
+            <div class="h">Vie</div>
+            <div class="h acc">Nouvelle</div>
+          </div>
+          <div id="w25" class="copy night" style="left:360px;top:880px;width:680px">
+            <div class="k">Cette prière</div>
+            <div class="h acc">Ce soir</div>
+          </div>
+          <div id="w26" class="copy amber" style="left:40px;top:1180px;width:1000px;text-align:center">
+            <div class="h acc xl">3</div>
+            <div class="h md">Minutes</div>
+          </div>
+          <div id="w27" class="copy gold" style="left:40px;top:720px;width:1000px;text-align:center">
+            <div class="k">Sentir</div>
+            <div class="h sm">La réponse</div>
+            <div class="h acc">Rapidement</div>
+          </div>
+          <div id="w28" class="copy gold" style="left:40px;top:1180px;width:1000px;text-align:center">
+            <div class="k">Vous devez connaître</div>
+            <div class="h">Son</div>
+            <div class="h acc">Histoire</div>
+          </div>
+          <div id="w29" class="copy holy" style="left:40px;top:700px;width:1000px;text-align:center">
+            <div class="k">Elle peut être</div>
+            <div class="h acc">Puissante</div>
+            <div class="h sm">Dans votre vie</div>
           </div>
         </div>
       </div>
 
-      <div id="b02" class="clip scene theme-gold" data-start="2.05" data-duration="2.75" data-track-index="5">
-        <div class="stage">
-          <div class="obj scroll" style="left:120px;top:380px"></div>
-          <div class="stack" style="top:760px" data-layout-allow-overlap>
-            <div class="kicker">Réciter</div>
-            <div class="hero">La prière</div>
-            <div class="hero accent">Perdue</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b03" class="clip scene theme-antique" data-start="4.80" data-duration="2.35" data-track-index="6">
-        <div class="stage">
-          <div class="stack" style="top:640px" data-layout-allow-overlap>
-            <div class="kicker">Cachée pendant</div>
-            <div class="hero accent" id="yearNum" style="font-size:150px">0</div>
-            <div class="hero sm">Ans</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b04" class="clip scene theme-holy" data-start="7.15" data-duration="0.85" data-track-index="7">
-        <div class="stage">
-          <div class="obj halo" style="left:430px;top:430px"></div>
-          <div class="stack" data-layout-allow-overlap><div class="hero accent">Saints</div></div>
-        </div>
-      </div>
-
-      <div id="b05" class="clip scene theme-amber" data-start="8.00" data-duration="1.30" data-track-index="8">
-        <div class="stage">
-          <div class="obj star" style="left:500px;top:460px"></div>
-          <div class="stack" data-layout-allow-overlap><div class="hero accent">Prophètes</div></div>
-        </div>
-      </div>
-
-      <div id="b06" class="clip scene theme-holy" data-start="9.30" data-duration="2.20" data-track-index="9">
-        <div class="stage">
-          <div class="obj cross" style="left:522px;top:300px"></div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="hero">Jésus</div>
-            <div class="hero accent sm">Lui-même</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b07" class="clip scene theme-white" data-start="11.50" data-duration="1.10" data-track-index="10">
-        <div class="stage">
-          <div class="obj burst" style="left:400px;top:420px"></div>
-          <div class="stack" data-layout-allow-overlap><div class="hero accent">Miracles</div></div>
-        </div>
-      </div>
-
-      <div id="b08" class="clip scene theme-heal" data-start="12.60" data-duration="1.25" data-track-index="11">
-        <div class="stage">
-          <div class="obj ring" style="left:420px;top:400px"></div>
-          <div class="stack" data-layout-allow-overlap><div class="hero accent">Guérison</div></div>
-        </div>
-      </div>
-
-      <div id="b09" class="clip scene theme-gold" data-start="13.85" data-duration="0.79" data-track-index="12">
-        <div class="stage">
-          <div class="stack" data-layout-allow-overlap><div class="hero accent xs">Bénédictions</div></div>
-        </div>
-      </div>
-
-      <div id="b10" class="clip scene theme-copper" data-start="14.64" data-duration="0.63" data-track-index="13">
-        <div class="stage">
-          <div class="stamp" style="position:absolute;left:230px;top:650px">
-            <div data-layout-allow-overlap>
-              <div class="kicker">Sur</div>
-              <div class="hero sm accent">Commande</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b11" class="clip scene theme-gold" data-start="15.27" data-duration="2.78" data-track-index="14">
-        <div class="stage">
-          <div class="dots" id="crowd"></div>
-          <div class="stack" style="top:700px" data-layout-allow-overlap>
-            <div class="kicker">Aujourd'hui</div>
-            <div class="hero">Des milliers</div>
-            <div class="hero accent sm">D'hommes et de femmes</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b12" class="clip scene theme-holy" data-start="18.05" data-duration="3.20" data-track-index="15">
-        <div class="stage">
-          <div class="obj burst" style="left:400px;top:360px;opacity:0.7"></div>
-          <div class="stack" style="top:700px" data-layout-allow-overlap>
-            <div class="hero">Miracles</div>
-            <div class="kicker">Dans leur propre vie</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b13" class="clip scene theme-amber" data-start="21.25" data-duration="1.85" data-track-index="16">
-        <div class="stage">
-          <div class="obj clock" style="left:400px;top:380px">
-            <div class="hand" id="hand1"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="hero accent">3</div>
-            <div class="hero sm">Minutes</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b14" class="clip scene theme-holy" data-start="23.10" data-duration="4.25" data-track-index="17">
-        <div class="stage">
-          <div class="obj burst" style="left:400px;top:280px;opacity:0.45"></div>
-          <div class="stack" style="top:640px" data-layout-allow-overlap>
-            <div class="kicker">Les mots</div>
-            <div class="hero sm">Directement</div>
-            <div class="hero accent">Au créateur</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b15" class="clip scene theme-amber" data-start="27.35" data-duration="1.43" data-track-index="18">
-        <div class="stage">
-          <div class="stack" style="top:700px" data-layout-allow-overlap>
-            <div class="kicker">Et vous sentez</div>
-            <div class="hero">La réponse</div>
-            <div class="hero accent">Vite</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b16" class="clip scene theme-steel" data-start="28.78" data-duration="4.62" data-track-index="19">
-        <div class="stage">
-          <div class="obj lock" id="lockClosed" style="left:460px;top:340px">
-            <div class="shackle"></div>
-            <div class="body"><div class="keyhole"></div></div>
-          </div>
-          <div class="stack" style="top:760px" data-layout-allow-overlap>
-            <div class="kicker">Il y a deux mois</div>
-            <div class="hero accent sm">Impossible</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b17" class="clip scene theme-silver" data-start="33.40" data-duration="2.80" data-track-index="20">
-        <div class="stage">
-          <div class="obj piece" style="left:430px;top:380px"></div>
-          <div class="stack" style="top:760px" data-layout-allow-overlap>
-            <div class="kicker">Il manquait</div>
-            <div class="hero">La pièce</div>
-            <div class="hero accent sm">De la traduction</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b18" class="clip scene theme-gold" data-start="36.20" data-duration="2.05" data-track-index="21">
-        <div class="stage">
-          <div class="stack" style="top:640px" data-layout-allow-overlap>
-            <div class="kicker">Mais pour la</div>
-            <div class="hero">Première</div>
-            <div class="hero accent">Fois</div>
-            <div class="kicker">En 2000 ans</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b19" class="clip scene theme-gold" data-start="38.25" data-duration="2.45" data-track-index="22">
-        <div class="stage">
-          <div class="obj lock" style="left:460px;top:300px">
-            <div class="shackle" style="transform:translateX(28px) rotate(18deg);transform-origin:left bottom"></div>
-            <div class="body"><div class="keyhole"></div></div>
-          </div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="hero sm">La prière</div>
-            <div class="hero accent">Complète</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b20" class="clip scene theme-holy" data-start="40.70" data-duration="3.15" data-track-index="23">
-        <div class="stage">
-          <div class="obj cross" style="left:522px;top:300px"></div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="kicker">Récitée par</div>
-            <div class="hero">Jésus</div>
-            <div class="hero accent xs">Et ses disciples</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b21" class="clip scene theme-gold" data-start="43.85" data-duration="0.85" data-track-index="24">
-        <div class="stage">
-          <div class="stack" data-layout-allow-overlap>
-            <div class="hero sm">Changer</div>
-            <div class="hero accent">Des vies</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b22" class="clip scene theme-gold" data-start="45.55" data-duration="2.80" data-track-index="25">
-        <div class="stage">
-          <div class="stack" style="top:680px" data-layout-allow-overlap>
-            <div class="kicker">Si vous êtes prêts</div>
-            <div class="hero accent xs">Bénédictions</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b23" class="clip scene theme-champagne" data-start="48.35" data-duration="2.80" data-track-index="26">
-        <div class="stage">
-          <div class="obj coin c1" style="left:120px;top:-40px"></div>
-          <div class="obj coin c2" style="left:780px;top:80px"></div>
-          <div class="obj coin c3" style="left:240px;top:200px"></div>
-          <div class="obj coin c4" style="left:860px;top:420px"></div>
-          <div class="obj coin c5" style="left:80px;top:900px"></div>
-          <div class="stack" data-layout-allow-overlap>
-            <div class="kicker">Pour votre</div>
-            <div class="hero accent">Abondance</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b24" class="clip scene theme-dawn" data-start="51.15" data-duration="2.55" data-track-index="27">
-        <div class="stage">
-          <div class="obj door" style="left:440px;top:320px"></div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="hero">Vie</div>
-            <div class="hero accent">Nouvelle</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b25" class="clip scene theme-night" data-start="53.70" data-duration="3.70" data-track-index="28">
-        <div class="stage">
-          <div class="obj moon" style="left:440px;top:300px"></div>
-          <div class="stack" style="top:760px" data-layout-allow-overlap>
-            <div class="kicker">Réciter cette prière</div>
-            <div class="hero">Ce soir</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b26" class="clip scene theme-amber" data-start="57.40" data-duration="1.85" data-track-index="29">
-        <div class="stage">
-          <div class="obj clock" style="left:400px;top:380px">
-            <div class="hand" id="hand2"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="stack" style="top:780px" data-layout-allow-overlap>
-            <div class="hero accent">3</div>
-            <div class="hero sm">Minutes</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b27" class="clip scene theme-gold" data-start="59.25" data-duration="1.75" data-track-index="30">
-        <div class="stage">
-          <div class="stack" data-layout-allow-overlap>
-            <div class="kicker">Sentir</div>
-            <div class="hero sm">La réponse</div>
-            <div class="hero accent sm">Rapidement</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b28" class="clip scene theme-cream" data-start="61.00" data-duration="5.20" data-track-index="31">
-        <div class="stage">
-          <div class="obj book" style="left:430px;top:360px"></div>
-          <div class="stack" style="top:740px" data-layout-allow-overlap>
-            <div class="kicker">Vous devez connaître</div>
-            <div class="hero">Son</div>
-            <div class="hero accent">Histoire</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="b29" class="clip scene theme-gold" data-start="66.20" data-duration="1.49" data-track-index="32">
-        <div class="stage">
-          <div class="stack" style="top:680px" data-layout-allow-overlap>
-            <div class="kicker">Elle peut être</div>
-            <div class="hero accent sm">Puissante</div>
-            <div class="hero xs">Dans votre vie</div>
-          </div>
-        </div>
-      </div>
-
-      <audio id="swoosh-1" src="assets/swoosh-in.wav" data-start="0.15" data-duration="0.28" data-track-index="33" data-volume="0.24"></audio>
-      <audio id="bubble-1" src="assets/bubble.wav" data-start="4.95" data-duration="0.08" data-track-index="34" data-volume="0.30"></audio>
-      <audio id="bubble-2" src="assets/bubble.wav" data-start="5.30" data-duration="0.08" data-track-index="35" data-volume="0.30"></audio>
-      <audio id="bubble-3" src="assets/bubble.wav" data-start="5.65" data-duration="0.08" data-track-index="36" data-volume="0.30"></audio>
-      <audio id="bubble-4" src="assets/bubble.wav" data-start="6.00" data-duration="0.08" data-track-index="37" data-volume="0.30"></audio>
-      <audio id="swoosh-2" src="assets/swoosh-in.wav" data-start="14.64" data-duration="0.28" data-track-index="38" data-volume="0.24"></audio>
-      <audio id="plim-1" src="assets/plim.wav" data-start="14.68" data-duration="0.12" data-track-index="39" data-volume="0.38"></audio>
-      <audio id="swoosh-3" src="assets/swoosh-in.wav" data-start="21.25" data-duration="0.28" data-track-index="40" data-volume="0.22"></audio>
-      <audio id="swoosh-4" src="assets/swoosh-in.wav" data-start="33.40" data-duration="0.28" data-track-index="41" data-volume="0.22"></audio>
-      <audio id="plim-2" src="assets/plim.wav" data-start="38.30" data-duration="0.12" data-track-index="42" data-volume="0.38"></audio>
-      <audio id="bubble-5" src="assets/bubble.wav" data-start="48.45" data-duration="0.08" data-track-index="43" data-volume="0.28"></audio>
-      <audio id="bubble-6" src="assets/bubble.wav" data-start="48.80" data-duration="0.08" data-track-index="44" data-volume="0.28"></audio>
-      <audio id="bubble-7" src="assets/bubble.wav" data-start="49.15" data-duration="0.08" data-track-index="45" data-volume="0.28"></audio>
-      <audio id="plim-3" src="assets/plim.wav" data-start="51.20" data-duration="0.12" data-track-index="46" data-volume="0.34"></audio>
-      <audio id="swoosh-5" src="assets/swoosh-in.wav" data-start="53.70" data-duration="0.28" data-track-index="47" data-volume="0.22"></audio>
+      <audio id="swoosh-1" src="assets/swoosh-in.wav" data-start="0.15" data-duration="0.28" data-track-index="4" data-volume="0.24"></audio>
+      <audio id="bubble-1" src="assets/bubble.wav" data-start="4.95" data-duration="0.08" data-track-index="5" data-volume="0.30"></audio>
+      <audio id="bubble-2" src="assets/bubble.wav" data-start="5.30" data-duration="0.08" data-track-index="6" data-volume="0.30"></audio>
+      <audio id="bubble-3" src="assets/bubble.wav" data-start="5.65" data-duration="0.08" data-track-index="7" data-volume="0.30"></audio>
+      <audio id="swoosh-2" src="assets/swoosh-in.wav" data-start="14.64" data-duration="0.28" data-track-index="8" data-volume="0.24"></audio>
+      <audio id="plim-1" src="assets/plim.wav" data-start="14.68" data-duration="0.12" data-track-index="9" data-volume="0.38"></audio>
+      <audio id="swoosh-3" src="assets/swoosh-in.wav" data-start="21.25" data-duration="0.28" data-track-index="10" data-volume="0.22"></audio>
+      <audio id="swoosh-4" src="assets/swoosh-in.wav" data-start="28.78" data-duration="0.28" data-track-index="11" data-volume="0.22"></audio>
+      <audio id="plim-2" src="assets/plim.wav" data-start="38.30" data-duration="0.12" data-track-index="12" data-volume="0.38"></audio>
+      <audio id="bubble-4" src="assets/bubble.wav" data-start="48.40" data-duration="0.08" data-track-index="13" data-volume="0.28"></audio>
+      <audio id="bubble-5" src="assets/bubble.wav" data-start="48.75" data-duration="0.08" data-track-index="14" data-volume="0.28"></audio>
+      <audio id="plim-3" src="assets/plim.wav" data-start="51.20" data-duration="0.12" data-track-index="15" data-volume="0.34"></audio>
+      <audio id="swoosh-5" src="assets/swoosh-in.wav" data-start="53.70" data-duration="0.28" data-track-index="16" data-volume="0.22"></audio>
     </div>
 
     <script>
@@ -610,117 +357,200 @@
       const tl = gsap.timeline({ paused: true });
       const year = { n: 0 };
 
-      const dust = document.getElementById("dust");
-      for (let i = 0; i < 28; i++) {
+      function spawn(parent, count, cls, maker) {
+        const box = document.getElementById(parent);
+        for (let i = 0; i < count; i++) box.appendChild(maker(i, cls));
+        return box.children;
+      }
+      spawn("dust", 40, "dust", function (i) {
         const d = document.createElement("i");
         d.className = "dust";
-        const x = Math.round((i * 137) % 1080);
-        const y = Math.round((i * 271) % 1920);
-        const s = 2 + (i % 4);
-        d.style.left = x + "px";
-        d.style.top = y + "px";
+        const s = 2 + (i % 5);
+        d.style.left = ((i * 173) % 1080) + "px";
+        d.style.top = ((i * 307) % 1920) + "px";
         d.style.width = s + "px";
         d.style.height = s + "px";
-        d.style.opacity = String(0.18 + (i % 5) * 0.08);
-        dust.appendChild(d);
-        tl.fromTo(d, { y: 0 }, { y: -90 - (i % 7) * 12, duration: 67.69, ease: "none" }, 0);
+        d.style.opacity = String(0.2 + (i % 6) * 0.1);
+        return d;
+      });
+      spawn("ribs", 5, "ribbon", function (i) {
+        const r = document.createElement("div");
+        r.className = "ribbon";
+        r.style.top = (380 + i * 220) + "px";
+        return r;
+      });
+      spawn("sheets", 10, "sheet", function () {
+        const s = document.createElement("div");
+        s.className = "sheet";
+        s.innerHTML = '<div class="face"></div>';
+        s.style.visibility = "hidden";
+        return s;
+      });
+      spawn("coins", 8, "coin", function () {
+        const c = document.createElement("div");
+        c.className = "coin";
+        c.innerHTML = '<div class="face"></div>';
+        c.style.visibility = "hidden";
+        return c;
+      });
+
+      gsap.set("#cam", { transformPerspective: 1600, transformStyle: "preserve-3d" });
+
+      const dust = document.querySelectorAll("#dust .dust");
+      for (let i = 0; i < dust.length; i++) {
+        tl.fromTo(dust[i], { y: 0, z: (i % 7) * -40 }, { y: -140 - (i % 8) * 10, z: 80, duration: 67.69, ease: "none" }, 0);
       }
 
-      const crowd = document.getElementById("crowd");
-      for (let i = 0; i < 22; i++) {
-        const s = document.createElement("span");
-        s.style.left = (40 + (i * 97) % 980) + "px";
-        s.style.top = (220 + (i * 163) % 520) + "px";
-        crowd.appendChild(s);
-      }
-
-      function smashIn(id, t, dur) {
+      const ribs = document.querySelectorAll(".ribbon");
+      for (let i = 0; i < ribs.length; i++) {
         tl.fromTo(
-          id + " .stage",
-          { autoAlpha: 0, scale: 0.56, rotateX: 38, z: -180 },
-          { autoAlpha: 1, scale: 1, rotateX: 0, z: 0, duration: dur || 0.26, ease: "back.out(2.2)" },
-          t
+          ribs[i],
+          { x: -500, z: -120 + i * 40, rotateZ: -12 + i * 6, rotateY: -30, opacity: 0.15 },
+          { x: 700, z: 180 - i * 30, rotateZ: 10 - i * 4, rotateY: 25, opacity: 0.55, duration: 7.2, ease: "none", repeat: 8 },
+          i * 0.55
         );
       }
-      function smashOut(id, t) {
-        tl.to(id + " .stage", { autoAlpha: 0, scale: 1.06, rotateX: -10, duration: 0.12, ease: "power2.in" }, t);
+
+      function flySet(nodes, t0, t1, xs, ys) {
+        const dur = t1 - t0;
+        for (let i = 0; i < nodes.length; i++) {
+          const el = nodes[i];
+          tl.set(el, { visibility: "visible" }, t0);
+          tl.fromTo(
+            el,
+            { x: xs[0] + (i % 5) * 160, y: ys[0] + (i % 4) * 180, z: 420 - i * 30, rotateX: -20, rotateY: -40, rotateZ: i * 18, autoAlpha: 0.95, filter: "blur(0px)" },
+            { x: xs[1] - (i % 4) * 120, y: ys[1] + (i % 3) * 220, z: -520, rotateX: 160, rotateY: 280, rotateZ: 80 + i * 20, filter: "blur(1.4px)", duration: dur, ease: "none" },
+            t0
+          );
+          tl.set(el, { visibility: "hidden", filter: "blur(0px)" }, t1);
+        }
+      }
+      const sheetNodes = document.querySelectorAll(".sheet");
+      const coinNodes = document.querySelectorAll(".coin");
+      flySet(sheetNodes, 2.05, 4.75, [-80, 980], [-40, 1400]);
+      flySet(sheetNodes, 15.27, 20.9, [1100, -200], [200, 1500]);
+      flySet(coinNodes, 48.35, 51.1, [-60, 1000], [-100, 1600]);
+      flySet(sheetNodes, 61.00, 66.05, [900, -180], [-80, 1500]);
+
+      function wordIn(id, t, kind) {
+        const from = {
+          z: { autoAlpha: 0, z: 560, scale: 0.35, rotateX: 42, rotateY: -8, filter: "blur(8px)" },
+          left: { autoAlpha: 0, x: -460, z: 120, rotateY: 48, filter: "blur(4px)" },
+          right: { autoAlpha: 0, x: 480, z: 120, rotateY: -48, filter: "blur(4px)" },
+          spin: { autoAlpha: 0, scale: 0.2, rotateY: 160, z: 240, filter: "blur(6px)" },
+          punch: { autoAlpha: 0, scale: 2.4, z: -80, filter: "blur(10px)" }
+        }[kind];
+        tl.set(id, { visibility: "visible" }, t);
+        tl.fromTo(id, from, {
+          autoAlpha: 1, x: 0, z: 0, scale: 1, rotateX: 10, rotateY: -14, filter: "blur(0px)",
+          duration: 0.36, ease: "power3.out"
+        }, t);
+      }
+      function wordOut(id, t) {
+        tl.to(id, { autoAlpha: 0, z: -380, rotateY: 18, filter: "blur(3px)", duration: 0.2, ease: "power2.in" }, t);
+        tl.set(id, { visibility: "hidden", filter: "blur(0px)" }, t + 0.2);
+      }
+      function showObj(id, t, tOut, from) {
+        tl.set(id, { visibility: "visible" }, t);
+        tl.fromTo(id, from, { x: 0, y: 0, z: 0, rotateY: -18, rotateX: 8, autoAlpha: 1, duration: 0.4, ease: "power3.out" }, t);
+        tl.to(id, { z: 80, rotateY: 16, duration: Math.max(0.4, tOut - t - 0.25), ease: "sine.inOut" }, t + 0.4);
+        tl.to(id, { autoAlpha: 0, z: -300, rotateY: 40, duration: 0.16, ease: "power2.in", overwrite: "auto" }, tOut);
+        tl.set(id, { visibility: "hidden" }, tOut + 0.16);
       }
 
       const beats = [
-        ["#b01", 0.15, 1.93],
-        ["#b02", 2.05, 4.68],
-        ["#b03", 4.80, 7.03],
-        ["#b04", 7.15, 7.90],
-        ["#b05", 8.00, 9.18],
-        ["#b06", 9.30, 11.38],
-        ["#b07", 11.50, 12.50],
-        ["#b08", 12.60, 13.75],
-        ["#b09", 13.85, 14.55],
-        ["#b10", 14.64, 15.18],
-        ["#b11", 15.27, 17.93],
-        ["#b12", 18.05, 21.13],
-        ["#b13", 21.25, 22.98],
-        ["#b14", 23.10, 27.23],
-        ["#b15", 27.35, 28.66],
-        ["#b16", 28.78, 33.28],
-        ["#b17", 33.40, 36.08],
-        ["#b18", 36.20, 38.13],
-        ["#b19", 38.25, 40.58],
-        ["#b20", 40.70, 43.73],
-        ["#b21", 43.85, 44.60],
-        ["#b22", 45.55, 48.23],
-        ["#b23", 48.35, 51.03],
-        ["#b24", 51.15, 53.58],
-        ["#b25", 53.70, 57.28],
-        ["#b26", 57.40, 59.13],
-        ["#b27", 59.25, 60.88],
-        ["#b28", 61.00, 66.08],
-        ["#b29", 66.20, 67.55]
+        ["#w01", 0.15, 1.95, "left"],
+        ["#w02", 2.05, 4.68, "z"],
+        ["#w02b", 2.25, 4.68, "right"],
+        ["#w03", 4.80, 7.05, "punch"],
+        ["#w04", 7.15, 7.92, "right"],
+        ["#w05", 8.00, 9.18, "left"],
+        ["#w06", 9.30, 11.38, "z"],
+        ["#w07", 11.50, 12.50, "punch"],
+        ["#w08", 12.60, 13.75, "spin"],
+        ["#w09", 13.85, 14.55, "z"],
+        ["#w10", 14.64, 15.18, "punch"],
+        ["#w11", 15.27, 17.95, "left"],
+        ["#w11b", 15.55, 17.95, "right"],
+        ["#w12", 18.05, 21.12, "z"],
+        ["#w13", 21.25, 22.98, "spin"],
+        ["#w14", 23.10, 27.22, "left"],
+        ["#w15", 27.35, 28.66, "punch"],
+        ["#w16", 28.78, 33.28, "right"],
+        ["#w17", 33.40, 36.08, "z"],
+        ["#w18", 36.20, 38.12, "left"],
+        ["#w19", 38.25, 40.58, "z"],
+        ["#w20", 40.70, 43.72, "right"],
+        ["#w21", 43.85, 44.58, "punch"],
+        ["#w22", 45.55, 48.22, "z"],
+        ["#w23", 48.35, 51.02, "spin"],
+        ["#w24", 51.15, 53.58, "z"],
+        ["#w25", 53.70, 57.28, "right"],
+        ["#w26", 57.40, 59.12, "spin"],
+        ["#w27", 59.25, 60.88, "punch"],
+        ["#w28", 61.00, 66.08, "left"],
+        ["#w29", 66.20, 67.55, "z"]
       ];
       beats.forEach(function (b) {
-        smashIn(b[0], b[1], b[0] === "#b10" ? 0.16 : 0.26);
-        smashOut(b[0], b[2]);
+        wordIn(b[0], b[1], b[3]);
+        wordOut(b[0], b[2]);
       });
+
+      showObj("#halo", 7.15, 7.90, { x: -200, z: 300, rotateY: -40, autoAlpha: 0 });
+      showObj("#cross", 9.30, 11.35, { y: 400, z: 200, rotateX: 30, autoAlpha: 0 });
+      showObj("#cross", 40.70, 43.70, { y: 300, z: 180, autoAlpha: 0 });
+      showObj("#clock", 21.25, 22.95, { z: 400, scale: 0.4, rotateY: 80, autoAlpha: 0 });
+      showObj("#clock", 57.40, 59.10, { z: 400, scale: 0.4, rotateY: -80, autoAlpha: 0 });
+      showObj("#lock", 28.78, 40.55, { x: -240, z: 220, rotateY: -50, autoAlpha: 0 });
+      showObj("#moon", 53.70, 57.25, { x: -180, z: 260, autoAlpha: 0 });
+      showObj("#door", 51.15, 53.55, { rotateY: -70, z: 80, autoAlpha: 0 });
+      showObj("#book", 61.00, 66.05, { rotateY: 50, z: 200, autoAlpha: 0 });
+
+      tl.fromTo("#hand", { rotation: -50 }, { rotation: 70, duration: 1.5, ease: "power2.out" }, 21.30);
+      tl.fromTo("#hand", { rotation: -50 }, { rotation: 70, duration: 1.5, ease: "power2.out" }, 57.45);
+      tl.to("#shackle", { rotateZ: 28, x: 26, duration: 0.45, ease: "back.out(1.8)" }, 38.25);
 
       tl.set("#yearNum", { textContent: "0" }, 4.80);
       tl.to(year, {
-        n: 2000,
-        duration: 1.55,
-        ease: "power2.out",
-        onUpdate: function () {
-          document.getElementById("yearNum").textContent = String(Math.round(year.n));
-        }
+        n: 2000, duration: 1.55, ease: "power2.out",
+        onUpdate: function () { document.getElementById("yearNum").textContent = String(Math.round(year.n)); }
       }, 4.90);
 
-      tl.fromTo("#hand1", { rotation: -40 }, { rotation: 50, duration: 1.4, ease: "power2.out" }, 21.30);
-      tl.fromTo("#hand2", { rotation: -40 }, { rotation: 50, duration: 1.4, ease: "power2.out" }, 57.45);
+      tl.to("#cam", { z: 90, rotateY: 10, rotateX: -5, duration: 6.2, ease: "sine.inOut" }, 0);
+      tl.to("#cam", { z: -70, rotateY: -9, rotateX: 4, duration: 7.0, ease: "sine.inOut" }, 6.2);
+      tl.to("#cam", { z: 50, rotateY: 7, rotateX: -3, duration: 6.5, ease: "sine.inOut" }, 13.2);
+      tl.to("#cam", { z: -40, rotateY: -6, rotateX: 3, duration: 7.2, ease: "sine.inOut" }, 19.7);
+      tl.to("#cam", { z: 70, rotateY: 8, rotateX: -4, duration: 8.0, ease: "sine.inOut" }, 26.9);
+      tl.to("#cam", { z: -30, rotateY: -7, rotateX: 2, duration: 7.5, ease: "sine.inOut" }, 34.9);
+      tl.to("#cam", { z: 60, rotateY: 5, rotateX: -3, duration: 8.0, ease: "sine.inOut" }, 42.4);
+      tl.to("#cam", { z: -20, rotateY: -4, rotateX: 2, duration: 8.5, ease: "sine.inOut" }, 50.4);
+      tl.to("#cam", { z: 40, rotateY: 3, rotateX: -2, duration: 8.8, ease: "sine.inOut" }, 58.9);
 
-      tl.fromTo(".c1", { y: -80, rotate: -20 }, { y: 980, rotate: 80, duration: 2.6, ease: "none" }, 48.35);
-      tl.fromTo(".c2", { y: -40, rotate: 10 }, { y: 860, rotate: -70, duration: 2.4, ease: "none" }, 48.45);
-      tl.fromTo(".c3", { y: 40, rotate: -8 }, { y: 920, rotate: 50, duration: 2.5, ease: "none" }, 48.40);
-      tl.fromTo(".c4", { y: 120, rotate: 16 }, { y: 880, rotate: -40, duration: 2.3, ease: "none" }, 48.55);
-      tl.fromTo(".c5", { y: 200, rotate: -12 }, { y: 700, rotate: 30, duration: 2.2, ease: "none" }, 48.50);
+      tl.to("#flare", { x: 820, y: 240, opacity: 0.35, duration: 67.69, ease: "none" }, 0);
 
-      tl.to("#gGold", { opacity: 1, duration: 0.4 }, 0);
-      tl.to("#gRed", { opacity: 1, duration: 0.35 }, 4.80);
-      tl.to("#gGold", { opacity: 0.35, duration: 0.35 }, 4.80);
-      tl.to("#gRed", { opacity: 0, duration: 0.3 }, 7.15);
-      tl.to("#gGold", { opacity: 1, duration: 0.3 }, 7.15);
-      tl.to("#gHeal", { opacity: 1, duration: 0.25 }, 12.60);
-      tl.to("#gGold", { opacity: 0.2, duration: 0.25 }, 12.60);
-      tl.to("#gHeal", { opacity: 0, duration: 0.25 }, 13.85);
-      tl.to("#gGold", { opacity: 1, duration: 0.25 }, 13.85);
-      tl.to("#gSteel", { opacity: 1, duration: 0.35 }, 28.78);
-      tl.to("#gGold", { opacity: 0.15, duration: 0.35 }, 28.78);
-      tl.to("#gSteel", { opacity: 0, duration: 0.3 }, 36.20);
-      tl.to("#gGold", { opacity: 1, duration: 0.3 }, 36.20);
-      tl.to("#gDawn", { opacity: 1, duration: 0.3 }, 51.15);
-      tl.to("#gGold", { opacity: 0.25, duration: 0.3 }, 51.15);
-      tl.to("#gDawn", { opacity: 0, duration: 0.3 }, 53.70);
-      tl.to("#gNight", { opacity: 1, duration: 0.3 }, 53.70);
-      tl.to("#gGold", { opacity: 0.2, duration: 0.3 }, 53.70);
-      tl.to("#gNight", { opacity: 0, duration: 0.3 }, 61.00);
-      tl.to("#gGold", { opacity: 1, duration: 0.35 }, 61.00);
+      function glow(on, t, off) {
+        tl.to(on, { opacity: 1, duration: 0.3 }, t);
+        ["#gGold", "#gHeal", "#gAmber", "#gNight", "#gSteel", "#gDawn"].forEach(function (g) {
+          if (g !== on) tl.to(g, { opacity: 0, duration: 0.3 }, t);
+        });
+        if (off) tl.to(on, { opacity: 0.15, duration: 0.25 }, off);
+      }
+      glow("#gGold", 0);
+      glow("#gAmber", 8.00);
+      glow("#gGold", 9.30);
+      glow("#gHeal", 12.60);
+      glow("#gGold", 13.85);
+      glow("#gAmber", 14.64);
+      glow("#gGold", 15.27);
+      glow("#gAmber", 21.25);
+      glow("#gGold", 23.10);
+      glow("#gSteel", 28.78);
+      glow("#gGold", 36.20);
+      glow("#gGold", 48.35);
+      glow("#gDawn", 51.15);
+      glow("#gNight", 53.70);
+      glow("#gAmber", 57.40);
+      glow("#gGold", 61.00);
 
       window.__timelines["main"] = tl;
     </script>

@@ -24,6 +24,7 @@ Second pass: tela cheia no **estilo 3D** do Reel de referência. Prévia 1080×1
 - Prévia do corte seco: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\02-rough-cut.mp4`
 - Prévia tela cheia 60 fps: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\04-tela-cheia.mp4`
 - Prévia estilo 3D 60 fps: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\05-estilo-3d.mp4`
+- Prévia clone do Reel 60 fps: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\06-clone-3d.mp4`
 - Cópia: `C:\Users\ig\Downloads\video-de-avatar-1080p-60fps.mp4`
 
 ## Corte
@@ -32,7 +33,7 @@ Pedido do Igor (2026-08-21): só silêncios **maiores**; respiradas curtas ficam
 
 ## Gráficos
 
-Tela cheia em todo o corte no **estilo 3D** do Reel (Igor, 2026-08-22): uma ideia por cena, texto enorme, objeto 3D, cor pelo contexto (ouro sagrado, verde-água na cura, cobre em “Sur commande”, prata na peça, âmbar nos 3 minutes, champanhe na abundância, aurora na vida nova, noite em “ce soir”). Música pad local baixa. Plim e bolha só nos eventos.
+Tela cheia clonando o **movimento** do Reel (Igor, 2026-08-22): um mundo 3D contínuo, câmera andando, pergaminhos/moedas/cadeado voando, texto enorme que muda de lugar. Cor pelo contexto.
 
 ## Lock
 

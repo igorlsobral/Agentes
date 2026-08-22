@@ -18,7 +18,7 @@ Prints que o Igor soltou em 2026-08-21. Isto é gosto permanente até ele mudar 
 - Rosto falando (talking-head) + **card branco arredondado / vidro líquido**, não gráfico gritado.
 - Texto: rótulo pequeno azul + corpo preto bold.
 - Gráficos pontuais sobre o vídeo por padrão. **Tela cheia** só no trecho que o Igor marcar (até **volta ao normal**).
-- **Tela cheia / estilo 3D** (Reel de referência, 2026-08-22): fundo escuro, texto enorme no centro, 2–4 palavras por cena, objeto 3D, brilho, troca rápida (1–2 s). Cor de destaque **pelo contexto da fala** (oração = ouro; cura = verde-água; noite = prata; urgência = âmbar). Não copiar verde neon se o assunto não pedir.
+- **Tela cheia / estilo 3D** (Reel de referência, 2026-08-22): **clonar o movimento**, não o mesmo cartão com outra cor. Mundo 3D contínuo: câmera andando, objetos voando (pergaminho, moeda, cadeado), texto enorme que muda de lugar e de ângulo, às vezes em cima do objeto. Cor pelo contexto da fala.
 - Corte de silêncio visível como ideia (azul fica / vermelho sai).
 
 Cores exatas, logo e mascote ainda `INFORMAÇÃO AUSENTE` (P6) — estes prints são o alvo de *estilo*, não o kit de marca completo.
