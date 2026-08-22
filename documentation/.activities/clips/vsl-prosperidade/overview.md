@@ -14,7 +14,7 @@ Clonar o ritmo da VSL de referência. Depoimentos no começo; depois narração 
 
 ## Estágio atual
 
-Estudo da referência feito (2026-08-22). Pasta da transcrição em francês criada — **Igor insere o arquivo**; o agente não escreve o texto. Cenas longas ainda `INFORMAÇÃO AUSENTE`. Intake/assembly das narrações ainda não rodou.
+Estudo da referência feito (2026-08-22). Pasta da transcrição em francês criada — **Igor insere o arquivo**; o agente não escreve o texto. Primeiro lote de cenas Pixabay em `cenas\pixabay` (bíblia, igreja, Terra Santa). Intake/assembly das narrações ainda não rodou.
 
 ## Fonte
 
@@ -24,7 +24,7 @@ Estudo da referência feito (2026-08-22). Pasta da transcrição em francês cri
 | Depoimentos (12) | `C:\Users\ig\Documents\Agentes\brand\assets\depoimentos\VIDEOS\FALA_1` … `FALA_12` |
 | Narração (depois dos depoimentos) | `C:\Users\ig\Documents\Agentes\raw\NARRAÇÃO VSL PROSPERIDADE` |
 | Transcrição FR (Igor solta o arquivo) | `C:\Users\ig\Documents\Agentes\transcricao` |
-| Cenas longas | `C:\Users\ig\Documents\Agentes\cenas` (ainda vazia) |
+| Cenas longas | `C:\Users\ig\Documents\Agentes\cenas` — primeiro lote Pixabay em `cenas\pixabay` |
 | Trabalho deste clipe | `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade` |
 
 ## Relógio da referência (27 min 17 s, 408×720, 30 fps, vertical)

@@ -13,10 +13,11 @@ Available on **every** format after the rough cut is locked (`long-form`, `short
 | Entry | When to open | Path |
 |---|---|---|
 | Library (gitignored) | Match a spoken idea to a visual stretch | this folder |
+| pixabay (2026-08-22) | First VSL batch: bible, church, Holy Land | [pixabay/README.md](pixabay/README.md) |
 
 ## Gaps
 
-No files yet until Igor drops them. Naming that hints at the content (place, person, action) helps the match.
+First Pixabay batch is on disk (mp4 gitignored). Still missing family, wedding, mountain, priest+library, Jerusalem street — add when the French script or Igor asks.
 
 ## Children
 
