@@ -1,6 +1,8 @@
-# Pixabay (primeiro lote, 2026-08-22)
+# Pixabay (lotes 2026-08-22)
 
 Clips baixados para a VSL prosperidade. Licença: [Pixabay Content License](https://pixabay.com/service/license-summary/) — uso no vídeo composto; não republicar o arquivo sozinho.
+
+## Primeiro lote (bíblia / igreja / Terra Santa)
 
 | Tema | Arquivo | Página |
 |---|---|---|
@@ -14,4 +16,14 @@ Clips baixados para a VSL prosperidade. Licença: [Pixabay Content License](http
 | Deserto bíblico | `terra-santa/deserto-biblico.mp4` | https://pixabay.com/videos/id-128424/ |
 | Paisagem Israel | `terra-santa/israel-paisagem.mp4` | https://pixabay.com/videos/id-126801/ |
 
-Ainda faltam (quando a transcrição ou o Igor pedir): família feliz, casamento, montanha ao pôr do sol, padre + rapaz numa biblioteca, Jerusalém (cúpula / escadaria).
+## Segundo lote (transcrição FR)
+
+| Tema | Arquivo | Página |
+|---|---|---|
+| Qumran / montanhas | `terra-santa/qumran-montanhas.mp4` | https://pixabay.com/videos/id-128273/ |
+| Caverna Mar Morto | `terra-santa/caverna-mar-morto.mp4` | https://pixabay.com/videos/id-128271/ |
+| Catedral / vitral | `igreja/catedral-vitral.mp4` | https://pixabay.com/videos/id-36992/ |
+| Igreja interior | `igreja/igreja-arquitetura.mp4` | https://pixabay.com/videos/id-42953/ |
+| Mosteiro na colina | `igreja/mosteiro-colina.mp4` | https://pixabay.com/videos/id-79642/ |
+
+Família, casamento, montanha ao pôr do sol, padre com livros e rua de pedra: ver [pexels/README.md](../pexels/README.md).

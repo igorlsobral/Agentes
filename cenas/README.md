@@ -13,11 +13,12 @@ Available on **every** format after the rough cut is locked (`long-form`, `short
 | Entry | When to open | Path |
 |---|---|---|
 | Library (gitignored) | Match a spoken idea to a visual stretch | this folder |
-| pixabay (2026-08-22) | First VSL batch: bible, church, Holy Land | [pixabay/README.md](pixabay/README.md) |
+| pixabay (2026-08-22) | Bible, church, Holy Land, Qumran, cathedral | [pixabay/README.md](pixabay/README.md) |
+| pexels (2026-08-22) | Family, wedding, mountain sunset, priest+books, old-city street | [pexels/README.md](pexels/README.md) |
 
 ## Gaps
 
-First Pixabay batch is on disk (mp4 gitignored). Still missing family, wedding, mountain, priest+library, Jerusalem street — add when the French script or Igor asks.
+Library is on disk (mp4 gitignored). Still missing an exact priest+young-man library two-shot and a street clearly labeled Jerusalem (dome / Western Wall).
 
 ## Children
 

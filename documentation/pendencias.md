@@ -20,7 +20,6 @@ Manual simples: [como-usar.md](como-usar.md).
 |---|---|---|---|
 | P7 | Corte mais seco ou mais calmo (padrão) | Sem default, o agente pergunta no 1º clipe | `presets/` ou `video-editor/AGENTS.md` |
 | P8 | Preset padrão se Igor **não** disser o formato | Gráficos não começam sem formato | `presets/README.md` |
-| P16 | Texto de oferta / preço / CTA da **nossa** VSL | A referência tem tela de oferta (~24:00, botão Order Now). Não copiar o produto dela nem inventar preço | Soltar a transcrição FR em `transcricao/` |
 | P17 | Wavs melhores de event sfx (passos, toc-toc, plim, bolha) | Sem o arquivo o agente sintetiza um hit discreto no PC | Soltar `.wav` / `.mp3` em `sfx/` |
 
 ## Operação do repo (pode esperar)
@@ -52,6 +51,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | **Tela cheia** sempre disponível depois do lock; some o rosto; voz fica; **volta ao normal** no chat ou na fala; event sfx no movimento (passos, toc-toc, plim, bolha); imagens de `brand/assets/` ou pasta nomeada; sem B-roll pago | Igor, 2026-08-21 |
 | **cenas/** = repertório de cenas longas; qualquer formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia; casar o trecho com a fala | Igor, 2026-08-22 |
 | **VSL clone** = igual à referência em `brand/references/`: depoimentos no começo; depois cenas (sem IA); **frase de impacto** em tela cheia com a cena parada; mesmo ritmo | Igor, 2026-08-22 |
+| Oferta desta VSL FR = **26,90 euros**, pagamento único, garantia 90 dias, botão sob o vídeo, envio por e-mail | transcrição, 2026-08-22 |
 | Stack, pipeline, Git commit+push, sem Whisk, música −23 dB, silêncio relativo, lock antes de gráficos, partial render | já na tabela anterior |
 
 ## Resolvidas
@@ -62,4 +62,5 @@ Manual simples: [como-usar.md](como-usar.md).
 | P1 P2 P3 | FFmpeg, WhisperX, HyperFrames+Chrome locais | 2026-08-20 |
 | P4 | Coolvetica `.otf` em `brand/` (default `Coolvetica Rg.otf`) | 2026-08-21 |
 | P5 | Intake do bruto `raw/2026-04-01 11-30-15.mkv` → `projects/2026-04-01-11-30-15/`; rough cut locked | 2026-08-21 |
+| P16 | Oferta da VSL FR: **26,90 euros**, único, garantia 90 dias, botão sob o vídeo, e-mail (`transcricao/VSL PROSPERIDADE FR.md`) | 2026-08-22 |
 | P14 (fps) | Final e gráficos = **60 fps** | 2026-08-21 |

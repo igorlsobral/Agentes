@@ -8,11 +8,11 @@
 
 | Entry | When to open | Path |
 |---|---|---|
-| VSL prosperidade (FR) | Full script of this VSL, start to finish | this folder — file still `INFORMAÇÃO AUSENTE` until Igor drops it |
+| VSL prosperidade (FR) | Full script of this VSL, start to finish | [VSL PROSPERIDADE FR.md](VSL%20PROSPERIDADE%20FR.md) |
 
 ## Gaps
 
-No file yet. Accept `.txt`, `.md`, `.docx`, `.pdf`, `.srt`.
+None for this VSL. Offer in the script: **26,90 euros**, one payment, 90-day guarantee, button under the video, delivery by e-mail.
 
 ## Children
 
