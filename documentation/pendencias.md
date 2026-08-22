@@ -44,6 +44,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | Aceitar `.mp4`, `.mov`, `.mkv`; normalizar mp4 | 2026-08-21 (mkv no raw) |
 | Gasto padrão = **nenhum**. API paga só com proposta + ok no chat | 2026-08-21 |
 | Estilo de gráfico alvo = cards brancos arredondados / liquid-glass (prints em `brand/references/`) | 2026-08-21 |
+| **Tela cheia / estilo 3D** = Reel em `brand/references/` (fundo escuro, texto enorme, objeto 3D, 1–2 s); cor de destaque pelo contexto, sem verde fixo | Igor, 2026-08-22 |
 | Talking-head long-form/VSL: cards à **direita**; títulos CAIXA ALTA (Coolvetica heavy); resto com 1ª maiúscula; cada card diferente | 2026-08-21 |
 | Formatos: long-form, short-form-explainer, tiktok-raw, **VSL** | 2026-08-21 |
 | Arquivo final e overlays de gráfico = **60 fps** (câmera pode ser 30) | 2026-08-21 |

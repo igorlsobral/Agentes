@@ -67,6 +67,6 @@ Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough
 
 Typical second pass: “no primeiro gráfico, move para baixo, deixa menor, usa a cor Claude e o PNG do mascote em `brand/assets/`”.
 
-Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”.
+Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”. Tela cheia in the **3D reel** taste (Igor, 2026-08-22): dark space, huge type, 3D object, 1–2 s beats; accent color from the spoken context, not a fixed neon green.
 
 Long-form and VSL talking-head (Igor, 2026-08-21): graphics on the **right**, not over the face — **except** a marked tela cheia stretch. Headlines ALL CAPS heavy Coolvetica; supporting text sentence case. Cards must differ visually (not four identical text boxes). Overlay motion and the **final file always 60 fps** even when the camera is 30 fps. Swoosh may be any file in `sfx/`. Event sfx on tela cheia match the visual (see [`skills/full-screen-visual.md`](../skills/full-screen-visual.md)).

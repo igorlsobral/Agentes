@@ -18,7 +18,7 @@ Requires: locked rough cut (`edl.json` + locked flag). If unlocked, stop and run
 ## Standing taste (Igor, 2026-08-21)
 
 - Long-form and VSL talking-head: cards on the **right**. Do not cover the face or other important on-screen info — **except** a marked **tela cheia** stretch ([`full-screen-visual.md`](full-screen-visual.md)).
-- If Igor already marked a tela cheia range (chat quote, clock, or spoken cue), build that stretch as full-frame visuals + event sfx. Everywhere else: cards as usual.
+- If Igor already marked a tela cheia range (chat quote, clock, or spoken cue), build that stretch as full-frame visuals + event sfx, in the **3D reel** taste when that is the brief ([`full-screen-visual.md`](full-screen-visual.md)). Everywhere else: cards as usual.
 - Headlines: ALL CAPS, heavy Coolvetica (`Coolvetica Hv Comp.otf`). Supporting text: sentence case (first letter only).
 - Each card must look different — icons, gauge, contrast rows, rising steps — not four identical text boxes.
 - Final (and graphics overlays) always **60 fps**.
