@@ -1,0 +1,2730 @@
+{
+  "source": "source/narracao-ordenada.mp4",
+  "source_duration_s": 1953.474,
+  "locked": true,
+  "order_note": "Folder numbers are not speaking order. ORDER follows transcricao/VSL PROSPERIDADE FR.md. Lead narration 'Dans un instant…' is not in any raw file.",
+  "order": [
+    {
+      "label": "Vdeo_de_Avatar",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar\\Vdeo_de_Avatar.mp4",
+      "duration_s": 86.0
+    },
+    {
+      "label": "Vdeo_de_Avatar (1)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (1)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 74.284
+    },
+    {
+      "label": "Vdeo_de_Avatar (2)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (2)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 104.322
+    },
+    {
+      "label": "Vdeo_de_Avatar (3)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (3)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 71.682
+    },
+    {
+      "label": "PADRE_1",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_1\\PADRE_1.mp4",
+      "duration_s": 4.56
+    },
+    {
+      "label": "EXPERT",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\EXPERT\\EXPERT.mp4",
+      "duration_s": 15.084
+    },
+    {
+      "label": "PADRE_2",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_2\\PADRE_2.mp4",
+      "duration_s": 8.364
+    },
+    {
+      "label": "EXPERT (1)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\EXPERT (1)\\EXPERT.mp4",
+      "duration_s": 5.634
+    },
+    {
+      "label": "PADRE_3",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_3\\PADRE_3.mp4",
+      "duration_s": 1.964
+    },
+    {
+      "label": "EXPERT (2)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\EXPERT (2)\\EXPERT.mp4",
+      "duration_s": 3.372
+    },
+    {
+      "label": "PADRE_4",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_4\\PADRE_4.mp4",
+      "duration_s": 5.868
+    },
+    {
+      "label": "EXPERT (3)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\EXPERT (3)\\EXPERT.mp4",
+      "duration_s": 5.058
+    },
+    {
+      "label": "PADRE_5",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_5\\PADRE_5.mp4",
+      "duration_s": 3.244
+    },
+    {
+      "label": "Vdeo_de_Avatar (4)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (4)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 127.148
+    },
+    {
+      "label": "Vdeo_de_Avatar (8)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (8)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 76.524
+    },
+    {
+      "label": "Vdeo_de_Avatar (7)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (7)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 63.618
+    },
+    {
+      "label": "Vdeo_de_Avatar (6)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (6)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 83.586
+    },
+    {
+      "label": "Vdeo_de_Avatar (5)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (5)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 104.13
+    },
+    {
+      "label": "Vdeo_de_Avatar (9)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (9)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 95.81
+    },
+    {
+      "label": "PADRE_6",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\PADRE_6\\PADRE_6.mp4",
+      "duration_s": 30.636
+    },
+    {
+      "label": "Vdeo_de_Avatar (10)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (10)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 118.764
+    },
+    {
+      "label": "Vdeo_de_Avatar (11)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (11)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 114.455
+    },
+    {
+      "label": "Vdeo_de_Avatar (12)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (12)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 71.92
+    },
+    {
+      "label": "Vdeo_de_Avatar (13)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (13)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 76.418
+    },
+    {
+      "label": "Vdeo_de_Avatar (14)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (14)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 111.191
+    },
+    {
+      "label": "Vdeo_de_Avatar (15)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (15)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 105.303
+    },
+    {
+      "label": "Vdeo_de_Avatar (16)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (16)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 110.594
+    },
+    {
+      "label": "Vdeo_de_Avatar (17)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (17)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 101.783
+    },
+    {
+      "label": "Vdeo_de_Avatar (18)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (18)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 127.042
+    },
+    {
+      "label": "Vdeo_de_Avatar (19)",
+      "path": "C:\\Users\\ig\\Documents\\Agentes\\raw\\NARRAÇÃO VSL PROSPERIDADE\\Vdeo_de_Avatar (19)\\Vdeo_de_Avatar.mp4",
+      "duration_s": 43.927
+    }
+  ],
+  "silence": {
+    "method": "relative_to_take",
+    "speech_rms_dbfs": -23.99,
+    "threshold_dbfs": -35.99,
+    "margin_below_speech_db": 12.0,
+    "min_silence_s": 0.5,
+    "breath_keep_s": 0.3,
+    "pad_s": 0.08,
+    "note": "Never a fixed -35 dB. Threshold is 12 dB below this take speech RMS. Only gaps >= 0.50 s are shortened to a 0.30 s breath. Words are never dropped."
+  },
+  "keep": [
+    {
+      "start": 0.0,
+      "end": 5.35,
+      "text": "Mon nom est Pierre Martin, et aujourd 'hui, je suis président de l 'Académie nationale des orateurs."
+    },
+    {
+      "start": 5.92,
+      "end": 36.44,
+      "text": "Nous avons déjà aidé près de 24 .744 hommes et femmes dans 71 pays différents à recevoir davantage de bénédictions dans leur vie grâce au pouvoir de la prière. Je suis fier du travail que nous faisons parce que cette prière perdue m 'a sort"
+    },
+    {
+      "start": 37.22,
+      "end": 37.86,
+      "text": "Mon temps."
+    },
+    {
+      "start": 38.54,
+      "end": 40.76,
+      "text": "Mais avant tout ça, j 'étais perdu."
+    },
+    {
+      "start": 41.32,
+      "end": 50.5,
+      "text": "Je me battais. Je cherchais une sortie. En tant que père fier de deux enfants, j 'avais l 'impression que leur loge tournait contre moi. Ma fille demandait des choses simples."
+    },
+    {
+      "start": 51.03,
+      "end": 61.13,
+      "text": "Un nouveau cartable, une soirée pizza, des cours de musique. Chaque nom me déchirait la poitrine. Mon fils est né par les déjà d 'études d 'un stage de foot de vacances d 'été."
+    },
+    {
+      "start": 61.76,
+      "end": 68.94,
+      "text": "Comment dire à un enfant que ses rêves coûtent plus que ce que vous gagnez en six mois ? Je devais être le héros, le pourvoyeur."
+    },
+    {
+      "start": 69.64,
+      "end": 76.47,
+      "text": "À la place, j 'étais la raison pour laquelle il passait à côté de choses que d 'autres enfants recevaient sans effort."
+    },
+    {
+      "start": 77.1,
+      "end": 105.44,
+      "text": "Chaque soir je priais pour un soulagement, pour un soutien, pour de l 'espoir. Mais on aurait dit que personne ne m 'entendait. J 'essayais d 'être fort. On me disait que c 'était une épreuve de foi. Mais je commençais à perdre espoir. Je n"
+    },
+    {
+      "start": 106.0,
+      "end": 106.55,
+      "text": "Perdu."
+    },
+    {
+      "start": 107.08,
+      "end": 116.68,
+      "text": "La même prière utilisée par des figures de la Bible. Elle allait m 'apporter les réponses et l 'abondance dont j 'avais besoin. Mais avant que les choses s 'améliorent, elles ont empiré."
+    },
+    {
+      "start": 117.21,
+      "end": 117.6,
+      "text": "Beaucoup."
+    },
+    {
+      "start": 118.4,
+      "end": 127.08,
+      "text": "C 'était le dîner de collecte de fonds de l 'école de ma fille. Nous étions entourés des parents de ses amis. Ils parlaient avec certitude. Ils s 'asseyaient avec confiance."
+    },
+    {
+      "start": 127.7,
+      "end": 129.24,
+      "text": "Tout en eux criait le succès."
+    },
+    {
+      "start": 129.78,
+      "end": 145.41,
+      "text": "Certains posaient en des sacs de luxe sur la table, comme si de rien n 'était. D 'autres parlaient de week -end en Provence. Certains portaient en des montres qui valaient plus que ma voiture. Je me suis enfoncé dans ma chaise. Quand le mom"
+    },
+    {
+      "start": 146.07,
+      "end": 146.7,
+      "text": "Refuser."
+    },
+    {
+      "start": 147.24,
+      "end": 150.1,
+      "text": "Le serveur a levé un sourcil. J 'en ai sorti une autre."
+    },
+    {
+      "start": 150.72,
+      "end": 151.34,
+      "text": "Refuser."
+    },
+    {
+      "start": 151.89,
+      "end": 155.7,
+      "text": "La table s 'est tu. J 'ai tenté la dernière carte. Refuser."
+    },
+    {
+      "start": 156.21,
+      "end": 179.95,
+      "text": "Ma fille a tiré ma manche et a chuchoté assez fort pour que toute la table entende. « Papa, pourquoi on n 'arrive pas à payer ? » D 'autres tables se sont retournées. Madame Laurent, notre voisine, a esquissé un petit sourire et a murmuré q"
+    },
+    {
+      "start": 180.52,
+      "end": 186.2,
+      "text": "En un seul instant, je suis devenu le spectacle de la soirée. J 'aurais voulu disparaître sous la table."
+    },
+    {
+      "start": 186.82,
+      "end": 191.09,
+      "text": "La mère, à côté de moi, a proposé, à voix basse, de régler l 'addition."
+    },
+    {
+      "start": 191.76,
+      "end": 192.52,
+      "text": "« Moi,"
+    },
+    {
+      "start": 193.08,
+      "end": 201.16,
+      "text": "je n 'avais pas le choix. J 'ai accepté. Je devais subvenir aux besoins de ma famille. Et je n 'arrivais même pas à payer le dîner de l 'école de ma fille."
+    },
+    {
+      "start": 201.78,
+      "end": 203.7,
+      "text": "En rentrant, je l 'ai fait entrer."
+    },
+    {
+      "start": 204.2,
+      "end": 205.66,
+      "text": "Et je suis resté dans la voiture,"
+    },
+    {
+      "start": 206.3,
+      "end": 208.71,
+      "text": "complètement détruit. J 'avais besoin d 'aide."
+    },
+    {
+      "start": 209.28,
+      "end": 224.1,
+      "text": "Pas une aide financière, quelque chose de plus profond. Je devais comprendre ce qui n 'allait pas. Pourquoi je cocheais toutes les cases et je me battais quand même ? Pourquoi je mettais les autres en premier ? Et j 'arrivais à peine à m 'o"
+    },
+    {
+      "start": 224.64,
+      "end": 231.78,
+      "text": "Quand je suis entré, ma femme a vu à quel point j 'étais brisé. Ma fille avait clairement raconté ce qui s 'était passé. Elle m 'a dit,"
+    },
+    {
+      "start": 232.3,
+      "end": 235.64,
+      "text": "« Tu dois te reconnecter à tes racines, trouver une perspective."
+    },
+    {
+      "start": 236.22,
+      "end": 239.68,
+      "text": "Cherie, on n 'a pas. J 'ai voulu protester."
+    },
+    {
+      "start": 240.3,
+      "end": 241.54,
+      "text": "J 'ai déjà réservé."
+    },
+    {
+      "start": 242.06,
+      "end": 244.52,
+      "text": "» Elle m 'a coupé. Elle a levé son téléphone."
+    },
+    {
+      "start": 245.3,
+      "end": 250.94,
+      "text": "Elle avait utilisé jusqu 'au bout la dernière carte d 'urgence, celle qu 'elle avait jurée de ne jamais toucher."
+    },
+    {
+      "start": 251.46,
+      "end": 254.21,
+      "text": "Elle avait réservé le voyage dont je parlais depuis des années."
+    },
+    {
+      "start": 254.72,
+      "end": 257.78,
+      "text": "Un voyage à Jérusalem. L 'argent était déjà parti."
+    },
+    {
+      "start": 258.56,
+      "end": 260.28,
+      "text": "Alors j 'allais y aller, moi aussi."
+    },
+    {
+      "start": 260.82,
+      "end": 275.5,
+      "text": "Ça a fini par être le meilleur argent que nous ayons jamais dépensé. Une semaine plus tard, j 'ai posé le pied dans la vieille ville. J 'ai fait le check -in dans le seul hôtel que je pouvais me permettre. Et je suis parti en courant pour r"
+    },
+    {
+      "start": 276.24,
+      "end": 286.22,
+      "text": "Nous avons visité une cathédrale magnifique. Le sol était en marbre, des filets d 'or dessinèrent les murs, des œuvres d 'art inestimables, remplissées chaque recoin."
+    },
+    {
+      "start": 286.96,
+      "end": 292.8,
+      "text": "On voyait que cet endroit avait été financé par de riches donateurs, génération après génération."
+    },
+    {
+      "start": 293.36,
+      "end": 306.38,
+      "text": "Rien qu 'à regarder, je sentais comment vivait le 1%. Rien que l 'art valait facilement des millions. Et une pièce m 'a coupé le souffle. Quelque chose en elle me parlait. Le détail. L 'art."
+    },
+    {
+      "start": 306.92,
+      "end": 325.24,
+      "text": "Cette alliance entre le savoir -faire humain et l 'inspiration divine. Je me suis perdu dedans trop longtemps. Parce que quand j 'ai levé les yeux, j 'étais seul. J 'ai essayé de rattraper le groupe en courant dans des couloirs que je croya"
+    },
+    {
+      "start": 325.8,
+      "end": 332.68,
+      "text": "Un prêtre âgé était assis, entouré de manuscrises anciens, de rouleaux et de tomes, certains probablement plus vieux que l 'église elle -même."
+    },
+    {
+      "start": 333.3,
+      "end": 347.38,
+      "text": "Le prêtre a levé les yeux de ses études et a souri. Vous avez l 'air un peu perdu. La plupart des gens ne trouvent pas le chemin jusqu 'ici. J 'ai expliqué que j 'avais raté un virage en cherchant mon groupe. Il a hoché la tête en étudiant "
+    },
+    {
+      "start": 348.06,
+      "end": 355.8,
+      "text": "Il s 'est présenté comme le père Marcus, bibliothécaire en chef et spécialiste des textes anciens. Je lui ai dit que je m 'appelais Pierre."
+    },
+    {
+      "start": 356.4,
+      "end": 375.37,
+      "text": "Pierre, vous portez un phare d 'eau lourd. J 'ai vu cette expression bien des fois, en 40 ans de sa serdosse. Dites -moi, vous priez ? Tous les soirs, j 'ai dit. Mais on dirait que je me suis arrêté, sans savoir comment l 'expliquer. Comme "
+    },
+    {
+      "start": 375.92,
+      "end": 392.62,
+      "text": "Voyez -vous, tout le monde sait qu 'il devrait prier. Mais on ne nous a jamais donné les vraies instructions. Il avait raison. Toute ma vie, je n 'avais fait que suivre ce qu 'on m 'avait appris en grandissant. Le vrai savoir s 'est perdu d"
+    },
+    {
+      "start": 393.26,
+      "end": 405.31,
+      "text": "Et ce qu 'il m 'a expliqué ensuite a tout changé pour moi. Il a commencé simplement. Vous avez déjà entendu un ensemble de mots qui vous inspirent. Une phrase selon laquelle vous vivez. Un livre qui vous parle tout simplement."
+    },
+    {
+      "start": 405.88,
+      "end": 408.2,
+      "text": "Quelque chose qui vous bouge à chaque fois que vous l 'entendez."
+    },
+    {
+      "start": 408.88,
+      "end": 409.83,
+      "text": "Eh bien,"
+    },
+    {
+      "start": 410.36,
+      "end": 417.6,
+      "text": "il existe une façon de prier qui fait ressentir la même chose au divin. Vous sentez vos prières exaucées immédiatement."
+    },
+    {
+      "start": 418.16,
+      "end": 421.54,
+      "text": "Vous expérimentez ce que vous désirez en un instant."
+    },
+    {
+      "start": 422.16,
+      "end": 438.12,
+      "text": "Vous êtes entouré par votre réponse. Ça peut sembler difficile à croire. Mais c 'est comme ça que ça aurait toujours dû être. Ça commence en récitant cette prière perdue. Cette prière a été pratiquée par Jésus et ses disciples, écrits dans "
+    },
+    {
+      "start": 438.64,
+      "end": 441.3,
+      "text": "Aujourd 'hui, l 'Araméen est presque éteint comme langue."
+    },
+    {
+      "start": 441.86,
+      "end": 459.13,
+      "text": "Mais le Nouveau Testament original A, en réalité, était écrit dans cette langue. Et c 'est pour ça que la plupart des gens n 'ont jamais entendu parler de cette prière. Pendant plus de 2 000 ans, la Bible a été traduite de l 'Araméen vers l"
+    },
+    {
+      "start": 459.86,
+      "end": 467.94,
+      "text": "3900 traductions faites par 25 000 traducteurs, sans ordinateur, sans logiciel,"
+    },
+    {
+      "start": 468.52,
+      "end": 469.24,
+      "text": "tout à la main."
+    },
+    {
+      "start": 469.96,
+      "end": 476.16,
+      "text": "Chaque traducteur a fait de son mieux. Mais à chaque verset, à chaque ligne, à chaque mot,"
+    },
+    {
+      "start": 476.84,
+      "end": 477.93,
+      "text": "quelque chose s 'est perdu."
+    },
+    {
+      "start": 478.56,
+      "end": 479.89,
+      "text": "Les sens se sont dilués."
+    },
+    {
+      "start": 480.4,
+      "end": 482.89,
+      "text": "Des pièces cruciales sont restées de côté."
+    },
+    {
+      "start": 483.5,
+      "end": 487.69,
+      "text": "Imaginez le téléphone arabe, avec le message le plus important de l 'histoire."
+    },
+    {
+      "start": 488.28,
+      "end": 491.21,
+      "text": "Des pièces clés finissent par se perdre dans la traduction."
+    },
+    {
+      "start": 492.04,
+      "end": 495.15,
+      "text": "Certains mots araméens n 'existent même pas en français."
+    },
+    {
+      "start": 495.7,
+      "end": 500.06,
+      "text": "Certains concepts araméens ont besoin de paragraphes entiers pour être expliqués."
+    },
+    {
+      "start": 500.72,
+      "end": 514.16,
+      "text": "Alors, même si le cœur du message a survécu, les vraies instructions pour prier se sont perdues. Seuls ceux qui avaient taxé aux manuscrises originaux connaissaient la vérité. Et ceux qui ont gardé cette prière perdue sans son servi."
+    },
+    {
+      "start": 515.02,
+      "end": 523.24,
+      "text": "D 'abord, l 'empereur Romain Constantin, il a retiré 43 livres de la Bible que nous connaissons aujourd 'hui et il a gardé la prière perdue pour lui."
+    },
+    {
+      "start": 523.78,
+      "end": 533.5,
+      "text": "Peu après, il s 'en est servi pour construire la nouvelle Rome qui a duré mille ans, unifié l 'Empire et fait de lui l 'empereur le plus puissant de l 'histoire romaine."
+    },
+    {
+      "start": 534.08,
+      "end": 544.48,
+      "text": "Quand Constantin a déplacé la capitale de Rome à Constantinople, beaucoup de ses textes de prière ancien ont atterri dans les coffres du Vatican où ils sont restés cachés pendant des siècles."
+    },
+    {
+      "start": 545.0,
+      "end": 550.8,
+      "text": "Ça a permis aux Vatican d 'accumuler plus de richesse et de pouvoir que n 'importe quelle institution de l 'histoire humaine."
+    },
+    {
+      "start": 551.4,
+      "end": 555.5,
+      "text": "Aujourd 'hui, ils ont des milliards en trésor, en art et en or."
+    },
+    {
+      "start": 556.06,
+      "end": 572.58,
+      "text": "Mais le pouvoir ne s 'est pas arrêté là. Pendant les croisades, les chevaliers templiers ont trouvé des fragments de ses textes de prière perdus à Jérusalem. Presque du jour au lendemain, ils sont devenus les premiers banquiers internationa"
+    },
+    {
+      "start": 573.4,
+      "end": 577.85,
+      "text": "Les templiers étaient en les si riches qu 'ils prétaient à de l 'argent à des nations entières."
+    },
+    {
+      "start": 578.6,
+      "end": 588.72,
+      "text": "Quand les templiers se sont dispersés, la famille Médicis a mis la main sur cette prière grâce à ses connexions bancaires avec le Vatican. Les Médicis ne sont pas seulement devenus riches,"
+    },
+    {
+      "start": 589.26,
+      "end": 616.55,
+      "text": "ils ont financé toute la Renaissance. La chapelle Sixtine de Michel -Ange. Les chef -d 'œuvre de Léonard. Des merveilles à architectural. Les plus grandes réussites artistiques de l 'histoire humaine. Tout ça financé par la famille qui util"
+    },
+    {
+      "start": 617.08,
+      "end": 626.16,
+      "text": "Mais ils n 'avaient que des morceaux de ce savoir divin. Le texte original complet est resté caché dans un système de grottes à Khumran pendant 2000 ans."
+    },
+    {
+      "start": 626.82,
+      "end": 663.62,
+      "text": "Gardé par des moines qui s 'étaient enfuis avant la purge de Constantin. Quand les archéologues ont enfin trouvé le texte, en 1947, nous avions enfin les pièces manquantes. Mais les textes traduits ont été retenus par des chercheurs qui vou"
+    },
+    {
+      "start": 664.38,
+      "end": 671.8,
+      "text": "Alors, pour la première fois depuis des siècles, nous avons les règles complètes de prière que Jésus a enseigné à ses disciples."
+    },
+    {
+      "start": 672.38,
+      "end": 675.02,
+      "text": "Et elles sont l 'opposé de ce que fait la plupart des gens."
+    },
+    {
+      "start": 675.56,
+      "end": 678.76,
+      "text": "Voyez, la plupart prient en étant reconnaissants,"
+    },
+    {
+      "start": 679.3,
+      "end": 680.4,
+      "text": "en disant merci,"
+    },
+    {
+      "start": 681.06,
+      "end": 684.88,
+      "text": "et ensuite en demandant quelque chose de nouveau. Ils demandent dans la guérison."
+    },
+    {
+      "start": 685.46,
+      "end": 687.42,
+      "text": "Ils demandent que les problèmes se règlent."
+    },
+    {
+      "start": 687.98,
+      "end": 697.1,
+      "text": "Ils demandent de trouver une âme sœur ou une guidance. Mais la plupart attendent encore le moment du miracle. Et beaucoup se demandent si ce miracle arrivera un jour."
+    },
+    {
+      "start": 697.78,
+      "end": 708.61,
+      "text": "Certains se demandent s 'ils sont aimés, s 'ils sont appréciés, si le divin veut leur donner les bénédictions qu 'ils méritent. Et ça arrive parce qu 'ils demandent des solutions, au lieu de prier depuis la solution."
+    },
+    {
+      "start": 709.16,
+      "end": 718.42,
+      "text": "La vérité, c 'est ceci. Vous avez été fait pour recevoir des bénédictions. En réalité, elles ont déjà été créées pour vous. Mais quand vous demandez des choses,"
+    },
+    {
+      "start": 718.96,
+      "end": 720.68,
+      "text": "que vous demandez des bénédictions,"
+    },
+    {
+      "start": 721.22,
+      "end": 722.53,
+      "text": "que vous demandez la guérison,"
+    },
+    {
+      "start": 723.18,
+      "end": 731.38,
+      "text": "ce que vous êtes vraiment en train de faire, c 'est de tout pousser plus loin. Parce que quand vous demandez quelque chose, ce que vous dites vraiment, c 'est,"
+    },
+    {
+      "start": 731.93,
+      "end": 734.52,
+      "text": "je n 'ai pas ça. Vous déclarez le manque,"
+    },
+    {
+      "start": 735.04,
+      "end": 743.3,
+      "text": "le vide, qu 'il manque quelque chose. Mais le vrai langage du divin, c 'est la plénitude, l 'accomplissement, l 'abondance."
+    },
+    {
+      "start": 744.0,
+      "end": 748.38,
+      "text": "C 'est pour ça que les textes spirituels disent et vous êtes complets en lui."
+    },
+    {
+      "start": 749.2,
+      "end": 760.76,
+      "text": "Soyez donc parfait, comme votre père céleste est parfait. Et la ligne que la plupart ignore, c 'est pourquoi je vous dis, tout ce que vous demanderez en priant, croyez que vous l 'avez reçu, et vous le verrez s 'accomplir."
+    },
+    {
+      "start": 761.34,
+      "end": 762.22,
+      "text": "En tout jeu,"
+    },
+    {
+      "start": 762.86,
+      "end": 766.43,
+      "text": "quand vous arrêtez de demander et que vous priez depuis la complétude,"
+    },
+    {
+      "start": 766.94,
+      "end": 771.8,
+      "text": "vous recevez la réponse rapidement. C 'est comme utiliser votre propre clé pour ouvrir la porte."
+    },
+    {
+      "start": 772.49,
+      "end": 775.26,
+      "text": "Versus, espérez que quelqu 'un l 'ouvre pour vous."
+    },
+    {
+      "start": 775.84,
+      "end": 789.48,
+      "text": "Et c 'est pour ça que cette prière perdue en Aramein fonctionne si bien. Vous la récitez comme si la prière avait déjà été exaucée, depuis la plénitude et la complétude. Et c 'est pour ça que cette prière vous entoure de votre réponse imméd"
+    },
+    {
+      "start": 790.16,
+      "end": 800.4,
+      "text": "Autrement dit, cette prière perdue vous permet d 'expérimenter la vie, comme si elle était déjà faite. Alors si vous priez pour l 'argent, vous expérimentez l 'abondance immédiatement."
+    },
+    {
+      "start": 800.96,
+      "end": 802.66,
+      "text": "Si vous priez pour la guérison,"
+    },
+    {
+      "start": 803.52,
+      "end": 807.15,
+      "text": "vous sentez cette guérison, avant même d 'avoir fini la récitation."
+    },
+    {
+      "start": 807.98,
+      "end": 809.45,
+      "text": "Et si vous priez pour l 'amour,"
+    },
+    {
+      "start": 809.97,
+      "end": 812.12,
+      "text": "vous vous sentez complètement enveloppé par lui."
+    },
+    {
+      "start": 812.63,
+      "end": 823.6,
+      "text": "Le père Marcus a appelé cette technologie divine, le code source originelle pour se connecter au divin. Il a dit que les prières modernes, c 'est comme envoyer une lettre et espérer qu 'elle arrive."
+    },
+    {
+      "start": 824.3,
+      "end": 828.94,
+      "text": "Mais cette prière perdue, c 'est comme avoir le numéro privé du divin."
+    },
+    {
+      "start": 829.72,
+      "end": 833.08,
+      "text": "Vous avez une connexion directe et une réponse immédiate,"
+    },
+    {
+      "start": 833.84,
+      "end": 835.1,
+      "text": "sans interférence."
+    },
+    {
+      "start": 835.9,
+      "end": 867.34,
+      "text": "Mais de la même façon que vous ne composez pas un numéro au hasard en espérant joindre quelqu 'un, vous avez besoin de la séquence exacte pour que cette prière perdue fonctionne. Et voici le vrai secret qui donne à cette prière son pouvoir "
+    },
+    {
+      "start": 867.86,
+      "end": 876.58,
+      "text": "mais des vibrations qu 'il crée. Parce que votre créateur ne parle pas français. Sinon, ceux qui parlent d 'autres langues seraient oughtrés coupés des bénédictions."
+    },
+    {
+      "start": 877.22,
+      "end": 886.68,
+      "text": "C 'est pour ça que les vibrations sont la clé. Et les vibrations de ces trois mots ont été récitées par certains des êtres les plus divins qui n 'aillaient jamais marché sur terre."
+    },
+    {
+      "start": 887.28,
+      "end": 890.66,
+      "text": "Des saints, des prophètes, même Jésus lui -même."
+    },
+    {
+      "start": 891.32,
+      "end": 903.04,
+      "text": "Et chaque fois qu 'elles sont récitées, elles résonnent avec la même fréquence divine qui se construit depuis 2000 ans. Alors quand vous prononcez ces mots, vous vous connectez à plus de 2000 ans de pouvoir divin."
+    },
+    {
+      "start": 903.94,
+      "end": 908.52,
+      "text": "L 'explication du Père Marcus m 'a sidéré. Toute ma vie, j 'avais raté ça."
+    },
+    {
+      "start": 909.18,
+      "end": 913.26,
+      "text": "Chaque fois que je priais, je m 'éloignais en réalité de ce que je voulais."
+    },
+    {
+      "start": 914.08,
+      "end": 924.74,
+      "text": "Ça n 'est pas étonnant que je me sois battu toute ma vie. Ça n 'est pas étonnant que je me sois senti coupé de l 'abondance divine. Ça n 'est pas étonnant que mes prières n 'aient jamais été exaucées."
+    },
+    {
+      "start": 925.36,
+      "end": 934.9,
+      "text": "Et si vous êtes bloqués, je suis sûr que vous commencez à reconnaître ce qui cause ça. Voilà la mauvaise nouvelle. La bonne nouvelle, c 'est que vous êtes sur le point d 'avoir le bon chemin."
+    },
+    {
+      "start": 935.64,
+      "end": 955.82,
+      "text": "Quand le Père Marcus a vu que tout prenait sens pour moi, il a eu le sourire de celui qui sait. Pierre, cette prière est restée enfermée dans des institutions académiques pendant des décennies. Prisonnière des universités pendant que le mon"
+    },
+    {
+      "start": 956.34,
+      "end": 963.9,
+      "text": "Alors je vais vous enseigner cette prière. Mais j 'ai besoin de quelque chose en échange. Promettez -moi que vous trouverez un moyen de porter ça aux gens ordinaires."
+    },
+    {
+      "start": 964.64,
+      "end": 975.02,
+      "text": "Les pères qui se battent, les mères inquiètent. Qui conque dont les prières semblent heurter le plafond ? Vous me faites cette promesse ? Sa passion était réelle. Il voulait vraiment aider les gens qui se battaient."
+    },
+    {
+      "start": 975.7,
+      "end": 977.72,
+      "text": "Comme moi. Alors j 'ai accepté."
+    },
+    {
+      "start": 978.72,
+      "end": 984.46,
+      "text": "Ensuite, le Père Marcus a fermé les yeux, baissé la tête et m 'a guidé à travers la prière."
+    },
+    {
+      "start": 985.18,
+      "end": 987.46,
+      "text": "Pas à pas, mot par mot."
+    },
+    {
+      "start": 988.44,
+      "end": 994.76,
+      "text": "Puis il a scellé la prière avec ses trois mots puissants en arameen. L 'air de la pièce a changé."
+    },
+    {
+      "start": 995.36,
+      "end": 1003.02,
+      "text": "Les mots ont raisonné dans mes eaux. Ils ressemblaient à un tonnerre dans la poitrine, traversant l 'esprit et parlant directement à l 'âme."
+    },
+    {
+      "start": 1003.66,
+      "end": 1005.51,
+      "text": "Et à l 'instant où il les a récités,"
+    },
+    {
+      "start": 1006.18,
+      "end": 1009.16,
+      "text": "j 'ai compris pourquoi ça avait été gardé pendant deux mille ans."
+    },
+    {
+      "start": 1009.92,
+      "end": 1015.66,
+      "text": "Ce n 'était haït pas seulement des mots, c 'était du pouvoir. Et j 'ai senti le pouvoir divin immédiatement."
+    },
+    {
+      "start": 1016.2,
+      "end": 1018.46,
+      "text": "Une vague de calme, de paix,"
+    },
+    {
+      "start": 1019.02,
+      "end": 1020.01,
+      "text": "de certitude,"
+    },
+    {
+      "start": 1020.69,
+      "end": 1024.87,
+      "text": "une sensation d 'abondance pure, de protection et de guidance divine,"
+    },
+    {
+      "start": 1025.39,
+      "end": 1028.64,
+      "text": "une connaissance profonde que ce que je voulais était déjà à moi."
+    },
+    {
+      "start": 1029.44,
+      "end": 1031.49,
+      "text": "Que mes bénédictions n 'étaient pas en chemin,"
+    },
+    {
+      "start": 1032.22,
+      "end": 1033.24,
+      "text": "elles étaient là."
+    },
+    {
+      "start": 1033.8,
+      "end": 1034.54,
+      "text": "Maintenant,"
+    },
+    {
+      "start": 1035.12,
+      "end": 1041.07,
+      "text": "le Père Marcus a ouvert les yeux et a souri. Je les remerciais pour tout et j 'ai promis que j 'accomplirais sa mission."
+    },
+    {
+      "start": 1041.72,
+      "end": 1045.22,
+      "text": "Le lendemain, j 'ai volé vers la maison avec une paix incroyable."
+    },
+    {
+      "start": 1045.94,
+      "end": 1054.01,
+      "text": "Mais la réalité a frappé fort dès que j 'ai franchi la porte. La machine à laver est tombée en panne pendant que j 'étais partie."
+    },
+    {
+      "start": 1054.54,
+      "end": 1069.08,
+      "text": "Elle a inondé tout le sol de la buandrie. Ma voiture n 'a pas démarré dans le garage. Je suis allé à pied au supermarché, chercher du lait et des oeufs. Et la carte a encore été refusée. Ma fille l 'a demandé si on pouvait aller prendre une"
+    },
+    {
+      "start": 1069.78,
+      "end": 1072.18,
+      "text": "Ça m 'a fait mal à la poitrine de dire non."
+    },
+    {
+      "start": 1072.72,
+      "end": 1073.8,
+      "text": "Le doute est entré."
+    },
+    {
+      "start": 1074.4,
+      "end": 1077.62,
+      "text": "Peut -être que cette prière perdue n 'était pas la réponse que je cherchais."
+    },
+    {
+      "start": 1078.22,
+      "end": 1088.94,
+      "text": "Peut -être que le Père Marcus voulait seulement me donner de l 'espoir. Mais ce soir -là, je les récité à nouveau. J 'ai fermé les yeux et j 'ai fait exactement ce que le Père Marcus m 'avait montré."
+    },
+    {
+      "start": 1089.56,
+      "end": 1091.3,
+      "text": "Pas à pas, mot par mot."
+    },
+    {
+      "start": 1091.96,
+      "end": 1094.79,
+      "text": "En s 'élant avec ses trois mots puissants, en arameen."
+    },
+    {
+      "start": 1095.48,
+      "end": 1099.5,
+      "text": "J 'ai senti cette vague de paix, cette sensation que c 'était déjà fait,"
+    },
+    {
+      "start": 1100.02,
+      "end": 1102.56,
+      "text": "cette connaissance que les bénédictions étaient en chemin."
+    },
+    {
+      "start": 1103.32,
+      "end": 1104.14,
+      "text": "Et après ça,"
+    },
+    {
+      "start": 1104.7,
+      "end": 1106.12,
+      "text": "les choses ont été différentes."
+    },
+    {
+      "start": 1107.24,
+      "end": 1138.18,
+      "text": "Le lendemain matin, le téléphone a sonné à 7h30. C 'était quelqu 'un de la banque. Ils se trouvent qu 'ils avaient débité mon compte par erreur. C 'est pour ça que les cartes étaient refusées. Ils ont remis 2050 euros sur le compte immédiat"
+    },
+    {
+      "start": 1138.72,
+      "end": 1146.16,
+      "text": "Il avait revu les salaires et c 'était rendu compte que j 'étais sous -payé depuis deux ans. Le rappel était déjà en cours de traitement et envoyé sur mon compte."
+    },
+    {
+      "start": 1146.76,
+      "end": 1152.34,
+      "text": "Mes yeux se sont illuminés. Mes mains tremblaient d 'incrédulité. Et ça n 'a fait que s 'améliorer."
+    },
+    {
+      "start": 1152.9,
+      "end": 1157.34,
+      "text": "Plus tard, en rangant le garage, j 'ai trouvé l 'ancienne collection de pièces de mon grand -père."
+    },
+    {
+      "start": 1158.02,
+      "end": 1160.66,
+      "text": "Les yeux du commerçant se sont allumés quand il les a vus."
+    },
+    {
+      "start": 1161.16,
+      "end": 1163.11,
+      "text": "Elles valaient au moins 5000 euros."
+    },
+    {
+      "start": 1163.62,
+      "end": 1175.1,
+      "text": "Ce soir -là, j 'ai surpris ma fille bar avec une sortie glace. Son excitation valait un million. Et son visage s 'est illuminé comme à Noël quand j 'ai dit qu 'on pouvait fêter ça et inscrire les cours de musique qu 'elle voulait tant."
+    },
+    {
+      "start": 1175.6,
+      "end": 1190.3,
+      "text": "Au fil des semaines, les bénédictions sont devenues de plus en plus courantes. On aurait dit que l 'abondance, les opportunités et les coûts de chance me cherchaient. Et quand je suis entré dans mon garage au volant d 'une Mercedes toute ne"
+    },
+    {
+      "start": 1190.84,
+      "end": 1192.96,
+      "text": "la tête de Mme Laurent n 'avait pas de prix."
+    },
+    {
+      "start": 1193.56,
+      "end": 1197.42,
+      "text": "La même voisine qui avait rit de mon humiliation me regardait maintenant."
+    },
+    {
+      "start": 1197.95,
+      "end": 1198.69,
+      "text": "Incrédule."
+    },
+    {
+      "start": 1199.38,
+      "end": 1201.52,
+      "text": "Ma femme m 'a tiré à part un soir."
+    },
+    {
+      "start": 1202.54,
+      "end": 1210.56,
+      "text": "Qu 'est -ce qui t 'est arrivé pendant ce voyage ? Tu es différent, plus léger. C 'est là que j 'ai compris. Je ne pouvais pas garder ça pour moi."
+    },
+    {
+      "start": 1211.08,
+      "end": 1217.0,
+      "text": "J 'ai commencé à passer le mot. Ça a commencé avec des amis proches, de la famille, des gens du quartier."
+    },
+    {
+      "start": 1217.64,
+      "end": 1220.06,
+      "text": "Un par un, il racontait croire la même chose."
+    },
+    {
+      "start": 1220.82,
+      "end": 1226.55,
+      "text": "Cette paix immédiate. Suivi de la réponse, en quelques jours ou quelques semaines."
+    },
+    {
+      "start": 1227.46,
+      "end": 1242.55,
+      "text": "Emma, la voisine d 'à côté, a reçu une promotion inattendue après des années à être écartée. Elle allait utiliser l 'argent en plus pour acheter une maison à ses parents. La douleur chronique au dos de mon beau frère s 'est simplement résol"
+    },
+    {
+      "start": 1243.1,
+      "end": 1246.3,
+      "text": "Jean, de notre rue, était au chômage depuis sept mois."
+    },
+    {
+      "start": 1246.94,
+      "end": 1254.16,
+      "text": "Deux semaines après que je lui ai enseigné la prière, il a décroché un emploi qui payait le double du précédent. Même ma cousine Sophie,"
+    },
+    {
+      "start": 1254.68,
+      "end": 1263.9,
+      "text": "s 'y désorganisait qu 'elle a complètement mélangé l 'ordre des mots. Mais quelques jours plus tard, elle a reçu un héritage inattendu d 'un parent éloigné dont elle se souvenait à peine."
+    },
+    {
+      "start": 1264.54,
+      "end": 1267.76,
+      "text": "Bientôt, la nouvelle s 'est répandue comme une traînée de poudre."
+    },
+    {
+      "start": 1268.3,
+      "end": 1292.1,
+      "text": "Les gens m 'appelaient à n 'importe quelle heure du jour pour demander si je pouvais enseigner la prière. Je le faisais avec plaisir, mais ça a vite été trop. J 'avais besoin d 'une meilleure façon de partager ce cadeau, une façon d 'attein"
+    },
+    {
+      "start": 1292.62,
+      "end": 1308.56,
+      "text": "Et c 'est ça qui m 'a mené à créer cette page pour rassembler ceux qui sont prêts à recevoir cette prière perdue. Pour partager l 'enseignement du père Marcus avec des gens qui utiliseraient cette technologie divine non seulement pour eux, "
+    },
+    {
+      "start": 1309.14,
+      "end": 1329.22,
+      "text": "Certains disent que, Jean, que l 'argent essaie la racine de tout mal. Mais ce n 'est pas l 'argent en soi. C 'est ce que vous faites avec l 'argent qui compte. Les médicis ont utilisé la richesse pour financer la renaissance. Ils n 'ont pa"
+    },
+    {
+      "start": 1329.85,
+      "end": 1330.48,
+      "text": "Rendre."
+    },
+    {
+      "start": 1331.06,
+      "end": 1331.96,
+      "text": "Élever les autres."
+    },
+    {
+      "start": 1332.68,
+      "end": 1334.06,
+      "text": "Et se souvenir d 'où ça vient."
+    },
+    {
+      "start": 1334.8,
+      "end": 1343.04,
+      "text": "Quand vous faites ça, vous ne changez pas seulement votre vie. Vous devenez une bénédiction pour la communauté, pour la famille et pour toutes les vies que vous touchez."
+    },
+    {
+      "start": 1343.78,
+      "end": 1360.66,
+      "text": "Alors, si vous pouvez être d 'accord avec ça, le moment est devenu de réciter cette prière perdue. J 'ai passé des mois à rassembler tout ce que le père Marcus m 'avait enseigné. La prière originale en arameen. Les instructions pas à pas. J"
+    },
+    {
+      "start": 1361.2,
+      "end": 1379.58,
+      "text": "L 'objectif était de créer quelque chose que n 'importe qui, n 'importe où dans le monde, pourrait utiliser pour recevoir des bénédictions, de l 'abondance et de la guérison. Les résultats parlent d 'eux -mêmes. Nathalie de Lyon, en France,"
+    },
+    {
+      "start": 1380.18,
+      "end": 1387.74,
+      "text": "Les migraines chroniques de Luca, celles que les médecins n 'arrivent pas à expliquer, ont disparu après seulement deux semaines avec la prière."
+    },
+    {
+      "start": 1388.38,
+      "end": 1392.78,
+      "text": "Chloé a rencontré son âme sœur dans un café, trois jours après avoir commencé la prière."
+    },
+    {
+      "start": 1393.32,
+      "end": 1394.87,
+      "text": "Il se marit au printemps prochain."
+    },
+    {
+      "start": 1395.44,
+      "end": 1407.75,
+      "text": "Une à une, les vies changaient. C 'était incroyable. À chaque transformation, les résultats devenaient indéniables. C 'est impressionnant. La vitesse à laquelle cette prière perdue change les choses."
+    },
+    {
+      "start": 1408.32,
+      "end": 1412.68,
+      "text": "Vous sentez la différence immédiatement. Le calme, la paix,"
+    },
+    {
+      "start": 1413.29,
+      "end": 1419.0,
+      "text": "la guidance divine. Vous serez entouré par votre réponse rapidement. Et vous ne voudrez plus rien."
+    },
+    {
+      "start": 1419.7,
+      "end": 1429.54,
+      "text": "Vous ne vous préoccuperaient plus du prix ni du coup. Vous n 'aurez plus besoin de manifester ni de courir après quoi que ce soit. Parce que vous saurez que vous êtes toujours pourvu."
+    },
+    {
+      "start": 1430.18,
+      "end": 1435.13,
+      "text": "Vous saurez que votre vie est béni. Parce que vous aurez la ligne directe avec l 'abondance divine."
+    },
+    {
+      "start": 1435.94,
+      "end": 1438.36,
+      "text": "Et quant à la quantité que vous allez en recevoir,"
+    },
+    {
+      "start": 1438.96,
+      "end": 1441.16,
+      "text": "eh bien, ça dépend entièrement de vous."
+    },
+    {
+      "start": 1441.86,
+      "end": 1445.2,
+      "text": "Tout commence en récitant cette prière perdue, simple."
+    },
+    {
+      "start": 1445.72,
+      "end": 1449.74,
+      "text": "Suivez les étapes simples. Ou écoutez l 'une de nos prières guidées."
+    },
+    {
+      "start": 1450.5,
+      "end": 1452.8,
+      "text": "Et expérimentez le changement immédiatement."
+    },
+    {
+      "start": 1453.4,
+      "end": 1459.1,
+      "text": "Plus vous serez constant, mieux ça fonctionne. Et plus vite les bénédictions se déversent en votre vie."
+    },
+    {
+      "start": 1459.65,
+      "end": 1470.84,
+      "text": "Est -ce que vous expérimentez au jour un peu se multiplier par 10 au jour 10 ? Et la différence que vous sentez au jour 10 peut encore se multiplier au jour 30. Ça a été mon expérience."
+    },
+    {
+      "start": 1471.52,
+      "end": 1473.43,
+      "text": "Et celle de milliers d 'autres personnes."
+    },
+    {
+      "start": 1474.22,
+      "end": 1489.5,
+      "text": "Maintenant, depuis que j 'ai partagé la prière perdue avec le monde, j 'ai créé un guide complet. Avec chaque mot, chaque étape, chaque inflection. Pour qu 'il ne reste plus de place au hasard, à la confusion, ou à l 'erreur. Et je suis all"
+    },
+    {
+      "start": 1490.3,
+      "end": 1496.29,
+      "text": "J 'ai aussi transformé la prière perdue en 3 prières guidées. Chacune avec un résultat différent."
+    },
+    {
+      "start": 1496.87,
+      "end": 1499.6,
+      "text": "Une est pour l 'abondance et la prospérité."
+    },
+    {
+      "start": 1500.16,
+      "end": 1503.12,
+      "text": "Une est pour la guérison et une santé complète."
+    },
+    {
+      "start": 1503.66,
+      "end": 1507.89,
+      "text": "Une est pour l 'amour et les relations. Et vous écoutez simplement"
+    },
+    {
+      "start": 1508.42,
+      "end": 1515.76,
+      "text": "pendant que vous êtes guidée à travers la prière. C 'est une excellente option pour ceux qui veulent être conduits à chaque étape."
+    },
+    {
+      "start": 1516.48,
+      "end": 1534.9,
+      "text": "J 'ai aussi inclus la méthode miracle de 7 jours. Un système jour par jour pour attirer des miracles de plus en plus grand. Chaque jour s 'appuie sur le précédent. En enseignant à renforcer la connexion et à augmenter les résultats. Au jour"
+    },
+    {
+      "start": 1535.5,
+      "end": 1545.55,
+      "text": "Et j 'ai créé le journal des miracles de la prière perdue. Parce que j 'ai remarqué que les hommes et les femmes qui suivent leur bénédiction et leur miracle semblent en recevoir encore davantage."
+    },
+    {
+      "start": 1546.06,
+      "end": 1554.22,
+      "text": "Et il y a une raison simple. La gratitude attire davantage de ce pourquoi vous êtes reconnaissant. Alors je ne me sentirai pas bien de laisser ça de côté."
+    },
+    {
+      "start": 1554.81,
+      "end": 1559.66,
+      "text": "Maintenant, à ce stade, vous vous demandez probablement comment accéder à tout ça."
+    },
+    {
+      "start": 1560.28,
+      "end": 1579.22,
+      "text": "Tout ça qui va vous connecter à la guidance qui rend la vie plus légère vous entourez de la vie que vous avez toujours voulu et mérité et vous faire passer du vouloir à l 'avoir. Pour ça, il y a un coup et un prix. Ce que ça va vous coûter,"
+    },
+    {
+      "start": 1579.78,
+      "end": 1580.88,
+      "text": "ce n 'est pas grand chose."
+    },
+    {
+      "start": 1581.52,
+      "end": 1588.06,
+      "text": "En réalité, la seule raison pour laquelle il y a un prix, c 'est de montrer que vous êtes sérieux et de vous encourager à le transmettre."
+    },
+    {
+      "start": 1588.6,
+      "end": 1598.55,
+      "text": "Parce que cet argent ne reste pas avec nous. Je n 'en ai pas l 'usage. Il y a de la nourriture sur ma table. Les lumières sont allumées. Ma famille est à l 'aise et en sécurité."
+    },
+    {
+      "start": 1599.12,
+      "end": 1607.74,
+      "text": "Il sert simplement à maintenir ce site, à payer notre petite équipe et à aider la prochaine personne à y avoir accès. Alors vous ne payez pas ces enregistrements."
+    },
+    {
+      "start": 1608.26,
+      "end": 1628.46,
+      "text": "Vous ouvrez l 'accès à la prochaine personne pour qu 'elle reçoive, elle aussi, l 'abondance qu 'elle mérite. Donc ce n 'est pas seulement pour vous. En entrant aujourd 'hui, vous créez des bénédictions pour tout le monde. Cela dit, ça ne v"
+    },
+    {
+      "start": 1629.0,
+      "end": 1645.12,
+      "text": "Un prix juste pour recevoir les bénédictions que vous méritez, c 'est seulement 26 euros 90. C 'est tout. Et la raison pour laquelle c 'est si accessible, c 'est que mon cœur se brise pour ceux qui font tout bien et qui se battent non quand"
+    },
+    {
+      "start": 1645.72,
+      "end": 1650.08,
+      "text": "De bonnes personnes qui vivent dans la foi et qui vivent quand même dans l 'inquiétude."
+    },
+    {
+      "start": 1650.6,
+      "end": 1658.84,
+      "text": "Elles aussi méritent d 'avoir ça. C 'est un paiement unique de 26 euros 90 pour profiter des bénédictions pour le reste de votre vie."
+    },
+    {
+      "start": 1659.49,
+      "end": 1674.48,
+      "text": "Aidez la première fois que vous récitez la prière perdue. La vie devient plus calme, plus en paix. Les choses commencent à s 'arranger d 'elles -mêmes. L 'abondance et les opportunités qui vous ignorent. Commencent à vous poursuivre. Et les"
+    },
+    {
+      "start": 1675.18,
+      "end": 1685.8,
+      "text": "En réalité, le seul problème que vous allez avoir c 'est de ne pas avoir trouvé cette prière plus tôt. Tout ce que vous avez à faire c 'est de permettre que ça arrive. Et la façon de permettre est simple."
+    },
+    {
+      "start": 1686.48,
+      "end": 1688.48,
+      "text": "Tout commence sur le bouton sous cette vidéo."
+    },
+    {
+      "start": 1689.25,
+      "end": 1694.48,
+      "text": "La prière perdue, les prières guidées et le journal des miracles vous attendent derrière ce bouton."
+    },
+    {
+      "start": 1695.0,
+      "end": 1705.53,
+      "text": "Il vous suffit de descendre et de cliquer sur le bouton pour commencer votre vie béni. Et allez vite. Parce que quand quelque chose fonctionne comme la prière perdue, la nouvelle se répand vite."
+    },
+    {
+      "start": 1706.04,
+      "end": 1709.22,
+      "text": "C 'est pour ça que nous avons dû fermer l 'accès deux fois ce mois -ci."
+    },
+    {
+      "start": 1709.74,
+      "end": 1717.08,
+      "text": "La demande écrasante pour la prière perdue a fait tomber nos systèmes. Je fais tout ce que je peux pour garder cette prière disponible."
+    },
+    {
+      "start": 1717.64,
+      "end": 1722.62,
+      "text": "Mais je ne peux pas promettre qu 'elle sera encore la demain. Ni même dans l 'heure qui vient."
+    },
+    {
+      "start": 1723.58,
+      "end": 1740.7,
+      "text": "Alors si vous voyez encore ce bouton sous cette vidéo, je vous invite à cliquer et à commencer votre nouvelle vie. En cliquant sur ce bouton, vous serez emmené vers notre page de paiement 100 % sécurisée et cryptée. Cette page est protégée "
+    },
+    {
+      "start": 1741.26,
+      "end": 1743.88,
+      "text": "Il vous suffit d 'entrer vos informations. Et c 'est tout."
+    },
+    {
+      "start": 1744.38,
+      "end": 1756.96,
+      "text": "La prière perdue sera envoyée directement dans votre boîte email. Ça veut dire pas d 'attente de colis. Et vous économisez 10 euros de frais de porc. Vous aurez accès à la prière perdue immédiatement."
+    },
+    {
+      "start": 1757.46,
+      "end": 1763.08,
+      "text": "Alors, dans quelques minutes vous pouvez déjà être en train de réciter la prière perdue."
+    },
+    {
+      "start": 1763.8,
+      "end": 1765.72,
+      "text": "De sentir la prière exaucée"
+    },
+    {
+      "start": 1766.34,
+      "end": 1772.88,
+      "text": "d 'expérimenter cette vague de certitude et de calme et de savoir que vos bénédictions sont déjà en chemin."
+    },
+    {
+      "start": 1773.44,
+      "end": 1788.92,
+      "text": "Tout commence sur le bouton sous cette vidéo. Chaque matin, ma boîte de réception est inondée d 'histoires de réussite d 'hommes et de femmes qui ont utilisé la prière perdue. Tous sentent la différence immédiatement. Mais nous voulions cal"
+    },
+    {
+      "start": 1789.42,
+      "end": 1791.25,
+      "text": "Des maisons, des voitures,"
+    },
+    {
+      "start": 1791.76,
+      "end": 1793.67,
+      "text": "des emplois, des promotions,"
+    },
+    {
+      "start": 1794.28,
+      "end": 1795.64,
+      "text": "même des revenus triplés."
+    },
+    {
+      "start": 1796.28,
+      "end": 1798.6,
+      "text": "Ce temps c 'est 63 jours."
+    },
+    {
+      "start": 1799.1,
+      "end": 1803.18,
+      "text": "Certains voient des résultats bien plus vite. D 'autres mettent un peu plus longtemps."
+    },
+    {
+      "start": 1803.76,
+      "end": 1806.98,
+      "text": "Mais la majorité voient ces grands changements en 63 jours."
+    },
+    {
+      "start": 1807.56,
+      "end": 1829.36,
+      "text": "Chaque parcours est unique, bien sûr. Et c 'est pour ça que nous garantissons la prière perdue avec notre garantie de 90 jours. Parce que, pour moi, ça n 'a jamais été une question d 'argent. Ça a toujours été une question d 'impact. Et ce "
+    },
+    {
+      "start": 1829.98,
+      "end": 1832.94,
+      "text": "Mais le monde utilisera ce travail pendant des générations."
+    },
+    {
+      "start": 1833.46,
+      "end": 1834.18,
+      "text": "Et un jour,"
+    },
+    {
+      "start": 1834.8,
+      "end": 1841.82,
+      "text": "mon espoir, c 'est que vous transmettiez ce cadeau à la génération suivante. Après avoir expérimenté le pouvoir par vous -même."
+    },
+    {
+      "start": 1842.46,
+      "end": 1848.88,
+      "text": "Cela dit, je n 'ai absolument aucun intérêt à garder votre argent si vous n 'êtes pas ravi de votre vie béni."
+    },
+    {
+      "start": 1849.46,
+      "end": 1854.96,
+      "text": "Alors si après 90 jours vous n 'aimez pas l 'abondance, la guérison et les miracles dans votre vie,"
+    },
+    {
+      "start": 1855.53,
+      "end": 1867.41,
+      "text": "envoyez -moi un message et je vous rend chaque centime. Je le fais avec plaisir, parce que j 'ai expérimenté les changements de première main. Je sais à quel point c 'est puissant. Ça a fonctionné pour des milliers d 'hommes et de femmes."
+    },
+    {
+      "start": 1868.1,
+      "end": 1873.7,
+      "text": "Ça a aussi changé la vie de ceux qui les entourent. Et j 'ai confiance que ça apportera les bénédictions que vous cherchez."
+    },
+    {
+      "start": 1874.26,
+      "end": 1885.86,
+      "text": "Alors cliquez sur ce bouton en bas et commencez votre nouveau départ. Il n 'est jamais trop tard pour accepter votre abondance. Mais vous avez déjà attendu toute votre vie pour avoir ce que vous voulez. Alors n 'attendez plus une minute."
+    },
+    {
+      "start": 1886.62,
+      "end": 1888.08,
+      "text": "Parce que jusqu 'à maintenant,"
+    },
+    {
+      "start": 1888.8,
+      "end": 1889.98,
+      "text": "vous étiez bloqué."
+    },
+    {
+      "start": 1890.64,
+      "end": 1892.28,
+      "text": "Parce que vous n 'aviez pas de chemin."
+    },
+    {
+      "start": 1893.0,
+      "end": 1894.14,
+      "text": "Vous n 'aviez pas de choix."
+    },
+    {
+      "start": 1894.66,
+      "end": 1903.1,
+      "text": "Maintenant vous en avez un. Le chemin est devant vous. Et ça veut dire il ne reste plus d 'excuse. Il ne reste plus rien à se demander."
+    },
+    {
+      "start": 1903.62,
+      "end": 1905.72,
+      "text": "Parce que vous êtes arrivé jusqu 'ici."
+    },
+    {
+      "start": 1906.22,
+      "end": 1910.52,
+      "text": "Et ça veut dire que vous savez pourquoi les choses ne fonctionnaient pas. Mais plus important,"
+    },
+    {
+      "start": 1911.1,
+      "end": 1935.83,
+      "text": "vous savez pourquoi ça fonctionne. Vous savez comment ça fonctionne. Donc vous savez que ça fonctionne. Vous avez la garantie de remboursement. Et tout ce que ça prend, c 'est 5 minutes de votre journée pour réciter cette prière. Si ça ce n"
+    },
+    {
+      "start": 1936.54,
+      "end": 1944.46,
+      "text": "Ce bouton n 'est pas seulement un clic. Ce bouton est la meilleure décision de votre vie. Parce que c 'est le moment où tout change. Pour vous."
+    },
+    {
+      "start": 1944.98,
+      "end": 1946.54,
+      "text": "Et pour tous ceux qui vous entourent."
+    },
+    {
+      "start": 1947.12,
+      "end": 1948.57,
+      "text": "Mon nom est Pierre Martin."
+    },
+    {
+      "start": 1949.22,
+      "end": 1950.77,
+      "text": "Et c 'est votre moment de miracle."
+    },
+    {
+      "start": 1951.32,
+      "end": 1953.25,
+      "text": "Je vous retrouve de l 'autre côté."
+    }
+  ],
+  "drop": [
+    {
+      "start": 5.35,
+      "end": 5.92,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 36.44,
+      "end": 37.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 37.86,
+      "end": 38.54,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 40.76,
+      "end": 41.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 50.5,
+      "end": 51.03,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 61.13,
+      "end": 61.76,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 68.94,
+      "end": 69.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 76.47,
+      "end": 77.1,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 105.44,
+      "end": 106.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 106.55,
+      "end": 107.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 116.68,
+      "end": 117.21,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 117.6,
+      "end": 118.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 127.08,
+      "end": 127.7,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 129.24,
+      "end": 129.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 145.41,
+      "end": 146.07,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 146.7,
+      "end": 147.24,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 150.1,
+      "end": 150.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 151.34,
+      "end": 151.89,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 155.7,
+      "end": 156.21,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 179.95,
+      "end": 180.52,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 186.2,
+      "end": 186.82,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 191.09,
+      "end": 191.76,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 192.52,
+      "end": 193.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 201.16,
+      "end": 201.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 203.7,
+      "end": 204.2,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 205.66,
+      "end": 206.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 208.71,
+      "end": 209.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 224.1,
+      "end": 224.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 231.78,
+      "end": 232.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 235.64,
+      "end": 236.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 239.68,
+      "end": 240.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 241.54,
+      "end": 242.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 244.52,
+      "end": 245.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 250.94,
+      "end": 251.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 254.21,
+      "end": 254.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 257.78,
+      "end": 258.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 260.28,
+      "end": 260.82,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 275.5,
+      "end": 276.24,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 286.22,
+      "end": 286.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 292.8,
+      "end": 293.36,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 306.38,
+      "end": 306.92,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 325.24,
+      "end": 325.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 332.68,
+      "end": 333.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 347.38,
+      "end": 348.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 355.8,
+      "end": 356.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 375.37,
+      "end": 375.92,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 392.62,
+      "end": 393.26,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 405.31,
+      "end": 405.88,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 408.2,
+      "end": 408.88,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 409.83,
+      "end": 410.36,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 417.6,
+      "end": 418.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 421.54,
+      "end": 422.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 438.12,
+      "end": 438.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 441.3,
+      "end": 441.86,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 459.13,
+      "end": 459.86,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 467.94,
+      "end": 468.52,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 469.24,
+      "end": 469.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 476.16,
+      "end": 476.84,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 477.93,
+      "end": 478.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 479.89,
+      "end": 480.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 482.89,
+      "end": 483.5,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 487.69,
+      "end": 488.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 491.21,
+      "end": 492.04,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 495.15,
+      "end": 495.7,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 500.06,
+      "end": 500.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 514.16,
+      "end": 515.02,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 523.24,
+      "end": 523.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 533.5,
+      "end": 534.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 544.48,
+      "end": 545.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 550.8,
+      "end": 551.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 555.5,
+      "end": 556.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 572.58,
+      "end": 573.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 577.85,
+      "end": 578.6,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 588.72,
+      "end": 589.26,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 616.55,
+      "end": 617.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 626.16,
+      "end": 626.82,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 663.62,
+      "end": 664.38,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 671.8,
+      "end": 672.38,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 675.02,
+      "end": 675.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 678.76,
+      "end": 679.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 680.4,
+      "end": 681.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 684.88,
+      "end": 685.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 687.42,
+      "end": 687.98,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 697.1,
+      "end": 697.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 708.61,
+      "end": 709.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 718.42,
+      "end": 718.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 720.68,
+      "end": 721.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 722.53,
+      "end": 723.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 731.38,
+      "end": 731.93,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 734.52,
+      "end": 735.04,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 743.3,
+      "end": 744.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 748.38,
+      "end": 749.2,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 760.76,
+      "end": 761.34,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 762.22,
+      "end": 762.86,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 766.43,
+      "end": 766.94,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 771.8,
+      "end": 772.49,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 775.26,
+      "end": 775.84,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 789.48,
+      "end": 790.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 800.4,
+      "end": 800.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 802.66,
+      "end": 803.52,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 807.15,
+      "end": 807.98,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 809.45,
+      "end": 809.97,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 812.12,
+      "end": 812.63,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 823.6,
+      "end": 824.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 828.94,
+      "end": 829.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 833.08,
+      "end": 833.84,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 835.1,
+      "end": 835.9,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 867.34,
+      "end": 867.86,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 876.58,
+      "end": 877.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 886.68,
+      "end": 887.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 890.66,
+      "end": 891.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 903.04,
+      "end": 903.94,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 908.52,
+      "end": 909.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 913.26,
+      "end": 914.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 924.74,
+      "end": 925.36,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 934.9,
+      "end": 935.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 955.82,
+      "end": 956.34,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 963.9,
+      "end": 964.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 975.02,
+      "end": 975.7,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 977.72,
+      "end": 978.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 984.46,
+      "end": 985.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 987.46,
+      "end": 988.44,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 994.76,
+      "end": 995.36,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1003.02,
+      "end": 1003.66,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1005.51,
+      "end": 1006.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1009.16,
+      "end": 1009.92,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1015.66,
+      "end": 1016.2,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1018.46,
+      "end": 1019.02,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1020.01,
+      "end": 1020.69,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1024.87,
+      "end": 1025.39,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1028.64,
+      "end": 1029.44,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1031.49,
+      "end": 1032.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1033.24,
+      "end": 1033.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1034.54,
+      "end": 1035.12,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1041.07,
+      "end": 1041.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1045.22,
+      "end": 1045.94,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1054.01,
+      "end": 1054.54,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1069.08,
+      "end": 1069.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1072.18,
+      "end": 1072.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1073.8,
+      "end": 1074.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1077.62,
+      "end": 1078.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1088.94,
+      "end": 1089.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1091.3,
+      "end": 1091.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1094.79,
+      "end": 1095.48,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1099.5,
+      "end": 1100.02,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1102.56,
+      "end": 1103.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1104.14,
+      "end": 1104.7,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1106.12,
+      "end": 1107.24,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1138.18,
+      "end": 1138.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1146.16,
+      "end": 1146.76,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1152.34,
+      "end": 1152.9,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1157.34,
+      "end": 1158.02,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1160.66,
+      "end": 1161.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1163.11,
+      "end": 1163.62,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1175.1,
+      "end": 1175.6,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1190.3,
+      "end": 1190.84,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1192.96,
+      "end": 1193.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1197.42,
+      "end": 1197.95,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1198.69,
+      "end": 1199.38,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1201.52,
+      "end": 1202.54,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1210.56,
+      "end": 1211.08,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1217.0,
+      "end": 1217.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1220.06,
+      "end": 1220.82,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1226.55,
+      "end": 1227.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1242.55,
+      "end": 1243.1,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1246.3,
+      "end": 1246.94,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1254.16,
+      "end": 1254.68,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1263.9,
+      "end": 1264.54,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1267.76,
+      "end": 1268.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1292.1,
+      "end": 1292.62,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1308.56,
+      "end": 1309.14,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1329.22,
+      "end": 1329.85,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1330.48,
+      "end": 1331.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1331.96,
+      "end": 1332.68,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1334.06,
+      "end": 1334.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1343.04,
+      "end": 1343.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1360.66,
+      "end": 1361.2,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1379.58,
+      "end": 1380.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1387.74,
+      "end": 1388.38,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1392.78,
+      "end": 1393.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1394.87,
+      "end": 1395.44,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1407.75,
+      "end": 1408.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1412.68,
+      "end": 1413.29,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1419.0,
+      "end": 1419.7,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1429.54,
+      "end": 1430.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1435.13,
+      "end": 1435.94,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1438.36,
+      "end": 1438.96,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1441.16,
+      "end": 1441.86,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1445.2,
+      "end": 1445.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1449.74,
+      "end": 1450.5,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1452.8,
+      "end": 1453.4,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1459.1,
+      "end": 1459.65,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1470.84,
+      "end": 1471.52,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1473.43,
+      "end": 1474.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1489.5,
+      "end": 1490.3,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1496.29,
+      "end": 1496.87,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1499.6,
+      "end": 1500.16,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1503.12,
+      "end": 1503.66,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1507.89,
+      "end": 1508.42,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1515.76,
+      "end": 1516.48,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1534.9,
+      "end": 1535.5,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1545.55,
+      "end": 1546.06,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1554.22,
+      "end": 1554.81,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1559.66,
+      "end": 1560.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1579.22,
+      "end": 1579.78,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1580.88,
+      "end": 1581.52,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1588.06,
+      "end": 1588.6,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1598.55,
+      "end": 1599.12,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1607.74,
+      "end": 1608.26,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1628.46,
+      "end": 1629.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1645.12,
+      "end": 1645.72,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1650.08,
+      "end": 1650.6,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1658.84,
+      "end": 1659.49,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1674.48,
+      "end": 1675.18,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1685.8,
+      "end": 1686.48,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1688.48,
+      "end": 1689.25,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1694.48,
+      "end": 1695.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1705.53,
+      "end": 1706.04,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1709.22,
+      "end": 1709.74,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1717.08,
+      "end": 1717.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1722.62,
+      "end": 1723.58,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1740.7,
+      "end": 1741.26,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1743.88,
+      "end": 1744.38,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1756.96,
+      "end": 1757.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1763.08,
+      "end": 1763.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1765.72,
+      "end": 1766.34,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1772.88,
+      "end": 1773.44,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1788.92,
+      "end": 1789.42,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1791.25,
+      "end": 1791.76,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1793.67,
+      "end": 1794.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1795.64,
+      "end": 1796.28,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1798.6,
+      "end": 1799.1,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1803.18,
+      "end": 1803.76,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1806.98,
+      "end": 1807.56,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1829.36,
+      "end": 1829.98,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1832.94,
+      "end": 1833.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1834.18,
+      "end": 1834.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1841.82,
+      "end": 1842.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1848.88,
+      "end": 1849.46,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1854.96,
+      "end": 1855.53,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1867.41,
+      "end": 1868.1,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1873.7,
+      "end": 1874.26,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1885.86,
+      "end": 1886.62,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1888.08,
+      "end": 1888.8,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1889.98,
+      "end": 1890.64,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1892.28,
+      "end": 1893.0,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1894.14,
+      "end": 1894.66,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1903.1,
+      "end": 1903.62,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1905.72,
+      "end": 1906.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1910.52,
+      "end": 1911.1,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1935.83,
+      "end": 1936.54,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1944.46,
+      "end": 1944.98,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1946.54,
+      "end": 1947.12,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1948.57,
+      "end": 1949.22,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    },
+    {
+      "start": 1950.77,
+      "end": 1951.32,
+      "reason": "silêncio grande (respirada mantida no corte)"
+    }
+  ],
+  "missing_from_script": [
+    "Lead NARRATION after testimonials: « Dans un instant, vous allez pouvoir réciter la prière perdue… » — no matching file in raw/NARRAÇÃO VSL PROSPERIDADE."
+  ]
+}
