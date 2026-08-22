@@ -1,6 +1,6 @@
 # Music
 
-**Role:** Beds. Mix default −23 dB until Igor adjusts.
+**Role:** Beds. Mix default −23 dB until Igor adjusts. One-shots are [`sfx/`](../sfx/README.md).
 
 **Parent:** [README.md](../README.md)
 
@@ -8,7 +8,7 @@
 
 | Entry | When to open | Path |
 |---|---|---|
-| _(empty)_ | When Igor adds audio files | this folder |
+| prosperity-pad.wav (gitignored) | Bed local de prosperidade (gerado neste PC, 2026-08-21) | this folder |
 
 ## Gaps
 

@@ -10,11 +10,11 @@ Cortes secos **só de silêncio grande** entre falas. Não tirar nenhuma palavra
 
 ## Preset de formato
 
-**VSL** em **9:16** (Igor, 2026-08-21). Cards à direita, terço de baixo, sem tapar o rosto. Sem preço/CTA inventado.
+**VSL** em **9:16** (Igor, 2026-08-21). Este clipe: **tela cheia** o vídeo inteiro (rosto escondido, voz fica). Visuais bem distribuídos. Sem preço/CTA inventado.
 
 ## Estágio atual
 
-Graphics 1st pass (rascunho) feito. Próximo: second pass (Igor dirige).
+Second pass: tela cheia + música baixa. Prévia 1080×1920 60 fps.
 
 ## Fonte
 
@@ -22,17 +22,16 @@ Graphics 1st pass (rascunho) feito. Próximo: second pass (Igor dirige).
 - Normalizado: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\source\video-de-avatar-1080p.mp4`
 - Prévia do intake: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\01-ingested.mp4`
 - Prévia do corte seco: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\02-rough-cut.mp4`
-- Prévia com gráficos (rascunho 60 fps): `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\03-graphics-draft.mp4`
+- Prévia tela cheia 60 fps: `C:\Users\ig\Documents\Agentes\projects\video-de-avatar-1080p\previews\04-tela-cheia.mp4`
+- Cópia: `C:\Users\ig\Downloads\video-de-avatar-1080p-60fps.mp4`
 
 ## Corte
 
 Pedido do Igor (2026-08-21): só silêncios **maiores**; respiradas curtas ficam; **nenhuma palavra** sai.
 
-Transcrição WhisperX `fr`, 204 palavras, score por palavra. Silêncio medido no áudio (limiar 12 dB abaixo da fala deste take, mínimo 0,75 s). Não se cortou pelo fim de palavra do WhisperX.
-
 ## Gráficos
 
-Cinco cards, um por trecho: prière perdue / sur commande (selo) / 3 minutes / première fois / ce soir (degraus). Texto só do que foi dito. Overlay 60 fps, 1080×1920.
+Tela cheia em todo o corte (Igor, 2026-08-21): fundo escuro + painéis de vidro dourado espalhados; 2000 ans com ticks; selo Sur commande; 3 minutes; pièce / prière complète; colunas Bénédictions / Abondance / Vie nouvelle. Música pad local baixa. Plim e bolha nos eventos.
 
 ## Lock
 

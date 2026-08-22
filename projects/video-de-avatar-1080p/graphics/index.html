@@ -17,374 +17,291 @@
         font-weight: 800;
         font-style: normal;
       }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
         margin: 0;
         width: 1080px;
         height: 1920px;
         overflow: hidden;
-        background: #000;
+        background: #0c0d12;
       }
-      body {
-        font-family: "Coolvetica", sans-serif;
-      }
-      .card {
+      body { font-family: "Coolvetica", sans-serif; color: #f4ead4; }
+      .scene {
         position: absolute;
-        right: 36px;
-        left: auto;
-        width: 448px;
-        padding: 24px 26px 26px;
-        border-radius: 28px;
-        background: rgba(229, 229, 237, 0.92);
-        border: 1px solid rgba(255, 255, 255, 0.75);
-        box-shadow: 0 22px 56px rgba(18, 22, 48, 0.28);
-        bottom: 132px;
-        top: auto;
+        inset: 0;
+      }
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(2px);
+      }
+      .orb-a {
+        width: 720px; height: 720px; left: -180px; top: -80px;
+        background: radial-gradient(circle, rgba(212,168,88,0.28) 0%, rgba(12,13,18,0) 70%);
+      }
+      .orb-b {
+        width: 640px; height: 640px; right: -160px; bottom: 80px;
+        background: radial-gradient(circle, rgba(124,139,205,0.22) 0%, rgba(12,13,18,0) 70%);
       }
       .kicker {
-        color: #4d567d;
-        font-size: 18px;
-        line-height: 1.2;
-        margin-bottom: 8px;
-      }
-      .headline {
-        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
-        color: #111318;
-        font-size: 34px;
-        line-height: 1.05;
-        letter-spacing: 0.02em;
+        color: rgba(232,201,137,0.82);
+        font-size: 28px;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
       }
-      .row {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-top: 12px;
+      .hero {
+        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
+        font-size: 92px;
+        line-height: 0.95;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
       }
-      .row-text {
-        color: #111318;
-        font-size: 22px;
-        line-height: 1.15;
+      .subhero {
+        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
+        font-size: 64px;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+        color: #e8c989;
       }
-      .icon {
-        flex: 0 0 46px;
-        width: 46px;
-        height: 46px;
-        border-radius: 14px;
-        background: #7c8bcd;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .glass {
+        background: rgba(28, 24, 18, 0.72);
+        border: 1px solid rgba(232, 201, 137, 0.38);
+        border-radius: 32px;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.35);
       }
-      .icon svg {
-        display: block;
+      .panel-label {
+        font-size: 26px;
+        text-align: center;
+        color: #f4ead4;
+      }
+      .icon-wrap {
+        width: 72px; height: 72px; border-radius: 20px;
+        background: rgba(232,201,137,0.18);
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 14px;
       }
       .year {
         font-family: "CoolveticaHv", "Coolvetica", sans-serif;
-        font-size: 56px;
-        color: #7c8bcd;
+        font-size: 120px;
+        color: #e8c989;
+        text-align: center;
         letter-spacing: 0.04em;
-        margin-top: 10px;
         line-height: 1;
       }
+      .word {
+        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: #e8c989;
+      }
       .stamp {
+        width: 640px; height: 640px; border-radius: 50%;
+        border: 18px solid #e8c989;
+        background: rgba(28,24,18,0.88);
+        display: flex; align-items: center; justify-content: center;
+        text-align: center;
+        position: absolute; left: 220px; top: 640px;
+      }
+      .stamp .hero { font-size: 72px; }
+      .col {
         position: absolute;
-        right: 48px;
-        bottom: 280px;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        background: rgba(229, 229, 237, 0.94);
-        border: 10px solid #7c8bcd;
-        box-shadow: 0 22px 56px rgba(18, 22, 48, 0.32);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 300px;
+        padding: 28px 22px 32px;
         text-align: center;
-        padding: 28px;
       }
-      .stamp .headline {
-        font-size: 36px;
-        line-height: 1.1;
-      }
-      .clock {
-        margin-top: 14px;
-        width: 120px;
-        height: 120px;
-      }
-      .steps {
-        display: flex;
-        align-items: flex-end;
-        gap: 10px;
-        height: 84px;
-        margin-top: 16px;
-      }
-      .steps span {
-        display: block;
-        width: 72px;
-        border-radius: 8px 8px 4px 4px;
-        background: #7c8bcd;
-      }
-      .step-labels {
-        display: flex;
-        gap: 10px;
-        margin-top: 8px;
-      }
-      .step-labels i {
-        width: 72px;
-        font-style: normal;
-        font-size: 13px;
-        color: #4d567d;
-        text-align: center;
-        line-height: 1.15;
-      }
-      .puzzle {
-        display: flex;
-        gap: 8px;
-        margin-top: 16px;
-      }
-      .puzzle b {
-        flex: 1;
-        height: 52px;
-        border-radius: 12px;
-        background: rgba(124, 139, 205, 0.22);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #4d567d;
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .puzzle b.on {
-        background: #3a4270;
-        color: #fff;
-      }
-      #g1year,
-      #g1r1,
-      #g1r2,
-      #g1r3,
-      #g3clock,
-      #g3r1,
-      #g3r2,
-      #g4r1,
-      #g4r2,
-      #g5r1,
-      #g5r2 {
-        opacity: 0;
-      }
-      #st1,
-      #st2,
-      #st3 {
-        height: 6px;
+      .col .hero { font-size: 36px; }
+      .check {
+        width: 88px; height: 88px; border-radius: 50%;
+        background: #e8c989;
+        display: flex; align-items: center; justify-content: center;
+        margin: 0 auto 18px;
       }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="67.69"
-      data-width="1080"
-      data-height="1920"
-      data-fps="60"
-    >
-      <video
-        id="a-roll"
-        class="clip"
-        src="02-rough-cut.mp4"
-        muted
-        playsinline
-        data-start="0"
-        data-duration="67.69"
-        data-track-index="0"
-        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"
-      ></video>
-      <audio
-        id="a-roll-audio"
-        src="02-rough-cut.mp4"
-        data-start="0"
-        data-duration="67.69"
-        data-track-index="2"
-        data-volume="1"
-      ></audio>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="67.69" data-width="1080" data-height="1920" data-fps="60">
+      <!-- Voice only — talking-head hidden (tela cheia) -->
+      <video id="a-roll" class="clip" src="02-rough-cut.mp4" muted playsinline data-start="0" data-duration="67.69" data-track-index="0" style="position:absolute;inset:0;width:100%;height:100%;opacity:0"></video>
+      <audio id="a-roll-audio" src="02-rough-cut.mp4" data-start="0" data-duration="67.69" data-track-index="2" data-volume="1"></audio>
+      <audio id="music" src="assets/prosperity-pad.wav" data-start="0" data-duration="67.69" data-track-index="3" data-volume="0.22"></audio>
 
-      <!-- G1: prière perdue + 2000 ans + saints / prophètes / Jésus -->
-      <div id="g1" class="clip card" data-start="0.40" data-duration="13.75" data-track-index="1">
-        <div class="kicker">Cachée pendant</div>
-        <div class="headline">Prière perdue</div>
-        <div class="year" id="g1year">2000 ans</div>
-        <div class="row" id="g1r1">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <circle cx="11" cy="7" r="3.2" fill="#fff" />
-              <path d="M4 19 c0-4 3.2-6 7-6 s7 2 7 6" fill="#fff" />
-            </svg>
-          </div>
-          <div class="row-text">Saints</div>
+      <div id="bg" class="clip scene" data-start="0" data-duration="67.69" data-track-index="1">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+      </div>
+
+      <!-- S1 0–14.2: prière perdue, 2000 ans, saints / prophètes / Jésus, miracles -->
+      <div id="s1" class="clip scene" data-start="0.25" data-duration="13.95" data-track-index="4">
+        <div class="kicker" style="position:absolute;top:96px;left:0;right:0;text-align:center">Dans un instant</div>
+        <div class="hero" style="position:absolute;top:180px;left:48px;right:48px">Prière<br />perdue</div>
+        <div id="yearWrap" style="position:absolute;top:430px;left:0;right:0;opacity:0">
+          <div class="year" id="yearNum">0</div>
+          <div class="kicker" style="margin-top:8px;text-align:center">Ans cachée</div>
         </div>
-        <div class="row" id="g1r2">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <path d="M11 3 l2.2 6.2 H20 l-5.2 3.8 2 6.2L11 15.6 5.2 19.2 7.2 13 2 9.2 h6.8z" fill="#fff" />
-            </svg>
+        <div id="pSaints" class="glass" style="position:absolute;left:48px;top:780px;width:300px;padding:28px 18px 32px;opacity:0">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 22 22"><circle cx="11" cy="7" r="3.2" fill="#e8c989"/><path d="M4 19 c0-4 3.2-6 7-6 s7 2 7 6" fill="#e8c989"/></svg>
           </div>
-          <div class="row-text">Prophètes</div>
+          <div class="panel-label">Saints</div>
         </div>
-        <div class="row" id="g1r3">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <circle cx="11" cy="11" r="8" fill="none" stroke="#fff" stroke-width="2" />
-              <path d="M11 6 v5 l3.5 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
-            </svg>
+        <div id="pProphetes" class="glass" style="position:absolute;left:390px;top:1080px;width:300px;padding:28px 18px 32px;opacity:0">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 22 22"><path d="M11 3 l2.2 6.2 H20 l-5.2 3.8 2 6.2L11 15.6 5.2 19.2 7.2 13 2 9.2 h6.8z" fill="#e8c989"/></svg>
           </div>
-          <div class="row-text">Jésus lui-même</div>
+          <div class="panel-label">Prophètes</div>
+        </div>
+        <div id="pJesus" class="glass" style="position:absolute;right:48px;top:780px;width:300px;padding:28px 18px 32px;opacity:0">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" fill="none" stroke="#e8c989" stroke-width="2"/><path d="M11 6 v5 l3.5 2" fill="none" stroke="#e8c989" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="panel-label">Jésus lui-même</div>
+        </div>
+        <div id="wMiracles" class="word" style="position:absolute;left:56px;bottom:280px;opacity:0">Miracles</div>
+        <div id="wGuerison" class="word" style="position:absolute;left:0;right:0;bottom:180px;text-align:center;opacity:0">Guérison</div>
+        <div id="wBened" class="word" style="position:absolute;right:56px;bottom:280px;opacity:0">Bénédictions</div>
+      </div>
+      <audio id="swoosh-1" src="assets/swoosh-in.wav" data-start="0.25" data-duration="0.28" data-track-index="5" data-volume="0.26"></audio>
+      <audio id="bubble-1" src="assets/bubble.wav" data-start="4.95" data-duration="0.08" data-track-index="6" data-volume="0.32"></audio>
+      <audio id="bubble-2" src="assets/bubble.wav" data-start="5.35" data-duration="0.08" data-track-index="7" data-volume="0.32"></audio>
+      <audio id="bubble-3" src="assets/bubble.wav" data-start="5.75" data-duration="0.08" data-track-index="8" data-volume="0.32"></audio>
+      <audio id="bubble-4" src="assets/bubble.wav" data-start="6.15" data-duration="0.08" data-track-index="9" data-volume="0.32"></audio>
+      <audio id="bubble-5" src="assets/bubble.wav" data-start="6.55" data-duration="0.08" data-track-index="10" data-volume="0.32"></audio>
+
+      <!-- S2 14.64–15.27: SUR COMMANDE full-frame stamp -->
+      <div id="s2" class="clip scene" data-start="14.64" data-duration="0.63" data-track-index="11">
+        <div class="stamp">
+          <div class="hero">Sur<br />commande</div>
         </div>
       </div>
-      <audio id="swoosh-1" src="assets/swoosh-in.wav" data-start="0.40" data-duration="0.28" data-track-index="3" data-volume="0.28"></audio>
+      <audio id="swoosh-2" src="assets/swoosh-in.wav" data-start="14.64" data-duration="0.28" data-track-index="12" data-volume="0.26"></audio>
+      <audio id="plim-1" src="assets/plim.wav" data-start="14.70" data-duration="0.18" data-track-index="13" data-volume="0.40"></audio>
 
-      <!-- G2: Sur commande — circular stamp, not another text box -->
-      <div id="g2" class="clip stamp" data-start="14.64" data-duration="0.63" data-track-index="4">
-        <div class="headline">Sur<br />commande</div>
-      </div>
-      <audio id="swoosh-2" src="assets/swoosh-in.wav" data-start="14.64" data-duration="0.28" data-track-index="5" data-volume="0.28"></audio>
-
-      <!-- G3: 3 minutes + réponse vite -->
-      <div id="g3" class="clip card" data-start="15.45" data-duration="13.10" data-track-index="6">
-        <div class="kicker">Des milliers de personnes</div>
-        <div class="headline">3 minutes</div>
-        <svg class="clock" id="g3clock" viewBox="0 0 120 120">
-          <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(124,139,205,0.25)" stroke-width="10" />
-          <circle id="g3arc" cx="60" cy="60" r="52" fill="none" stroke="#7c8bcd" stroke-width="10" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="327" transform="rotate(-90 60 60)" />
-          <line id="g3hand" x1="60" y1="60" x2="60" y2="22" stroke="#111318" stroke-width="5" stroke-linecap="round" />
-          <circle cx="60" cy="60" r="6" fill="#111318" />
-        </svg>
-        <div class="row" id="g3r1">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <path d="M3 18 V8 l8-5 8 5 v10" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="row-text">Directement au créateur</div>
+      <!-- S3 15.45–28.4: milliers, 3 minutes, créateur, réponse vite -->
+      <div id="s3" class="clip scene" data-start="15.45" data-duration="13.10" data-track-index="14">
+        <div class="kicker" style="position:absolute;top:88px;left:0;right:0;text-align:center">Aujourd'hui</div>
+        <div class="hero" id="s3title" style="position:absolute;top:150px;left:40px;right:40px;font-size:72px">Des milliers<br />d'hommes et de femmes</div>
+        <div id="clockWrap" style="position:absolute;left:330px;top:520px;width:420px;text-align:center;opacity:0">
+          <svg width="280" height="280" viewBox="0 0 120 120" style="margin:0 auto;display:block">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(232,201,137,0.22)" stroke-width="8"/>
+            <circle id="g3arc" cx="60" cy="60" r="52" fill="none" stroke="#e8c989" stroke-width="8" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="327" transform="rotate(-90 60 60)"/>
+            <line id="g3hand" x1="60" y1="60" x2="60" y2="22" stroke="#f4ead4" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="60" cy="60" r="6" fill="#e8c989"/>
+          </svg>
+          <div class="subhero" style="margin-top:12px">3 minutes</div>
         </div>
-        <div class="row" id="g3r2">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <path d="M4 11 h14 M13 6 l5 5 -5 5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="row-text">La réponse vite</div>
+        <div id="s3a" class="glass" style="position:absolute;left:48px;bottom:280px;width:460px;padding:28px 24px;opacity:0">
+          <div class="kicker" style="margin-bottom:8px">Les mots</div>
+          <div class="panel-label" style="font-size:32px;text-align:left">Directement au créateur</div>
+        </div>
+        <div id="s3b" class="glass" style="position:absolute;right:48px;bottom:280px;width:460px;padding:28px 24px;opacity:0">
+          <div class="kicker" style="margin-bottom:8px">Et vous sentez</div>
+          <div class="panel-label" style="font-size:32px;text-align:left">La réponse vite</div>
         </div>
       </div>
-      <audio id="swoosh-3" src="assets/swoosh-in.wav" data-start="15.45" data-duration="0.28" data-track-index="7" data-volume="0.28"></audio>
+      <audio id="swoosh-3" src="assets/swoosh-in.wav" data-start="15.45" data-duration="0.28" data-track-index="15" data-volume="0.26"></audio>
 
-      <!-- G4: missing piece → first time in 2000 years -->
-      <div id="g4" class="clip card" data-start="28.90" data-duration="15.50" data-track-index="8">
-        <div class="kicker">Il manquait une pièce</div>
-        <div class="headline">Première fois</div>
-        <div class="puzzle">
-          <b id="p1">1</b>
-          <b id="p2">2</b>
-          <b id="p3" class="on">3</b>
-        </div>
-        <div class="row" id="g4r1">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <path d="M5 11.5 l4 4 L17 7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+      <!-- S4 28.9–44.2: pièce manquante, première fois, complète -->
+      <div id="s4" class="clip scene" data-start="28.90" data-duration="15.50" data-track-index="16">
+        <div class="kicker" style="position:absolute;top:90px;left:0;right:0;text-align:center">Il manquait une pièce</div>
+        <div class="hero" style="position:absolute;top:160px;left:40px;right:40px;font-size:78px">Première fois</div>
+        <div class="kicker" style="position:absolute;top:360px;left:0;right:0;text-align:center">En 2000 ans</div>
+        <div id="tile1" class="glass" style="position:absolute;left:70px;top:520px;width:280px;height:280px;opacity:0.35"></div>
+        <div id="tile2" class="glass" style="position:absolute;left:400px;top:620px;width:280px;height:280px;opacity:0.35"></div>
+        <div id="tile3" class="glass" style="position:absolute;left:730px;top:520px;width:280px;height:280px;display:flex;align-items:center;justify-content:center;opacity:0">
+          <div class="check">
+            <svg width="44" height="44" viewBox="0 0 22 22"><path d="M5 11.5 l4 4 L17 7" fill="none" stroke="#0c0d12" stroke-width="2.8" stroke-linecap="round"/></svg>
           </div>
-          <div class="row-text">La prière complète</div>
         </div>
-        <div class="row" id="g4r2">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <circle cx="7" cy="8" r="2.4" fill="#fff" />
-              <circle cx="15" cy="8" r="2.4" fill="#fff" />
-              <path d="M3 18 c1.4-3.4 3.4-5 4-5 s2.4 1.4 4 5" fill="#fff" />
-              <path d="M11 18 c1.4-3.4 3.4-5 4-5 s2.4 1.4 4 5" fill="#fff" />
-            </svg>
-          </div>
-          <div class="row-text">Jésus et ses disciples</div>
+        <div id="s4done" class="subhero" style="position:absolute;left:40px;right:40px;top:980px;opacity:0">La prière complète</div>
+        <div id="s4disc" class="glass" style="position:absolute;left:80px;right:80px;bottom:220px;padding:28px;opacity:0">
+          <div class="panel-label" style="font-size:30px">Récitée par Jésus et ses disciples</div>
+          <div class="kicker" style="margin-top:10px;text-align:center">Déjà en train de changer des vies</div>
         </div>
       </div>
-      <audio id="swoosh-4" src="assets/swoosh-in.wav" data-start="28.90" data-duration="0.28" data-track-index="9" data-volume="0.28"></audio>
+      <audio id="swoosh-4" src="assets/swoosh-in.wav" data-start="28.90" data-duration="0.28" data-track-index="17" data-volume="0.26"></audio>
+      <audio id="plim-2" src="assets/plim.wav" data-start="38.65" data-duration="0.18" data-track-index="18" data-volume="0.40"></audio>
 
-      <!-- G5: bénédictions / abondance / vie nouvelle — no invented CTA -->
-      <div id="g5" class="clip card" data-start="44.90" data-duration="22.30" data-track-index="10">
-        <div class="kicker">Si vous êtes prêts</div>
-        <div class="headline">Ce soir</div>
-        <div class="steps">
-          <span id="st1"></span>
-          <span id="st2"></span>
-          <span id="st3"></span>
-        </div>
-        <div class="step-labels">
-          <i>Bénédictions</i>
-          <i>Abondance</i>
-          <i>Vie nouvelle</i>
-        </div>
-        <div class="row" id="g5r1">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <circle cx="11" cy="11" r="8" fill="none" stroke="#fff" stroke-width="2" />
-              <path d="M11 7 v4 l3 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
-            </svg>
+      <!-- S5 44.9–67.69: bénédictions / abondance / vie nouvelle / ce soir / histoire -->
+      <div id="s5" class="clip scene" data-start="44.90" data-duration="22.79" data-track-index="19">
+        <div class="kicker" style="position:absolute;top:80px;left:0;right:0;text-align:center">Si vous êtes prêts</div>
+        <div id="c1" class="glass col" style="left:48px;top:180px;height:720px;opacity:0">
+          <div class="icon-wrap" style="margin-top:40px">
+            <svg width="36" height="36" viewBox="0 0 22 22"><path d="M11 3 l2.2 6.2 H20 l-5.2 3.8 2 6.2L11 15.6 5.2 19.2 7.2 13 2 9.2 h6.8z" fill="#e8c989"/></svg>
           </div>
-          <div class="row-text">Ça prend 3 minutes</div>
+          <div class="hero" style="margin-top:24px">Bénédictions</div>
         </div>
-        <div class="row" id="g5r2">
-          <div class="icon">
-            <svg width="22" height="22" viewBox="0 0 22 22">
-              <path d="M4 16 V6 h10 l4 4 v6z" fill="none" stroke="#fff" stroke-width="2" />
-              <path d="M14 6 v4 h4" fill="none" stroke="#fff" stroke-width="2" />
-            </svg>
+        <div id="c2" class="glass col" style="left:390px;top:280px;height:720px;opacity:0">
+          <div class="icon-wrap" style="margin-top:40px">
+            <svg width="36" height="36" viewBox="0 0 22 22"><circle cx="11" cy="11" r="8" fill="none" stroke="#e8c989" stroke-width="2"/><path d="M11 7 v8 M7 11 h8" stroke="#e8c989" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <div class="row-text">D'abord, son histoire</div>
+          <div class="hero" style="margin-top:24px">Abondance</div>
+        </div>
+        <div id="c3" class="glass col" style="right:48px;top:180px;height:720px;opacity:0">
+          <div class="icon-wrap" style="margin-top:40px">
+            <svg width="36" height="36" viewBox="0 0 22 22"><path d="M3 18 V8 l8-5 8 5 v10" fill="none" stroke="#e8c989" stroke-width="2"/></svg>
+          </div>
+          <div class="hero" style="margin-top:24px">Vie nouvelle</div>
+        </div>
+        <div id="s5soir" class="hero" style="position:absolute;left:40px;right:40px;bottom:430px;font-size:96px;opacity:0">Ce soir</div>
+        <div id="s5min" class="subhero" style="position:absolute;left:40px;right:40px;bottom:300px;opacity:0">3 minutes</div>
+        <div id="s5hist" class="glass" style="position:absolute;left:80px;right:80px;bottom:120px;padding:26px;opacity:0">
+          <div class="panel-label" style="font-size:28px">D'abord, vous devez connaître son histoire</div>
         </div>
       </div>
-      <audio id="swoosh-5" src="assets/swoosh-in.wav" data-start="44.90" data-duration="0.28" data-track-index="11" data-volume="0.28"></audio>
+      <audio id="swoosh-5" src="assets/swoosh-in.wav" data-start="44.90" data-duration="0.28" data-track-index="20" data-volume="0.26"></audio>
+      <audio id="plim-3" src="assets/plim.wav" data-start="51.24" data-duration="0.18" data-track-index="21" data-volume="0.32"></audio>
     </div>
 
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
+      const year = { n: 0 };
 
-      tl.from("#g1", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 0.4);
-      tl.to("#g1year", { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 4.9);
-      tl.to("#g1r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 7.3);
-      tl.to("#g1r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 8.0);
-      tl.to("#g1r3", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 9.4);
-      tl.to("#g1", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 13.85);
+      tl.from("#s1 .hero", { opacity: 0, y: 28, duration: 0.7, ease: "power2.out" }, 0.35);
+      tl.to("#yearWrap", { opacity: 1, duration: 0.35 }, 4.85);
+      tl.to(year, {
+        n: 2000,
+        duration: 1.7,
+        ease: "power1.out",
+        onUpdate: function () {
+          document.getElementById("yearNum").textContent = String(Math.round(year.n));
+        }
+      }, 4.9);
+      tl.to("#pSaints", { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 7.3);
+      tl.to("#pProphetes", { opacity: 1, duration: 0.45, ease: "power2.out" }, 8.0);
+      tl.to("#pJesus", { opacity: 1, duration: 0.45, ease: "power2.out" }, 9.4);
+      tl.to("#wMiracles", { opacity: 1, duration: 0.4 }, 11.6);
+      tl.to("#wGuerison", { opacity: 1, duration: 0.4 }, 12.7);
+      tl.to("#wBened", { opacity: 1, duration: 0.4 }, 13.5);
+      tl.to("#s1", { opacity: 0, duration: 0.25 }, 13.95);
 
-      tl.from("#g2", { opacity: 0, scale: 0.72, duration: 0.18, ease: "back.out(2)" }, 14.64);
-      tl.to("#g2", { opacity: 0, scale: 1.06, duration: 0.12, ease: "power1.in" }, 15.15);
+      tl.from("#s2 .stamp", { scale: 0.7, opacity: 0, duration: 0.18, ease: "back.out(2)" }, 14.64);
+      tl.to("#s2", { opacity: 0, duration: 0.1 }, 15.17);
 
-      tl.from("#g3", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 15.45);
-      tl.to("#g3clock", { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }, 21.2);
-      tl.to("#g3arc", { strokeDashoffset: 80, duration: 1.1, ease: "power2.out" }, 21.3);
-      tl.from("#g3hand", { rotation: -80, transformOrigin: "60px 60px", duration: 1.1, ease: "power2.out" }, 21.3);
-      tl.to("#g3r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 25.9);
-      tl.to("#g3r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 27.9);
-      tl.to("#g3", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 28.35);
+      tl.from("#s3title", { opacity: 0, y: 20, duration: 0.5 }, 15.5);
+      tl.to("#clockWrap", { opacity: 1, duration: 0.45 }, 21.2);
+      tl.to("#g3arc", { strokeDashoffset: 70, duration: 1.15, ease: "power2.out" }, 21.3);
+      tl.from("#g3hand", { rotation: -90, transformOrigin: "60px 60px", duration: 1.15, ease: "power2.out" }, 21.3);
+      tl.to("#s3a", { opacity: 1, duration: 0.4 }, 25.9);
+      tl.to("#s3b", { opacity: 1, duration: 0.4 }, 27.9);
+      tl.to("#s3", { opacity: 0, duration: 0.25 }, 28.35);
 
-      tl.from("#g4", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 28.9);
-      tl.from("#p3", { scale: 0.7, duration: 0.45, ease: "power2.out" }, 34.28);
-      tl.to("#g4r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 38.65);
-      tl.to("#g4r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 40.12);
-      tl.to("#g4", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 44.18);
+      tl.from("#s4 .hero", { opacity: 0, y: 18, duration: 0.5 }, 28.95);
+      tl.to("#tile1", { opacity: 1, duration: 0.4 }, 32.4);
+      tl.to("#tile2", { opacity: 1, duration: 0.4 }, 33.2);
+      tl.to("#tile3", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 34.28);
+      tl.to("#s4done", { opacity: 1, duration: 0.4 }, 38.65);
+      tl.to("#s4disc", { opacity: 1, duration: 0.4 }, 40.12);
+      tl.to("#s4", { opacity: 0, duration: 0.25 }, 44.18);
 
-      tl.from("#g5", { opacity: 0, y: 28, duration: 0.48, ease: "power2.out" }, 44.9);
-      tl.to("#st1", { height: 28, duration: 0.4, ease: "power2.out" }, 46.13);
-      tl.to("#st2", { height: 52, duration: 0.4, ease: "power2.out" }, 48.5);
-      tl.to("#st3", { height: 84, duration: 0.4, ease: "power2.out" }, 51.24);
-      tl.to("#g5r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 57.5);
-      tl.to("#g5r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 63.43);
-      tl.to("#g5", { opacity: 0, y: 16, duration: 0.28, ease: "power1.in" }, 67.15);
+      tl.to("#c1", { opacity: 1, duration: 0.45 }, 46.13);
+      tl.to("#c2", { opacity: 1, duration: 0.45 }, 48.5);
+      tl.to("#c3", { opacity: 1, duration: 0.45 }, 51.24);
+      tl.to("#s5soir", { opacity: 1, duration: 0.5 }, 55.52);
+      tl.to("#s5min", { opacity: 1, duration: 0.4 }, 57.5);
+      tl.to("#s5hist", { opacity: 1, duration: 0.45 }, 63.43);
 
       window.__timelines["main"] = tl;
     </script>
