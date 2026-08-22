@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Coolvetica";
+        src: url("assets/Coolvetica-Rg.otf") format("opentype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "CoolveticaHv";
+        src: url("assets/Coolvetica-Hv.otf") format("opentype");
+        font-weight: 800;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      body {
+        font-family: "Coolvetica", sans-serif;
+      }
+      .card {
+        position: absolute;
+        right: 36px;
+        left: auto;
+        width: 448px;
+        padding: 24px 26px 26px;
+        border-radius: 28px;
+        background: rgba(229, 229, 237, 0.92);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        box-shadow: 0 22px 56px rgba(18, 22, 48, 0.28);
+        bottom: 132px;
+        top: auto;
+      }
+      .kicker {
+        color: #4d567d;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+      .headline {
+        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
+        color: #111318;
+        font-size: 34px;
+        line-height: 1.05;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 12px;
+      }
+      .row-text {
+        color: #111318;
+        font-size: 22px;
+        line-height: 1.15;
+      }
+      .icon {
+        flex: 0 0 46px;
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        background: #7c8bcd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon svg {
+        display: block;
+      }
+      .year {
+        font-family: "CoolveticaHv", "Coolvetica", sans-serif;
+        font-size: 56px;
+        color: #7c8bcd;
+        letter-spacing: 0.04em;
+        margin-top: 10px;
+        line-height: 1;
+      }
+      .stamp {
+        position: absolute;
+        right: 48px;
+        bottom: 280px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: rgba(229, 229, 237, 0.94);
+        border: 10px solid #7c8bcd;
+        box-shadow: 0 22px 56px rgba(18, 22, 48, 0.32);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 28px;
+      }
+      .stamp .headline {
+        font-size: 36px;
+        line-height: 1.1;
+      }
+      .clock {
+        margin-top: 14px;
+        width: 120px;
+        height: 120px;
+      }
+      .steps {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        height: 84px;
+        margin-top: 16px;
+      }
+      .steps span {
+        display: block;
+        width: 72px;
+        border-radius: 8px 8px 4px 4px;
+        background: #7c8bcd;
+      }
+      .step-labels {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+      }
+      .step-labels i {
+        width: 72px;
+        font-style: normal;
+        font-size: 13px;
+        color: #4d567d;
+        text-align: center;
+        line-height: 1.15;
+      }
+      .puzzle {
+        display: flex;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .puzzle b {
+        flex: 1;
+        height: 52px;
+        border-radius: 12px;
+        background: rgba(124, 139, 205, 0.22);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4d567d;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .puzzle b.on {
+        background: #3a4270;
+        color: #fff;
+      }
+      #g1year,
+      #g1r1,
+      #g1r2,
+      #g1r3,
+      #g3clock,
+      #g3r1,
+      #g3r2,
+      #g4r1,
+      #g4r2,
+      #g5r1,
+      #g5r2 {
+        opacity: 0;
+      }
+      #st1,
+      #st2,
+      #st3 {
+        height: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="67.69"
+      data-width="1080"
+      data-height="1920"
+      data-fps="60"
+    >
+      <video
+        id="a-roll"
+        class="clip"
+        src="02-rough-cut.mp4"
+        muted
+        playsinline
+        data-start="0"
+        data-duration="67.69"
+        data-track-index="0"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"
+      ></video>
+      <audio
+        id="a-roll-audio"
+        src="02-rough-cut.mp4"
+        data-start="0"
+        data-duration="67.69"
+        data-track-index="2"
+        data-volume="1"
+      ></audio>
+
+      <!-- G1: prière perdue + 2000 ans + saints / prophètes / Jésus -->
+      <div id="g1" class="clip card" data-start="0.40" data-duration="13.75" data-track-index="1">
+        <div class="kicker">Cachée pendant</div>
+        <div class="headline">Prière perdue</div>
+        <div class="year" id="g1year">2000 ans</div>
+        <div class="row" id="g1r1">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <circle cx="11" cy="7" r="3.2" fill="#fff" />
+              <path d="M4 19 c0-4 3.2-6 7-6 s7 2 7 6" fill="#fff" />
+            </svg>
+          </div>
+          <div class="row-text">Saints</div>
+        </div>
+        <div class="row" id="g1r2">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M11 3 l2.2 6.2 H20 l-5.2 3.8 2 6.2L11 15.6 5.2 19.2 7.2 13 2 9.2 h6.8z" fill="#fff" />
+            </svg>
+          </div>
+          <div class="row-text">Prophètes</div>
+        </div>
+        <div class="row" id="g1r3">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <circle cx="11" cy="11" r="8" fill="none" stroke="#fff" stroke-width="2" />
+              <path d="M11 6 v5 l3.5 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="row-text">Jésus lui-même</div>
+        </div>
+      </div>
+      <audio id="swoosh-1" src="assets/swoosh-in.wav" data-start="0.40" data-duration="0.28" data-track-index="3" data-volume="0.28"></audio>
+
+      <!-- G2: Sur commande — circular stamp, not another text box -->
+      <div id="g2" class="clip stamp" data-start="14.64" data-duration="0.63" data-track-index="4">
+        <div class="headline">Sur<br />commande</div>
+      </div>
+      <audio id="swoosh-2" src="assets/swoosh-in.wav" data-start="14.64" data-duration="0.28" data-track-index="5" data-volume="0.28"></audio>
+
+      <!-- G3: 3 minutes + réponse vite -->
+      <div id="g3" class="clip card" data-start="15.45" data-duration="13.10" data-track-index="6">
+        <div class="kicker">Des milliers de personnes</div>
+        <div class="headline">3 minutes</div>
+        <svg class="clock" id="g3clock" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(124,139,205,0.25)" stroke-width="10" />
+          <circle id="g3arc" cx="60" cy="60" r="52" fill="none" stroke="#7c8bcd" stroke-width="10" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="327" transform="rotate(-90 60 60)" />
+          <line id="g3hand" x1="60" y1="60" x2="60" y2="22" stroke="#111318" stroke-width="5" stroke-linecap="round" />
+          <circle cx="60" cy="60" r="6" fill="#111318" />
+        </svg>
+        <div class="row" id="g3r1">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M3 18 V8 l8-5 8 5 v10" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="row-text">Directement au créateur</div>
+        </div>
+        <div class="row" id="g3r2">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M4 11 h14 M13 6 l5 5 -5 5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="row-text">La réponse vite</div>
+        </div>
+      </div>
+      <audio id="swoosh-3" src="assets/swoosh-in.wav" data-start="15.45" data-duration="0.28" data-track-index="7" data-volume="0.28"></audio>
+
+      <!-- G4: missing piece → first time in 2000 years -->
+      <div id="g4" class="clip card" data-start="28.90" data-duration="15.50" data-track-index="8">
+        <div class="kicker">Il manquait une pièce</div>
+        <div class="headline">Première fois</div>
+        <div class="puzzle">
+          <b id="p1">1</b>
+          <b id="p2">2</b>
+          <b id="p3" class="on">3</b>
+        </div>
+        <div class="row" id="g4r1">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M5 11.5 l4 4 L17 7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="row-text">La prière complète</div>
+        </div>
+        <div class="row" id="g4r2">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <circle cx="7" cy="8" r="2.4" fill="#fff" />
+              <circle cx="15" cy="8" r="2.4" fill="#fff" />
+              <path d="M3 18 c1.4-3.4 3.4-5 4-5 s2.4 1.4 4 5" fill="#fff" />
+              <path d="M11 18 c1.4-3.4 3.4-5 4-5 s2.4 1.4 4 5" fill="#fff" />
+            </svg>
+          </div>
+          <div class="row-text">Jésus et ses disciples</div>
+        </div>
+      </div>
+      <audio id="swoosh-4" src="assets/swoosh-in.wav" data-start="28.90" data-duration="0.28" data-track-index="9" data-volume="0.28"></audio>
+
+      <!-- G5: bénédictions / abondance / vie nouvelle — no invented CTA -->
+      <div id="g5" class="clip card" data-start="44.90" data-duration="22.30" data-track-index="10">
+        <div class="kicker">Si vous êtes prêts</div>
+        <div class="headline">Ce soir</div>
+        <div class="steps">
+          <span id="st1"></span>
+          <span id="st2"></span>
+          <span id="st3"></span>
+        </div>
+        <div class="step-labels">
+          <i>Bénédictions</i>
+          <i>Abondance</i>
+          <i>Vie nouvelle</i>
+        </div>
+        <div class="row" id="g5r1">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <circle cx="11" cy="11" r="8" fill="none" stroke="#fff" stroke-width="2" />
+              <path d="M11 7 v4 l3 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="row-text">Ça prend 3 minutes</div>
+        </div>
+        <div class="row" id="g5r2">
+          <div class="icon">
+            <svg width="22" height="22" viewBox="0 0 22 22">
+              <path d="M4 16 V6 h10 l4 4 v6z" fill="none" stroke="#fff" stroke-width="2" />
+              <path d="M14 6 v4 h4" fill="none" stroke="#fff" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="row-text">D'abord, son histoire</div>
+        </div>
+      </div>
+      <audio id="swoosh-5" src="assets/swoosh-in.wav" data-start="44.90" data-duration="0.28" data-track-index="11" data-volume="0.28"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.from("#g1", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 0.4);
+      tl.to("#g1year", { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 4.9);
+      tl.to("#g1r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 7.3);
+      tl.to("#g1r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 8.0);
+      tl.to("#g1r3", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 9.4);
+      tl.to("#g1", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 13.85);
+
+      tl.from("#g2", { opacity: 0, scale: 0.72, duration: 0.18, ease: "back.out(2)" }, 14.64);
+      tl.to("#g2", { opacity: 0, scale: 1.06, duration: 0.12, ease: "power1.in" }, 15.15);
+
+      tl.from("#g3", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 15.45);
+      tl.to("#g3clock", { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }, 21.2);
+      tl.to("#g3arc", { strokeDashoffset: 80, duration: 1.1, ease: "power2.out" }, 21.3);
+      tl.from("#g3hand", { rotation: -80, transformOrigin: "60px 60px", duration: 1.1, ease: "power2.out" }, 21.3);
+      tl.to("#g3r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 25.9);
+      tl.to("#g3r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 27.9);
+      tl.to("#g3", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 28.35);
+
+      tl.from("#g4", { opacity: 0, x: 56, duration: 0.5, ease: "power2.out" }, 28.9);
+      tl.from("#p3", { scale: 0.7, duration: 0.45, ease: "power2.out" }, 34.28);
+      tl.to("#g4r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 38.65);
+      tl.to("#g4r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 40.12);
+      tl.to("#g4", { opacity: 0, x: 24, duration: 0.28, ease: "power1.in" }, 44.18);
+
+      tl.from("#g5", { opacity: 0, y: 28, duration: 0.48, ease: "power2.out" }, 44.9);
+      tl.to("#st1", { height: 28, duration: 0.4, ease: "power2.out" }, 46.13);
+      tl.to("#st2", { height: 52, duration: 0.4, ease: "power2.out" }, 48.5);
+      tl.to("#st3", { height: 84, duration: 0.4, ease: "power2.out" }, 51.24);
+      tl.to("#g5r1", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 57.5);
+      tl.to("#g5r2", { opacity: 1, y: 0, duration: 0.36, ease: "power2.out" }, 63.43);
+      tl.to("#g5", { opacity: 0, y: 16, duration: 0.28, ease: "power1.in" }, 67.15);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
