@@ -1,6 +1,6 @@
 # HyperFrames
 
-Motion graphics, overlays, captions: HTML/CSS/GSAP → MP4. One graphic per segment on 1st pass. Partial render on second pass.
+Motion graphics, overlays, captions: HTML/CSS/GSAP → MP4. One graphic per segment on 1st pass. Partial render on second pass. A marked **tela cheia** stretch is a full-frame composition (talking-head hidden, voice stays) until **volta ao normal**.
 
 Brand tokens from `brand/`. Preset layout from `presets/`.
 
@@ -30,7 +30,7 @@ Do **not** run `npx skills add heygen-com/hyperframes` here. Process Caller stay
 C:\Users\ig\tools\node\npx.cmd --yes hyperframes init projects/<clip>/graphics
 cd projects/<clip>/graphics
 C:\Users\ig\tools\node\npx.cmd --yes hyperframes preview
-C:\Users\ig\tools\node\npx.cmd --yes hyperframes render -o ..\previews\<name>.mp4
+C:\Users\ig\tools\node\npx.cmd --yes hyperframes render -o ..\previews\<name>.mp4 --fps 60 --quality high
 ```
 
 Keep a copy of the composition as `projects/<clip>/composition.html`. First graphics pass: full render allowed. Second pass: **partial** render of the changed stretch only.

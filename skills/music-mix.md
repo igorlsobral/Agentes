@@ -1,6 +1,6 @@
 # music-mix
 
-Use when adding or leveling a music bed.
+Use when adding or leveling a music **bed** (loop under the voice). One-shots (swoosh, whoosh, event sfx on **tela cheia**) live in [`sfx/`](../sfx/README.md) and [`full-screen-visual.md`](full-screen-visual.md), not here.
 
 ## Do
 

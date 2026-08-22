@@ -18,6 +18,7 @@
 | intake-clip | New bruto → `projects/<clip>/` | [intake-clip.md](intake-clip.md) | no |
 | rough-cut | WhisperX + silence + EDL + assembly + lock | [rough-cut.md](rough-cut.md) | no |
 | graphics-pass | 1st HyperFrames pass (draft) | [graphics-pass.md](graphics-pass.md) | no |
+| full-screen-visual | Tela cheia + event sfx on a marked stretch | [full-screen-visual.md](full-screen-visual.md) | no |
 | second-pass | Natural-language graphic/cut direction; partial render | [second-pass.md](second-pass.md) | no |
 | captions | Short-form word-pop captions from existing transcript | [captions.md](captions.md) | no |
 | music-mix | Bed music path + dB | [music-mix.md](music-mix.md) | no |
@@ -26,7 +27,7 @@
 
 ## Gaps
 
-No incident-intake skill (Igor has not described production incidents). No B-roll/TTS/Veo skill until spend policy is filled.
+No incident-intake skill (Igor has not described production incidents). No paid B-roll/TTS/Veo skill until spend policy is filled. Local **tela cheia** (images from our folders + event sfx) is available.
 
 ## Children
 

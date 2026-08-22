@@ -11,8 +11,9 @@ After classification: read [`skills/README.md`](../skills/README.md) (index only
 | Continuation of a named clip (`projects/<clip>/` or an activity folder) | That folder first (`edl.json`, `transcript.json`, overview if any), then the skill for the **current unlocked stage** |
 | New bruto / “começa um projeto” / path to `.mp4` or `.mov` | [`skills/intake-clip.md`](../skills/intake-clip.md) — one stage; do not skip to graphics |
 | Rough cut / WhisperX / silêncio / EDL / assembly | [`skills/rough-cut.md`](../skills/rough-cut.md) |
-| Graphics 1st pass / HyperFrames draft / preset layout | [`skills/graphics-pass.md`](../skills/graphics-pass.md) — only if rough cut is locked |
-| Second pass / natural-language direction on an existing graphic | [`skills/second-pass.md`](../skills/second-pass.md) — partial render |
+| Graphics 1st pass / HyperFrames draft / preset layout | [`skills/graphics-pass.md`](../skills/graphics-pass.md) — only if rough cut is locked; if a **tela cheia** range is already marked, also load [`skills/full-screen-visual.md`](../skills/full-screen-visual.md) |
+| Tela cheia / “volta ao normal” / full-screen visuals / event sfx on a stretch | [`skills/full-screen-visual.md`](../skills/full-screen-visual.md) — only if rough cut is locked |
+| Second pass / natural-language direction on an existing graphic | [`skills/second-pass.md`](../skills/second-pass.md) — partial render; “tela cheia” / “volta ao normal” / event sfx → full-screen-visual |
 | Captions / legendas / word-pop (short-form) | [`skills/captions.md`](../skills/captions.md) |
 | Music / trilha / dB level | [`skills/music-mix.md`](../skills/music-mix.md) |
 | Export / MP4 final / copy to Downloads | [`skills/export-video.md`](../skills/export-video.md) |

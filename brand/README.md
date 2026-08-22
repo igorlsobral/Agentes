@@ -8,7 +8,7 @@
 
 | Entry | When to open | Path |
 |---|---|---|
-| Assets | Logo, mascote, fonte (PNG/SVG/TTF/OTF) | [assets/](assets/) |
+| Assets | Logo, mascote, fonte, imagens para **tela cheia** (PNG/SVG/TTF/OTF) | [assets/](assets/) |
 | References | Prints e exemplos de vídeos (identidade / gráficos) | [references/](references/) |
 
 ## Gaps

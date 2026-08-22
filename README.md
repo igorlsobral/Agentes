@@ -42,7 +42,7 @@ Do not ask Igor to waive these.
 | Paid APIs | Default **off** (this PC only). Propose first; wait for explicit ok in chat. Never put tokens in Git. |
 | Talk to Igor | Portuguese, didactic. He is not a programmer. |
 | Definition of done | Real footage through the pipeline. A green unit test is not enough. |
-| First render | Draft. Target “pretty good”, then iterate. |
+| First render | Rough-cut preview may match camera fps. **Graphics overlays and the publishable file are always 60 fps.** |
 | Whisk | Do not use Google Whisk. “Whisk X” means WhisperX. |
 
 ## Indexes
@@ -63,29 +63,35 @@ Do not ask Igor to waive these.
 | Scripts | [`scripts/README.md`](scripts/README.md) |
 | Raw | [`raw/README.md`](raw/README.md) |
 | Music | [`music/README.md`](music/README.md) |
+| Sfx | [`sfx/README.md`](sfx/README.md) |
 | Projects | [`projects/README.md`](projects/README.md) |
 
 ## Pipeline (do not skip a stage)
 
 1. Intake — bruto in `raw/` (or a pasted path) → `projects/<clip>/`
 2. Rough cut — WhisperX → `transcript.json`; silence on audio; EDL in `edl.json`; FFmpeg assembly; keep last/best take; **lock**
-3. Graphics (1st pass) — one graphic per segment via HyperFrames + format preset. Draft, not final
-4. Second pass — Igor directs in natural language. Partial render only
+3. Graphics (1st pass) — one graphic per segment via HyperFrames + format preset. Draft, not final. A marked **tela cheia** stretch is full-frame (always available after lock)
+4. Second pass — Igor directs in natural language. Partial render only. “tela cheia” / “volta ao normal” / event sfx on that stretch
 5. Captions — short-form only. Reuse WhisperX transcript. Word-pop, Coolvetica, black box behind the word unless the preset says otherwise
-6. Music — file path + level in dB (default **−23 dB** until Igor adjusts)
-7. Export — MP4 in `projects/<clip>/outputs/` and a copy in Downloads. Never delete the project on export
+6. Music — file path + level in dB (default **−23 dB** until Igor adjusts). One-shots from `sfx/`
+7. Export — MP4 **60 fps** in `projects/<clip>/outputs/` and a copy in Downloads. Never delete the project on export
 
 Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough cut”.
 
 Typical second pass: “no primeiro gráfico, move para baixo, deixa menor, usa a cor Claude e o PNG do mascote em `brand/assets/`”.
 
+Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”.
+
 ## Format presets
 
 - `short-form-explainer` — graphics on top, face below, captions in the middle
 - `tiktok-raw` — text hook + raw cut + captions
-- `long-form` — cinematic YouTube-style intro (full face + punctual graphics)
+- `long-form` — YouTube longo (full face + punctual graphics)
+- `vsl` — Video Sales Letter (vídeos de vendas)
 
 If format is unclear, ask before generating graphics.
+
+**Tela cheia** is always available after lock: full-frame visuals + event sfx until **volta ao normal**. Images from `brand/assets/` or a folder Igor names. Not paid B-roll.
 
 ## Allowlist
 
@@ -95,11 +101,11 @@ See [`documentation/services/pipeline.md`](documentation/services/pipeline.md). 
 
 - Structural files (skills, agents, processes, templates, this README): English
 - Domain notes (people, glossary, pendências, clip overviews): Portuguese
-- Domain terms are never translated (WhisperX, HyperFrames, EDL, Coolvetica)
+- Domain terms are never translated (WhisperX, HyperFrames, EDL, Coolvetica, VSL, tela cheia)
 
 ## Gaps
 
-Tool binaries and Coolvetica are on disk (2026-08-21). A `.mkv` bruto is in `raw/` (gitignored). Remaining: full brand kit, default format, cut feel, spend catalog if he ever wants paid extras — [`documentation/pendencias.md`](documentation/pendencias.md).
+Tool binaries, Coolvetica, first clip, **60 fps final**, `sfx/`, preset **VSL**, and **tela cheia** (always available after lock) are on disk (2026-08-21). Remaining: full brand kit, default format if he forgets to say, cut feel as standing default, VSL offer/end-card layout, spend catalog, better event-sfx wavs — [`documentation/pendencias.md`](documentation/pendencias.md).
 
 ## Children
 

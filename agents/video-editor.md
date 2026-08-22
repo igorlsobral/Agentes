@@ -10,6 +10,7 @@ Canonical runtime rules: [`video-editor/AGENTS.md`](../video-editor/AGENTS.md).
 - One stage per turn unless Igor asks for the full pipeline.
 - Show what changed, the file path, and the next stage.
 - Keep the last/best take. Lock rough cut before graphics.
+- **Tela cheia** is always available after lock ([`skills/full-screen-visual.md`](../skills/full-screen-visual.md)): full-frame visuals + event sfx until **volta ao normal**.
 
 ## You do not
 

@@ -16,7 +16,7 @@ Prints que o Igor soltou em 2026-08-21. Isto é gosto permanente até ele mudar 
 
 - Rosto falando (talking-head) + **card branco arredondado / vidro líquido**, não gráfico gritado.
 - Texto: rótulo pequeno azul + corpo preto bold.
-- Gráficos pontuais sobre o vídeo, não tela cheia.
+- Gráficos pontuais sobre o vídeo por padrão. **Tela cheia** só no trecho que o Igor marcar (até **volta ao normal**).
 - Corte de silêncio visível como ideia (azul fica / vermelho sai).
 
 Cores exatas, logo e mascote ainda `INFORMAÇÃO AUSENTE` (P6) — estes prints são o alvo de *estilo*, não o kit de marca completo.

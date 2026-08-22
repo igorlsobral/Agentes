@@ -12,7 +12,7 @@
 
 ## Gaps
 
-Invoke commands live in `documentation/services/` and were recorded 2026-08-20. Coolvetica and a real bruto still missing (P4–P5).
+Invoke commands live in `documentation/services/` (2026-08-20). Coolvetica and first clip on disk (P4–P5). Final/graphics **60 fps**. `sfx/` for whooshes and event sfx. **Tela cheia** always available after lock. Preset **VSL** exists; offer layout still `INFORMAÇÃO AUSENTE` (P16).
 
 ## Children
 

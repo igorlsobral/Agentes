@@ -1,6 +1,6 @@
 # Pipeline
 
-Pipeline local: bruto → vídeo publicado. Ordem fixa: intake → rough cut (lock) → graphics 1st pass → second pass → captions (short-form) → music → export.
+Pipeline local: bruto → vídeo publicado. Ordem fixa: intake → rough cut (lock) → graphics 1st pass (60 fps overlay; **tela cheia** if marked) → second pass → captions (short-form) → music/sfx → export **60 fps**.
 
 ## Allowlist (grep / edit)
 
@@ -31,4 +31,4 @@ Catalog of accounts he even has: none recorded (P9 still open as “none until h
 
 ## Runtime folders
 
-`raw/` · `music/` · `projects/<clip>/` · `presets/` · `brand/` · `scripts/` · `video-editor/`
+`raw/` · `music/` · `sfx/` · `projects/<clip>/` · `presets/` · `brand/` · `scripts/` · `video-editor/`
