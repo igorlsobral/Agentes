@@ -20,7 +20,7 @@ Manual simples: [como-usar.md](como-usar.md).
 |---|---|---|---|
 | P7 | Corte mais seco ou mais calmo (padrão) | Sem default, o agente pergunta no 1º clipe | `presets/` ou `video-editor/AGENTS.md` |
 | P8 | Preset padrão se Igor **não** disser o formato | Gráficos não começam sem formato | `presets/README.md` |
-| P16 | Layout de oferta / end card do **VSL** | Estrutura do clone já está (depoimentos → cenas → frase de impacto). Falta o arquivo na pasta de referências para cravar oferta/CTA | Soltar o VSL longo em `brand/references/` |
+| P16 | Texto de oferta / preço / CTA da **nossa** VSL | A referência tem tela de oferta (~24:00, botão Order Now). Não copiar o produto dela nem inventar preço | Soltar a transcrição FR em `transcricao/` |
 | P17 | Wavs melhores de event sfx (passos, toc-toc, plim, bolha) | Sem o arquivo o agente sintetiza um hit discreto no PC | Soltar `.wav` / `.mp3` em `sfx/` |
 
 ## Operação do repo (pode esperar)

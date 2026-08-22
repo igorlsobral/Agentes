@@ -10,6 +10,7 @@
 |---|---|---|
 | 2026-04-01-11-30-15 | Primeiro clipe real; rough cut locked | [2026-04-01-11-30-15/overview.md](2026-04-01-11-30-15/overview.md) |
 | video-de-avatar-1080p | Avatar em francês; rough cut locked (só silêncio grande) | [video-de-avatar-1080p/overview.md](video-de-avatar-1080p/overview.md) |
+| vsl-prosperidade | VSL clone (FR); estudo da referência feito | [vsl-prosperidade/overview.md](vsl-prosperidade/overview.md) |
 
 ## Gaps
 

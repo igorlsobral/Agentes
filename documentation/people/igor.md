@@ -38,6 +38,7 @@ Exemplos de pedido dele:
 - Música de fundo: `music/`
 - Efeitos (swoosh e event sfx: passos, toc-toc, plim, bolha): `sfx/` — pode trocar o arquivo
 - Cenas longas (repertório visual, qualquer formato): `cenas/` (Igor, 2026-08-22)
+- Transcrição pronta (francês da VSL): `transcricao/`
 
 ## Dados ainda ausentes
 

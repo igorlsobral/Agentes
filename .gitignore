@@ -52,6 +52,7 @@ projects/*/outputs/
 !music/.gitkeep
 !sfx/.gitkeep
 !cenas/.gitkeep
+!transcricao/.gitkeep
 !brand/assets/.gitkeep
 !brand/assets/depoimentos/.gitkeep
 !projects/.gitkeep

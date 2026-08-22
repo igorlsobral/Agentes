@@ -65,7 +65,7 @@ He is not a programmer. Portuguese, short, no jargon dump. Explorer paths, not o
 
 On intake, if format, cut aggressiveness, brand kit, or spend policy is missing **and this stage needs it**, ask. Else run the current stage to `previews/`. Show what changed, the file path, and the next stage. One stage at a time unless he asks for the full pipeline.
 
-Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); depoimentos de VSL → `brand/assets/depoimentos/`; prints e VSL de referência → `brand/references/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`; scene library → `cenas/`.
+Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); depoimentos de VSL → `brand/assets/depoimentos/`; prints e VSL de referência → `brand/references/`; French VSL script (ready-made) → `transcricao/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`; scene library → `cenas/`.
 
 Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough cut”.
 

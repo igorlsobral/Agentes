@@ -65,6 +65,7 @@ Do not ask Igor to waive these.
 | Music | [`music/README.md`](music/README.md) |
 | Sfx | [`sfx/README.md`](sfx/README.md) |
 | Cenas | [`cenas/README.md`](cenas/README.md) |
+| Transcrição | [`transcricao/README.md`](transcricao/README.md) |
 | Projects | [`projects/README.md`](projects/README.md) |
 
 ## Pipeline (do not skip a stage)

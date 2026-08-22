@@ -12,7 +12,7 @@ Prints que o Igor soltou em 2026-08-21. Isto é gosto permanente até ele mudar 
 | `Captura de tela 2026-08-21 141504.png` | Card branco arredondado no meio: “cuts the dead space” / **AUTO-EDITED**; timeline azul = fala, vermelho = silêncio a cortar. |
 | `Captura de tela 2026-08-21 141517.png` | Card translúcido à esquerda: rótulo azul “MOTION GRAPHICS”, título preto *dope. on-beat. auto-built.*, barras azuis tipo beat. |
 | `3D viral Reel editing #alightmotiontutorial #editing #3d #alightmotion.mp4` | Reel vertical (~11 s). Alvo de **tela cheia / estilo 3D**: fundo escuro, texto enorme no centro, palavra-chave com brilho, objetos 3D, troca a cada 1–2 s. A cor de destaque segue o que está sendo dito — não é verde fixo. |
-| VSL longo (nome do arquivo ainda `INFORMAÇÃO AUSENTE`) | Template de **VSL** (Igor, 2026-08-22). Clonar ritmo e ordem: depoimentos no começo → cenas no lugar da geração por IA → **frase de impacto** em tela cheia (a cena para). Soltar o `.mp4` nesta pasta. |
+| `VSL REFERÊNCIA PROSPERIDADE.mp4` | Template de **VSL** (Igor, 2026-08-22). Vertical 9:16, **27 min 17 s**. Ordem: gancho notícia → depoimentos (~0:06–0:50) → cenas no lugar da IA → **frase de impacto** (ex. ~2:00 *We're Doing*, cena parada, só texto) → oferta no fim. Estudo em [`documentation/.activities/clips/vsl-prosperidade/overview.md`](../../documentation/.activities/clips/vsl-prosperidade/overview.md). |
 
 ## Gosto a repetir (draft)
 

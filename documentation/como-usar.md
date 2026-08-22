@@ -21,6 +21,7 @@ Você solta o vídeo cru. O agente corta, põe gráfico e exporta um MP4. Você 
 | Música de fundo | `C:\Users\ig\Documents\Agentes\music` |
 | Efeitos (swoosh, passos, toc-toc, plim, bolha) | `C:\Users\ig\Documents\Agentes\sfx` |
 | Cenas longas (repertório visual) | `C:\Users\ig\Documents\Agentes\cenas` |
+| Transcrição pronta (francês desta VSL) | `C:\Users\ig\Documents\Agentes\transcricao` |
 | Prévia que o agente gerar | `C:\Users\ig\Documents\Agentes\projects\<nome>\previews` |
 | Arquivo final | `projects\<nome>\outputs` **e** `C:\Users\ig\Downloads` |
 

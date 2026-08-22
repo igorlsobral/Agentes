@@ -14,7 +14,7 @@ Before the first graphics pass: **study the reference** (duration, when testimon
 2. **Body** — the reference uses AI image generation. We do **not**. After testimonials, fill those beats with stretches from [`cenas/`](../cenas/README.md) ([`skills/match-cenas.md`](../skills/match-cenas.md)) that match what is being said. One stretch per spoken idea. Mute library audio; keep our voice (or the reference’s spoken track if this clip’s bruto is that voice).
 3. **Frase de impacto** — at the same moments as the reference: the scene **stops**, the frame is **only** the phrase (full screen). Not B-roll with text on top. See [`skills/full-screen-visual.md`](../skills/full-screen-visual.md).
 
-Do not invent price, guarantee, or CTA copy. Offer/end-card layout stays `INFORMAÇÃO AUSENTE` (P16) until the reference file is on disk and studied.
+Do not invent price, guarantee, or CTA copy. The reference offer screen (product mockup + green **Order Now**, ~24:00) is structure only. Our price/CTA comes from Igor’s French script in [`transcricao/`](../transcricao/README.md). Until that file is on disk, offer copy stays `INFORMAÇÃO AUSENTE` (P16).
 
 ## Talking-head VSL (only if he is on camera)
 
