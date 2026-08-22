@@ -20,7 +20,7 @@ Manual simples: [como-usar.md](como-usar.md).
 |---|---|---|---|
 | P7 | Corte mais seco ou mais calmo (padrão) | Sem default, o agente pergunta no 1º clipe | `presets/` ou `video-editor/AGENTS.md` |
 | P8 | Preset padrão se Igor **não** disser o formato | Gráficos não começam sem formato | `presets/README.md` |
-| P16 | Layout de oferta / end card do **VSL** | Sem isto o VSL não inventa preço, CTA nem garantia | Print em `brand/references/` ou texto no chat |
+| P16 | Layout de oferta / end card do **VSL** | Estrutura do clone já está (depoimentos → cenas → frase de impacto). Falta o arquivo na pasta de referências para cravar oferta/CTA | Soltar o VSL longo em `brand/references/` |
 | P17 | Wavs melhores de event sfx (passos, toc-toc, plim, bolha) | Sem o arquivo o agente sintetiza um hit discreto no PC | Soltar `.wav` / `.mp3` em `sfx/` |
 
 ## Operação do repo (pode esperar)
@@ -51,6 +51,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | Swoosh pode ser outro arquivo; biblioteca = `sfx/` | 2026-08-21 |
 | **Tela cheia** sempre disponível depois do lock; some o rosto; voz fica; **volta ao normal** no chat ou na fala; event sfx no movimento (passos, toc-toc, plim, bolha); imagens de `brand/assets/` ou pasta nomeada; sem B-roll pago | Igor, 2026-08-21 |
 | **cenas/** = repertório de cenas longas; qualquer formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia; casar o trecho com a fala | Igor, 2026-08-22 |
+| **VSL clone** = igual à referência em `brand/references/`: depoimentos no começo; depois cenas (sem IA); **frase de impacto** em tela cheia com a cena parada; mesmo ritmo | Igor, 2026-08-22 |
 | Stack, pipeline, Git commit+push, sem Whisk, música −23 dB, silêncio relativo, lock antes de gráficos, partial render | já na tabela anterior |
 
 ## Resolvidas

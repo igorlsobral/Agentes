@@ -15,7 +15,7 @@
 
 ## Gaps
 
-Preset **padrão** quando Igor não diz o formato: `INFORMAÇÃO AUSENTE` (P8). Resolução / loudness master: `INFORMAÇÃO AUSENTE` (P14). **Final + gráficos = 60 fps** (Igor, 2026-08-21). **Tela cheia** is available on every format after lock. Local scene library `cenas/` is also available on every format after lock (Igor, 2026-08-22).
+Preset **padrão** quando Igor não diz o formato: `INFORMAÇÃO AUSENTE` (P8). Resolução / loudness master: `INFORMAÇÃO AUSENTE` (P14). **Final + gráficos = 60 fps** (Igor, 2026-08-21). **Tela cheia** is available on every format after lock. Local scene library `cenas/` is also available on every format after lock (Igor, 2026-08-22). Clone **VSL**: study the file in `brand/references/` (Igor, 2026-08-22); file still `INFORMAÇÃO AUSENTE` until he drops it.
 
 ## Children
 

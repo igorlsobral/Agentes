@@ -16,7 +16,8 @@ Você solta o vídeo cru. O agente corta, põe gráfico e exporta um MP4. Você 
 |---|---|
 | Vídeo cru (`.mp4`, `.mov`, `.mkv`) | `C:\Users\ig\Documents\Agentes\raw` |
 | Logo, mascote, fontes, imagens de **tela cheia** | `C:\Users\ig\Documents\Agentes\brand\assets` |
-| Prints de vídeos / “quero assim” | `C:\Users\ig\Documents\Agentes\brand\references` |
+| Prints de vídeos / “quero assim” / VSL de referência | `C:\Users\ig\Documents\Agentes\brand\references` |
+| Depoimentos (abertura da VSL) | `C:\Users\ig\Documents\Agentes\brand\assets\depoimentos` |
 | Música de fundo | `C:\Users\ig\Documents\Agentes\music` |
 | Efeitos (swoosh, passos, toc-toc, plim, bolha) | `C:\Users\ig\Documents\Agentes\sfx` |
 | Cenas longas (repertório visual) | `C:\Users\ig\Documents\Agentes\cenas` |
@@ -37,6 +38,7 @@ Vídeos grandes **não** sobem para o GitHub (de propósito). Ficam só no seu d
 4. Mande ajustes em português (“o gráfico mais baixo”, “menor”, “outro swoosh”).
 5. Se um trecho deve **cobrir a tela inteira** (sumir a sua cara, só visual + sua voz): *a partir de [frase], tela cheia até [frase]* ou *volta ao normal*. Imagens em `C:\Users\ig\Documents\Agentes\brand\assets` (ou outra pasta que você apontar). Sons curtos (passos, toc-toc, plim, bolha) entram sozinhos quando o visual pedir; você pode soltar um `.wav` melhor em `C:\Users\ig\Documents\Agentes\sfx`.
 6. Cenas longas (igreja, padre, milagre, etc.) vão em `C:\Users\ig\Documents\Agentes\cenas`. Servem para **qualquer** formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia. O agente procura o trecho que combina com o que você falou.
+7. VSL clone: o vídeo de referência longo vai em `C:\Users\ig\Documents\Agentes\brand\references`. Os depoimentos do começo vão em `C:\Users\ig\Documents\Agentes\brand\assets\depoimentos`. O agente estuda o ritmo da referência (quando a cena para e só a frase cobre a tela) e monta o nosso com as cenas da pasta `cenas`, sem gerar imagem por IA.
 
 O **arquivo final** (com gráficos) sai a **60 fps**. Um estágio por vez, a menos que você peça o pipeline inteiro.
 
@@ -46,4 +48,4 @@ Fluxo local = **grátis**. Serviços pagos (voz de robô, vídeo inventado, rend
 
 ## O que ainda só você pode completar
 
-Lista viva: [pendencias.md](pendencias.md). Resumo: kit de cores/logo/mascote, quão seco o corte, formato padrão se você esquecer de dizer, layout de oferta do VSL.
+Lista viva: [pendencias.md](pendencias.md). Resumo: kit de cores/logo/mascote, quão seco o corte, formato padrão se você esquecer de dizer. Layout de oferta da VSL: o vídeo de referência na pasta de referências (ainda não chegou).

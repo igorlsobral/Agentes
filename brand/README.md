@@ -9,7 +9,8 @@
 | Entry | When to open | Path |
 |---|---|---|
 | Assets | Logo, mascote, fonte, imagens para **tela cheia** (PNG/SVG/TTF/OTF) | [assets/](assets/) |
-| References | Prints e exemplos de vídeos (identidade / gráficos) | [references/](references/) |
+| Depoimentos | Abertura da VSL clone | [assets/depoimentos/](assets/depoimentos/) |
+| References | Prints, Reel 3D, VSL longo de molde | [references/](references/) |
 
 ## Gaps
 

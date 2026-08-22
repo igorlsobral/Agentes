@@ -53,4 +53,5 @@ projects/*/outputs/
 !sfx/.gitkeep
 !cenas/.gitkeep
 !brand/assets/.gitkeep
+!brand/assets/depoimentos/.gitkeep
 !projects/.gitkeep

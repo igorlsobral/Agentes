@@ -36,6 +36,8 @@ If format is unclear, ask before generating graphics.
 
 **cenas** (Igor, 2026-08-22): standing scene library in `cenas/`. Use whenever a spoken beat needs a matching visual, on **every** format (`long-form`, `short-form-explainer`, `tiktok-raw`, `vsl`) — not only tela cheia. Do not invent a match. Do not wallpaper every sentence. Keep the assembly voice.
 
+**VSL clone** (Igor, 2026-08-22): the long VSL in `brand/references/` is the template. This VSL must match its rhythm. Order: **depoimentos** first (`brand/assets/depoimentos/`) → body from `cenas/` (no AI image generation) → **frase de impacto** as full-screen text with the scene stopped, at the same clocks as the reference. Study that file before the first graphics pass. See [`presets/vsl.md`](../presets/vsl.md).
+
 ## Files that matter
 
 `video-editor/` `AGENTS.md` `.cursor/rules/` `.cursor/skills/` `presets/` `brand/` `scripts/` `raw/` `music/` `sfx/` `cenas/` `projects/<clip>/{source, transcript.json, edl.json, composition.html, previews/, outputs/}`
@@ -63,7 +65,7 @@ He is not a programmer. Portuguese, short, no jargon dump. Explorer paths, not o
 
 On intake, if format, cut aggressiveness, brand kit, or spend policy is missing **and this stage needs it**, ask. Else run the current stage to `previews/`. Show what changed, the file path, and the next stage. One stage at a time unless he asks for the full pipeline.
 
-Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); prints → `brand/references/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`; scene library → `cenas/`.
+Drop zones: bruto → `raw/`; logo/fonte/imagens de tela cheia → `brand/assets/` (Coolvetica `.otf` also sits in `brand/`); depoimentos de VSL → `brand/assets/depoimentos/`; prints e VSL de referência → `brand/references/`; music beds → `music/`; swoosh/whoosh/event sfx → `sfx/`; scene library → `cenas/`.
 
 Typical prompt: “começa um projeto neste bruto, preset long-form, faz o rough cut”.
 
@@ -72,5 +74,7 @@ Typical second pass: “no primeiro gráfico, move para baixo, deixa menor, usa 
 Typical tela cheia: “a partir de [frase], tela cheia até [frase]” / “volta ao normal”. Tela cheia in the **3D reel** taste (Igor, 2026-08-22): dark space, huge type, 3D object, 1–2 s beats; accent color from the spoken context, not a fixed neon green.
 
 Typical cenas: drop long clips in `cenas/`; the agent matches a spoken beat (example: padre entrega o livro) to a stretch in that folder, on any format.
+
+Typical clone VSL: drop the reference in `brand/references/`, testimonials in `brand/assets/depoimentos/`, library in `cenas/`; the agent studies the reference clocks, then builds the same rhythm.
 
 Long-form and VSL talking-head (Igor, 2026-08-21): graphics on the **right**, not over the face — **except** a marked tela cheia stretch. Headlines ALL CAPS heavy Coolvetica; supporting text sentence case. Cards must differ visually (not four identical text boxes). Overlay motion and the **final file always 60 fps** even when the camera is 30 fps. Swoosh may be any file in `sfx/`. Event sfx on tela cheia match the visual (see [`skills/full-screen-visual.md`](../skills/full-screen-visual.md)).

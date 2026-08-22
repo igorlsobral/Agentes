@@ -25,6 +25,7 @@ Exemplos de pedido dele:
 - “no primeiro gráfico, move para baixo, deixa menor, usa a cor Claude e o PNG do mascote em `brand/assets/`”
 - “a partir de [frase], tela cheia até [frase]” / “volta ao normal”
 - “usa as cenas” / soltar filmes em `cenas/`
+- VSL clone: referência em `brand/references/`; depoimentos no começo
 - “Salve todo o conhecimento… vou dar clear no chat” (persistir no repo, não só na conversa)
 
 ## Pastas que ele usa
@@ -32,6 +33,7 @@ Exemplos de pedido dele:
 - Bruto: `raw/` (já usou `.mkv`)
 - Marca: `brand/assets/` (também imagens para **tela cheia**)
 - Prints: `brand/references/`
+- Depoimentos (abertura de VSL): `brand/assets/depoimentos/`
 - Fonte Coolvetica: vários `.otf` em `brand/` (P4 resolvido 2026-08-21); títulos de card usam **Coolvetica Hv Comp**
 - Música de fundo: `music/`
 - Efeitos (swoosh e event sfx: passos, toc-toc, plim, bolha): `sfx/` — pode trocar o arquivo

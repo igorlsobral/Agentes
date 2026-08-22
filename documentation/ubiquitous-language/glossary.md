@@ -18,7 +18,9 @@ Termos canônicos. Não traduzir a coluna **Term**.
 | short-form-explainer | Gráficos em cima, rosto embaixo, captions no meio | |
 | tiktok-raw | Hook de texto + corte cru + captions | |
 | long-form | YouTube longo (rosto cheio + gráficos pontuais) | Cards à direita; 60 fps no overlay |
-| VSL | Video Sales Letter — vídeo de vendas | Preset `vsl`; não inventar preço/CTA |
+| VSL | Video Sales Letter — vídeo de vendas | Preset `vsl`; clone do arquivo em `brand/references/` quando Igor pedir (2026-08-22); não inventar preço/CTA |
+| depoimentos | Bloco de abertura da VSL clone | Arquivos em `brand/assets/depoimentos/`; mesmo ritmo da referência |
+| frase de impacto | Tela só com a frase; a cena **para** | Mesmos relógios da VSL de referência (Igor, 2026-08-22) |
 | sfx | Pasta de efeitos one-shot (swoosh, whoosh, event sfx) | `sfx/`; distinto de `music/` |
 | tela cheia | Trecho em que o visual cobre o quadro inteiro; a fala continua; some o talking-head | Sempre disponível depois do lock; não é B-roll pago |
 | cenas | Pasta de filmes longos usados como repertório visual | `cenas/`; qualquer formato depois do lock, não só tela cheia (Igor, 2026-08-22) |

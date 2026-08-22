@@ -20,6 +20,7 @@ Requires: locked rough cut (`edl.json` + locked flag). If unlocked, stop and run
 - Long-form and VSL talking-head: cards on the **right**. Do not cover the face or other important on-screen info — **except** a marked **tela cheia** stretch ([`full-screen-visual.md`](full-screen-visual.md)).
 - If Igor already marked a tela cheia range (chat quote, clock, or spoken cue), build that stretch as full-frame visuals + event sfx, in the **3D reel** taste when that is the brief ([`full-screen-visual.md`](full-screen-visual.md)). Everywhere else: cards as usual.
 - If `cenas/` has files and a spoken beat names a concrete visual (place, person, action), match that beat ([`match-cenas.md`](match-cenas.md)). Do not wallpaper every sentence.
+- Clone **VSL** ([`presets/vsl.md`](../presets/vsl.md)): study the reference in `brand/references/` first. Opening = files in `brand/assets/depoimentos/`. Body = `cenas/`. Impact phrases = full-screen text with the scene stopped. Same clocks as the reference.
 - Headlines: ALL CAPS, heavy Coolvetica (`Coolvetica Hv Comp.otf`). Supporting text: sentence case (first letter only).
 - Each card must look different — icons, gauge, contrast rows, rising steps — not four identical text boxes.
 - Final (and graphics overlays) always **60 fps**.
