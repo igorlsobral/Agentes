@@ -14,6 +14,7 @@ Igor, 2026-08-22: this folder is the standing repertoire. Use it whenever a beat
 6. Cut that range into `projects/<clip>/graphics/assets/`. Discard (mute) library audio. Keep the assembly voice.
 7. Placement:
    - Clone **VSL**: after the testimonials block, body beats are full-frame stretches timed to the reference ([`presets/vsl.md`](../presets/vsl.md)). **Frase de impacto** beats: scene stops; text only ([`full-screen-visual.md`](full-screen-visual.md)).
+   - **16:9 inside 9:16** (Igor, 2026-08-22): never leave white bars. Keep the landscape picture in the middle. Fill top and bottom with the same picture, extra zoom + blur (the usual “reflexo”). Applies to depoimentos and to `cenas/` clips.
    - Marked **tela cheia** stretch → full frame + event sfx via [`full-screen-visual.md`](full-screen-visual.md).
    - Otherwise still allowed on every preset. Show the action clearly. Long-form / talking-head VSL: do not cover the face unless that beat needs the whole frame. `tiktok-raw` / `short-form-explainer`: the scene may occupy more of the frame at that moment.
 8. Composite at **60 fps**. Preview in `projects/<clip>/previews/`.

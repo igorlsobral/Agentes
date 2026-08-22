@@ -14,7 +14,13 @@ Clonar o ritmo da VSL de referência. Depoimentos no começo; depois narração 
 
 ## Estágio atual
 
-Rough cut **locked** (2026-08-22, atualizado no mesmo dia). Ordem: **12 depoimentos → gancho → narração**. Prévia: `projects\vsl-prosperidade\previews\rough-cut.mp4` (~31 min 48 s).
+Second pass + música: telas brancas ok; 3 depoimentos deitados (FALA_1, FALA_2, FALA_5) com reflexo desfocado no lugar da faixa branca; trilha de piano por baixo (−23 dB).
+
+Prévia com música (vídeo inteiro): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-pass.mp4`
+
+Começo (~3 min): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-inicio.mp4`
+
+Só os 3 depoimentos deitados (~22 s): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-depoimentos.mp4`
 
 ## Fonte
 
@@ -31,16 +37,26 @@ Rough cut **locked** (2026-08-22, atualizado no mesmo dia). Ordem: **12 depoimen
 
 ## Relógio desta montagem
 
-1. **~0:00–0:48 — depoimentos.** `FALA_1` … `FALA_12` nesta ordem (o `FALA_1` é a fala da “notícia” / pesquisadores).
-2. **~0:48–1:53 — gancho.** *Dans un instant, vous allez pouvoir réciter…* até *vous devez connaître son histoire.*
-3. **~1:53 até o fim — corpo.** Narração já encaixada (Pierre Martin → padre → oferta → fechamento).
+1. **~0:00–0:48 — depoimentos.** `FALA_1` … `FALA_12` nesta ordem (o `FALA_1` é a fala da “notícia” / pesquisadores). Sem gráfico em cima.
+2. **~0:48–1:53 — gancho.** *Dans un instant…* em tela cheia com cenas + frases de impacto.
+3. **~1:53 até o fim — corpo.** Mesmo modo: cenas da pasta `cenas/` e tela branca só com a frase.
 
 Corte: silêncios grandes encurtados; nenhuma palavra tirada.
 
 ## Relógio da referência (27 min 17 s)
 
-Clonar o ritmo na 1ª passagem de gráficos: depoimentos rápidos; corpo com `cenas/`; frases de impacto com a cena parada; oferta **26,90 euros**.
+Estudo no disco (2026-08-22):
+
+| Relógio | O que acontece |
+|---|---|
+| **0:00–0:06** | Gancho de “notícia” (LIVE *lost prayer / 2.000 years*). |
+| **~0:06–0:50** | Depoimentos, troca rápida. |
+| **~0:50–~24:00** | Corpo: cenas no ritmo da fala + legenda branca em caixa preta embaixo. |
+| **Frases de impacto** | A cena **para**. Fundo branco, frase grande no centro. 62 telas com ≥1 s (ex.: ~1:31 *Just Recite This*; ~2:00 *Of The Work*; ~2:50 *Nobody Could*). |
+| **~24:00–fim** | Oferta (produto dela + botão verde). **Não copiar o produto.** Nosso preço: **26,90 euros**. |
+
+No nosso corte, esses horários da referência (depois de 0:50) foram puxados para começar em **0:48**, um pouco mais longos porque o nosso arquivo dura ~31 min 48 s.
 
 ## Próximo passo
 
-Gráficos (1ª passagem): cenas da pasta `cenas/` no corpo, no ritmo da referência.
+Second pass: Igor dirige (trocar cena, frase, volume da música, outro depoimento). Export quando ele pedir.

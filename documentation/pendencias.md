@@ -51,6 +51,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | **Tela cheia** sempre disponível depois do lock; some o rosto; voz fica; **volta ao normal** no chat ou na fala; event sfx no movimento (passos, toc-toc, plim, bolha); imagens de `brand/assets/` ou pasta nomeada; sem B-roll pago | Igor, 2026-08-21 |
 | **cenas/** = repertório de cenas longas; qualquer formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia; casar o trecho com a fala | Igor, 2026-08-22 |
 | **VSL clone** = igual à referência em `brand/references/`: depoimentos no começo; depois cenas (sem IA); **frase de impacto** em tela cheia com a cena parada; mesmo ritmo | Igor, 2026-08-22 |
+| **16:9 em 9:16** = sem faixa branca; no meio o vídeo deitado; em cima e embaixo o mesmo vídeo com zoom e desfocado | Igor, 2026-08-22 |
 | Ordem desta VSL no corte: **FALA_1…12 → gancho *Dans un instant…* → narração** | Igor, 2026-08-22 |
 | Oferta desta VSL FR = **26,90 euros**, pagamento único, garantia 90 dias, botão sob o vídeo, envio por e-mail | transcrição, 2026-08-22 |
 | Stack, pipeline, Git commit+push, sem Whisk, música −23 dB, silêncio relativo, lock antes de gráficos, partial render | já na tabela anterior |
