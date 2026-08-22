@@ -1,0 +1,75 @@
+{
+  "source": "source/video-de-avatar-1080p.mp4",
+  "source_duration_s": 71.596,
+  "locked": true,
+  "language": "fr",
+  "policy": {
+    "keep_every_word": true,
+    "keep_brief_breaths": true,
+    "cut_only_large_silence": true
+  },
+  "silence": {
+    "method": "relative_to_take",
+    "speech_rms_dbfs": -26.1,
+    "threshold_dbfs": -38.1,
+    "margin_below_speech_db": 12.0,
+    "min_silence_s": 0.75,
+    "pad_s": 0.1,
+    "note": "Never a fixed -35 dB. Only silences >= 0.75s dropped; brief breaths kept. No word removed."
+  },
+  "keep": [
+    {
+      "start": 0.0,
+      "end": 14.64,
+      "text": "Dans un instant, vous allez pouvoir réciter la prière perdue, qui est restée cachée pendant plus de 2000 ans. Elle a été utilisée par des saints, par des prophètes, et même par Jésus lui-même, pour créer des miracles, la guérison et les bénédictions."
+    },
+    {
+      "start": 15.69,
+      "end": 16.32,
+      "text": "Sur commande."
+    },
+    {
+      "start": 17.46,
+      "end": 30.97,
+      "text": "Aujourd'hui, des milliers d'hommes et de femmes créent des miracles dans leur propre vie avec cette prière perdue de trois minutes. Parce que les mots eux-mêmes envoient votre prière directement à votre créateur. Et vous sentez la réponse vite."
+    },
+    {
+      "start": 31.86,
+      "end": 47.78,
+      "text": "Il y a deux mois, il aurait été impossible de partager ça avec vous. Il manquait la dernière pièce de la traduction. Mais pour la première fois en 2000 ans, nous avons la prière complète. récitée par Jésus et ses disciples, et elle est déjà en train de changer des vies."
+    },
+    {
+      "start": 48.62,
+      "end": 71.596,
+      "text": "Alors si vous êtes prêts pour vos bénédictions, si vous êtes prêts pour votre abondance, si vous êtes prêts à entrer dans une vie nouvelle, il vous suffit de réciter cette prière perdue ce soir. Ça prend seulement trois minutes, et vous allez sentir la réponse rapidement. Mais avant de la réciter, vous devez connaître son histoire, pour comprendre à quel point elle peut être puissante dans votre vie."
+    }
+  ],
+  "drop": [
+    {
+      "start": 14.64,
+      "end": 15.69,
+      "reason": "silêncio grande (buraco no áudio); nenhuma palavra",
+      "text": ""
+    },
+    {
+      "start": 16.32,
+      "end": 17.46,
+      "reason": "silêncio grande (buraco no áudio); nenhuma palavra",
+      "text": ""
+    },
+    {
+      "start": 30.97,
+      "end": 31.86,
+      "reason": "silêncio grande (buraco no áudio); nenhuma palavra",
+      "text": ""
+    },
+    {
+      "start": 47.78,
+      "end": 48.62,
+      "reason": "silêncio grande (buraco no áudio); nenhuma palavra",
+      "text": ""
+    }
+  ],
+  "word_count": 204,
+  "words_kept": 204
+}

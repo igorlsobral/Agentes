@@ -22,11 +22,12 @@ The transcript is the timeline.
 
 | Entry | When to open | Path |
 |---|---|---|
-| _(none)_ | After intake | `projects/<clip>/` |
+| 2026-04-01-11-30-15 | Primeiro clipe; corte seco locked | `projects/2026-04-01-11-30-15/` |
+| video-de-avatar-1080p | Avatar francês; corte seco locked | `projects/video-de-avatar-1080p/` |
 
 ## Gaps
 
-No clips yet.
+Format preset still missing for both clips (needed before graphics).
 
 ## Children
 

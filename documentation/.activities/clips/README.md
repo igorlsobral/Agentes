@@ -8,11 +8,12 @@
 
 | Entry | When to open | Path |
 |---|---|---|
-| _(nenhum clipe ainda)_ | Intake cria a pasta | — |
+| 2026-04-01-11-30-15 | Primeiro clipe real; rough cut locked | [2026-04-01-11-30-15/overview.md](2026-04-01-11-30-15/overview.md) |
+| video-de-avatar-1080p | Avatar em francês; rough cut locked (só silêncio grande) | [video-de-avatar-1080p/overview.md](video-de-avatar-1080p/overview.md) |
 
 ## Gaps
 
-Nenhum bruto ingerido neste bootstrap.
+Preset de formato ainda INFORMAÇÃO AUSENTE nos clipes (precisa antes dos gráficos).
 
 ## Children
 
