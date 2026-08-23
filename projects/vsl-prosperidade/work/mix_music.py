@@ -8,7 +8,10 @@ FFMPEG = Path(r"C:\Users\ig\tools\ffmpeg\bin\ffmpeg.exe")
 PROJ = Path(r"C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade")
 PREV = PROJ / "previews"
 MUSIC = Path(r"C:\Users\ig\Documents\Agentes\music\vsl-prosperity-bed.mp3")
-LEVEL_DB = -23
+# Igor 2026-08-22: a bit louder, especially the first seconds
+BODY_DB = -20
+START_DB = -17
+START_S = 20.0
 
 
 def run_ff(args: list[str]) -> None:
@@ -28,7 +31,10 @@ def mix(src: Path, dest: Path) -> None:
             "-i",
             str(MUSIC),
             "-filter_complex",
-            f"[1:a]volume={LEVEL_DB}dB[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+            (
+                f"[1:a]volume=if(lt(t\\,{START_S:.1f})\\,{10 ** (START_DB / 20):.6f}\\,{10 ** (BODY_DB / 20):.6f}):eval=frame[m];"
+                f"[0:a][m]amix=inputs=2:duration=first:normalize=0[a]"
+            ),
             "-map",
             "0:v:0",
             "-map",

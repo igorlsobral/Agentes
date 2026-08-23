@@ -9,7 +9,7 @@
 | Entry | When to open | Path |
 |---|---|---|
 | prosperity-pad.wav (gitignored) | Bed local de prosperidade (gerado neste PC, 2026-08-21) | this folder |
-| vsl-prosperity-bed.mp3 (gitignored) | Piano esperançoso, clima da VSL de referência. Kevin MacLeod *Dreams Become Real* (Incompetech, CC BY). Mix −23 dB. | this folder |
+| vsl-prosperity-bed.mp3 (gitignored) | Piano esperançoso, clima da VSL de referência. Kevin MacLeod *Dreams Become Real* (Incompetech, CC BY). Mix −17 dB nos primeiros 20 s, depois −20 dB (Igor, 2026-08-22). | this folder |
 
 ## Gaps
 

@@ -14,13 +14,11 @@ Clonar o ritmo da VSL de referência. Depoimentos no começo; depois narração 
 
 ## Estágio atual
 
-Second pass + música: telas brancas ok; 3 depoimentos deitados (FALA_1, FALA_2, FALA_5) com reflexo desfocado no lugar da faixa branca; trilha de piano por baixo (−23 dB).
+Second pass: sem legendas de caixa escura embaixo (Igor coloca depois de outro jeito). Música um pouco mais alta (−17 dB nos primeiros 20 s, depois −20 dB).
 
-Prévia com música (vídeo inteiro): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-pass.mp4`
+Prévia com música (vídeo inteiro): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\05-music-pass.mp4`
 
-Começo (~3 min): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-inicio.mp4`
-
-Só os 3 depoimentos deitados (~22 s): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\04-music-depoimentos.mp4`
+Começo (~3 min): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\05-music-inicio.mp4`
 
 ## Fonte
 
@@ -59,4 +57,4 @@ No nosso corte, esses horários da referência (depois de 0:50) foram puxados pa
 
 ## Próximo passo
 
-Second pass: Igor dirige (trocar cena, frase, volume da música, outro depoimento). Export quando ele pedir.
+Second pass: Igor dirige (cena, frase, volume da música). Export quando ele pedir.
