@@ -6,8 +6,10 @@ import re
 import subprocess
 import sys
 import unicodedata
+import wave
 from pathlib import Path
 
+import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 FFMPEG = Path(r"C:\Users\ig\tools\ffmpeg\bin\ffmpeg.exe")
@@ -170,6 +172,61 @@ def fold(s: str) -> str:
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
 
 
+AUDIO_WAV = WORK / "rough_16k.wav"
+
+
+def ensure_audio() -> tuple[int, np.ndarray]:
+    if not AUDIO_WAV.exists() or AUDIO_WAV.stat().st_size < 1000:
+        subprocess.run(
+            [
+                str(FFMPEG),
+                "-y",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-i",
+                str(ROUGH),
+                "-vn",
+                "-ac",
+                "1",
+                "-ar",
+                "16000",
+                str(AUDIO_WAV),
+            ],
+            check=True,
+        )
+    with wave.open(str(AUDIO_WAV), "rb") as w:
+        sr = w.getframerate()
+        audio = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
+    return sr, audio
+
+
+def phrase_onset(sr: int, audio: np.ndarray, prev_end: float, word_start: float) -> float:
+    """First speech after the previous word — WhisperX often parks the next word late."""
+    t_lo = min(word_start, prev_end + 0.05)
+    t_hi = word_start + 0.08
+    if t_hi <= t_lo + 0.04:
+        return round(word_start, 3)
+    hop = int(sr * 0.02)
+    i0 = max(0, int(t_lo * sr))
+    i1 = min(len(audio), int(t_hi * sr))
+    run = 0
+    idx = i0
+    t = t_lo
+    while idx + hop <= i1:
+        sl = audio[idx : idx + hop]
+        db = 20.0 * np.log10(float(np.sqrt(np.mean(sl * sl) + 1e-12)))
+        if db > -36.0:
+            run += 1
+            if run >= 2:
+                return round(max(prev_end + 0.04, t - 0.02), 3)
+        else:
+            run = 0
+        idx += hop
+        t += 0.02
+    return round(word_start, 3)
+
+
 def probe_dur(path: Path) -> float:
     r = subprocess.run(
         [str(FFPROBE), "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", str(path)],
@@ -221,20 +278,23 @@ def find_phrase_hits(words: list[dict]) -> list[dict]:
             if folded[i : i + n] == tok:
                 a = words[i]["s"]
                 b = words[i + n - 1]["e"]
-                hits.append({"start": a, "end": b, "headline": display, "n": n, "prio": prio})
+                hits.append({"start": a, "end": b, "headline": display, "n": n, "prio": prio, "idx": i})
                 i += n
             else:
                 i += 1
     hits.sort(key=lambda h: (-h["prio"], -h["n"], h["start"]))
+    sr, audio = ensure_audio()
     chosen = []
     for h in hits:
-        if any(abs(h["start"] - c["start"]) < 6.5 for c in chosen):
+        prev_end = words[h["idx"] - 1]["e"] if h["idx"] > 0 else h["start"]
+        start = phrase_onset(sr, audio, prev_end, h["start"])
+        if any(abs(start - c["start"]) < 6.5 for c in chosen):
             continue
         dur = max(1.35, min(3.2, (h["end"] - h["start"]) + 0.45))
         chosen.append(
             {
-                "start": round(h["start"], 3),
-                "end": round(min(OUR_END, h["start"] + dur), 3),
+                "start": start,
+                "end": round(min(OUR_END, start + dur), 3),
                 "headline": h["headline"],
             }
         )
@@ -518,7 +578,7 @@ def encode_white(beat: dict, dest: Path, png: Path) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     cache = WORK / "gfx_white_cache"
     cache.mkdir(parents=True, exist_ok=True)
-    key = f"{beat['headline'].replace(' ', '_')}_{int(round(dur * 10)):03d}.mp4"
+    key = f"v4sync_{beat['headline'].replace(' ', '_')}_{int(round(dur * 10)):03d}.mp4"
     cached = cache / key
     if cached.exists() and cached.stat().st_size > 1000:
         dest.write_bytes(cached.read_bytes())

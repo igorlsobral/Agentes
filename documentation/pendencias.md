@@ -52,6 +52,7 @@ Manual simples: [como-usar.md](como-usar.md).
 | **cenas/** = repertório de cenas longas; qualquer formato (TikTok, YouTube longo, explainer, VSL), não só tela cheia; casar o trecho com a fala | Igor, 2026-08-22 |
 | **VSL clone** = igual à referência em `brand/references/`: depoimentos no começo; depois cenas (sem IA); **frase de impacto** em tela cheia com a cena parada; mesmo ritmo | Igor, 2026-08-22 |
 | **16:9 em 9:16** = sem faixa branca; no meio o vídeo deitado; em cima e embaixo o mesmo vídeo com zoom e desfocado | Igor, 2026-08-22 |
+| **Frase de impacto** aparece no primeiro som da palavra-destaque, sem espera da animação | Igor, 2026-08-23 |
 | Ordem desta VSL no corte: **FALA_1…12 → gancho *Dans un instant…* → narração** | Igor, 2026-08-22 |
 | Oferta desta VSL FR = **26,90 euros**, pagamento único, garantia 90 dias, botão sob o vídeo, envio por e-mail | transcrição, 2026-08-22 |
 | Stack, pipeline, Git commit+push, sem Whisk, música −23 dB, silêncio relativo, lock antes de gráficos, partial render | já na tabela anterior |

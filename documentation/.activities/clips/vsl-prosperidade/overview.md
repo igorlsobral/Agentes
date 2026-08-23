@@ -14,11 +14,11 @@ Clonar o ritmo da VSL de referência. Depoimentos no começo; depois narração 
 
 ## Estágio atual
 
-Second pass: sem legendas de caixa escura embaixo (Igor coloca depois de outro jeito). Música um pouco mais alta (−17 dB nos primeiros 20 s, depois −20 dB).
+Second pass: telas brancas no **primeiro som** da palavra-destaque (ex. *Sur Commande* ~1:03). Sem legendas de caixa escura. Música −17 dB no começo, depois −20 dB.
 
-Prévia com música (vídeo inteiro): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\05-music-pass.mp4`
+Prévia com música (vídeo inteiro): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\06-sync-music-pass.mp4`
 
-Começo (~3 min): `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\05-music-inicio.mp4`
+Começo (~3 min) para conferir o *Sur Commande*: `C:\Users\ig\Documents\Agentes\projects\vsl-prosperidade\previews\06-sync-music-inicio.mp4`
 
 ## Fonte
 
