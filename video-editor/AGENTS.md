@@ -36,7 +36,7 @@ If format is unclear, ask before generating graphics.
 
 **cenas** (Igor, 2026-08-22): standing scene library in `cenas/`. Use whenever a spoken beat needs a matching visual, on **every** format (`long-form`, `short-form-explainer`, `tiktok-raw`, `vsl`) — not only tela cheia. Do not invent a match. Do not wallpaper every sentence. Keep the assembly voice.
 
-**VSL clone** (Igor, 2026-08-22): the long VSL in `brand/references/` is the template. This VSL must match its rhythm. Order: **depoimentos** first (`brand/assets/depoimentos/`) → body from `cenas/` (no AI image generation) → **frase de impacto** as full-screen text with the scene stopped, at the same clocks as the reference. Study that file before the first graphics pass. See [`presets/vsl.md`](../presets/vsl.md). A 16:9 take inside 9:16 never keeps white bars: picture in the middle, top and bottom = same picture zoomed and blurred (Igor, 2026-08-22). White impact screens hit **on the first sound of the highlight word** (Igor, 2026-08-23).
+**VSL clone** (Igor, 2026-08-22): the long VSL in `brand/references/` is the template. This VSL must match its rhythm. Order: **depoimentos** first (`brand/assets/depoimentos/`) → body from `cenas/` (no AI image generation) → **frase de impacto** as full-screen text with the scene stopped, at the same clocks as the reference. Study that file before the first graphics pass. See [`presets/vsl.md`](../presets/vsl.md). A 16:9 take inside 9:16 never keeps white bars: picture in the middle, top and bottom = same picture zoomed and blurred (Igor, 2026-08-22). White impact screens **start their transition** on the first sound of the highlight word and **keep the fade + word animation** (Igor, 2026-08-23).
 
 ## Files that matter
 

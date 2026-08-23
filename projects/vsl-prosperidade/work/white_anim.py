@@ -80,7 +80,7 @@ def wrap_lines(text: str) -> list[str]:
 
 
 def draw_icon(draw: ImageDraw.ImageDraw, kind: str, cx: int, cy: int, s: float, t: float) -> None:
-    r = int(92 * s)
+    r = int(78 * s)
     # soft disc like the first-test icon tile
     box = (cx - r - 28, cy - r - 28, cx + r + 28, cy + r + 28)
     draw.rounded_rectangle(box, radius=36, fill=(ACCENT[0], ACCENT[1], ACCENT[2], 255))
@@ -176,17 +176,19 @@ def draw_icon(draw: ImageDraw.ImageDraw, kind: str, cx: int, cy: int, s: float, 
 
 
 def render_frame(headline: str, caption: str, t: float, dur: float) -> Image.Image:
-    # Phrase is on screen at t=0 — hit lands on the spoken word (Igor, 2026-08-23).
-    img = Image.new("RGBA", (W, H), (255, 255, 255, 255))
+    # Clip starts on the first sound of the highlight word.
+    # Keep the fade-to-white and the word motion — do not flatten.
+    fade = ease_out(min(1.0, t / 0.22))
+    bg = tuple(int(lerp(216, 255, fade)) for _ in range(3))
+    img = Image.new("RGBA", (W, H), bg + (255,))
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(layer)
 
     kind = kind_for(headline)
-    pop = ease_out(min(1.0, t / 0.10))
-    icon_t = 1.0
-    icon_s = lerp(0.92, 1.0, pop)
-    icon_a = 255
-    icon_y = 560
+    icon_t = ease_out((t - 0.10) / 0.38)
+    icon_s = lerp(0.58, 1.0, icon_t)
+    icon_a = int(255 * icon_t)
+    icon_y = int(lerp(620, 560, icon_t))
     if icon_a > 0:
         tile = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         td = ImageDraw.Draw(tile)
@@ -203,9 +205,9 @@ def render_frame(headline: str, caption: str, t: float, dur: float) -> Image.Ima
         n = int(target * ease_out((t - 0.28) / 0.55))
         shown = [f"{n:,}".replace(",", " ")]
 
-    size = 196 if max(len(x) for x in shown) < 12 else 164
+    size = 168 if max(len(x) for x in shown) < 12 else 140
     if max(len(x) for x in shown) > 16:
-        size = 138
+        size = 118
     font = ImageFont.truetype(str(FONT_RG), size)
     gap = 18
     heights, widths = [], []
@@ -216,12 +218,12 @@ def render_frame(headline: str, caption: str, t: float, dur: float) -> Image.Ima
     total_h = sum(heights) + gap * (len(shown) - 1)
     y0 = 860
     for i, (line, tw, th) in enumerate(zip(shown, widths, heights)):
-        lt = ease_out(min(1.0, (t + 0.16 - i * 0.03) / 0.10))
+        lt = ease_out((t - 0.26 - i * 0.08) / 0.36)
         if lt <= 0:
             y0 += th + gap
             continue
         x = (W - tw) / 2
-        y = y0 + lerp(8, 0, lt)
+        y = y0 + lerp(36, 0, lt)
         a = int(255 * lt)
         # soft shadow
         draw.text((x + 3, y + 4), line, font=font, fill=(17, 19, 24, int(40 * lt)))
@@ -247,7 +249,6 @@ def render_frame(headline: str, caption: str, t: float, dur: float) -> Image.Ima
 
 
 def encode_animated_white(headline: str, caption: str, dur: float, dest: Path) -> None:
-    dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
     n = max(8, int(round(dur * FPS)))
     cmd = [

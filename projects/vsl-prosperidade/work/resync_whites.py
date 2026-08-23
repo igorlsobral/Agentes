@@ -47,9 +47,9 @@ def main() -> None:
             break
         dest = CLIP_DIR_V2 / f"{i:04d}_{beat['kind']}.mp4"
         print(f"[{i}/{n}] {beat['kind']} {beat['start']:.2f}-{beat['end']:.2f} {beat['headline'] or beat['scene']}", flush=True)
-        if dest.exists():
-            dest.unlink()
         if beat["kind"] == "white":
+            if dest.exists():
+                dest.unlink()
             encode_white(beat, dest, asset_dir / f"white_{i:04d}.png")
         else:
             encode_scene(beat, dest, Path())
@@ -58,10 +58,10 @@ def main() -> None:
     tag = "inicio" if mode == "inicio" else "full"
     concat_txt = WORK / f"concat_gfx_{tag}.txt"
     write_concat(paths, concat_txt)
-    pic = OUT_DIR / ("06-sync-inicio.mp4" if mode == "inicio" else "06-sync-pass.mp4")
+    pic = OUT_DIR / ("07-whites-inicio.mp4" if mode == "inicio" else "07-whites-pass.mp4")
     print("concat...", flush=True)
     concat_mux(concat_txt, pic, ROUGH)
-    mixed = OUT_DIR / ("06-sync-music-inicio.mp4" if mode == "inicio" else "06-sync-music-pass.mp4")
+    mixed = OUT_DIR / ("07-whites-music-inicio.mp4" if mode == "inicio" else "07-whites-music-pass.mp4")
     print("mix...", flush=True)
     mix(pic, mixed)
     print("done", mixed, "dur", probe_dur(mixed))

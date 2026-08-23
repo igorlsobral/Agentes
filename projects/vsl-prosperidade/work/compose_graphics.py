@@ -202,29 +202,30 @@ def ensure_audio() -> tuple[int, np.ndarray]:
 
 
 def phrase_onset(sr: int, audio: np.ndarray, prev_end: float, word_start: float) -> float:
-    """First speech after the previous word — WhisperX often parks the next word late."""
-    t_lo = min(word_start, prev_end + 0.05)
-    t_hi = word_start + 0.08
-    if t_hi <= t_lo + 0.04:
+    """First sound of THIS highlight word. Never steal the previous word's tail."""
+    t_lo = max(word_start - 0.08, prev_end + 0.05)
+    t_hi = word_start + 0.02
+    if t_hi <= t_lo + 0.01:
         return round(word_start, 3)
-    hop = int(sr * 0.02)
+    hop = int(sr * 0.01)
     i0 = max(0, int(t_lo * sr))
     i1 = min(len(audio), int(t_hi * sr))
     run = 0
     idx = i0
     t = t_lo
+    found = None
     while idx + hop <= i1:
         sl = audio[idx : idx + hop]
         db = 20.0 * np.log10(float(np.sqrt(np.mean(sl * sl) + 1e-12)))
-        if db > -36.0:
+        if db > -32.0:
             run += 1
-            if run >= 2:
-                return round(max(prev_end + 0.04, t - 0.02), 3)
+            if run >= 2 and found is None:
+                found = t - 0.01
         else:
             run = 0
         idx += hop
-        t += 0.02
-    return round(word_start, 3)
+        t += 0.01
+    return round(found if found is not None else word_start, 3)
 
 
 def probe_dur(path: Path) -> float:
@@ -286,13 +287,14 @@ def find_phrase_hits(words: list[dict]) -> list[dict]:
     sr, audio = ensure_audio()
     chosen = []
     for h in hits:
+        if any(abs(h["start"] - c["wx"]) < 6.5 for c in chosen):
+            continue
         prev_end = words[h["idx"] - 1]["e"] if h["idx"] > 0 else h["start"]
         start = phrase_onset(sr, audio, prev_end, h["start"])
-        if any(abs(start - c["start"]) < 6.5 for c in chosen):
-            continue
         dur = max(1.35, min(3.2, (h["end"] - h["start"]) + 0.45))
         chosen.append(
             {
+                "wx": h["start"],
                 "start": start,
                 "end": round(min(OUR_END, start + dur), 3),
                 "headline": h["headline"],
@@ -300,6 +302,55 @@ def find_phrase_hits(words: list[dict]) -> list[dict]:
         )
     chosen.sort(key=lambda h: h["start"])
     return chosen
+
+
+def tokens_for_headline(headline: str) -> list[str]:
+    for _prio, display, tokens in PHRASES:
+        if display == headline:
+            return [fold(re.sub(r"[^\wÀ-ÿ]+", "", t, flags=re.UNICODE)) for t in tokens]
+    return [fold(re.sub(r"[^\wÀ-ÿ]+", "", t, flags=re.UNICODE)) for t in headline.split() if t]
+
+
+def snap_existing_whites(words: list[dict], old_whites: list[dict]) -> list[dict]:
+    """Keep the current set of white screens; only move each one onto its spoken word."""
+    sr, audio = ensure_audio()
+    folded = [w["f"] for w in words]
+    out = []
+    for w in old_whites:
+        tok = tokens_for_headline(w["headline"])
+        n = len(tok)
+        if n == 0:
+            continue
+        approx = float(w["start"])
+        best_i = None
+        best_d = 1e9
+        i = 0
+        while i <= len(folded) - n:
+            if folded[i : i + n] == tok:
+                d = abs(words[i]["s"] - approx)
+                if d < best_d:
+                    best_d = d
+                    best_i = i
+                i += n
+            else:
+                i += 1
+        if best_i is None:
+            start = approx
+            word_end = float(w["end"])
+        else:
+            prev_end = words[best_i - 1]["e"] if best_i > 0 else words[best_i]["s"]
+            start = phrase_onset(sr, audio, prev_end, words[best_i]["s"])
+            word_end = words[best_i + n - 1]["e"]
+        dur = max(1.35, min(3.2, (word_end - start) + 0.45))
+        out.append(
+            {
+                "start": start,
+                "end": round(min(OUR_END, start + dur), 3),
+                "headline": w["headline"],
+            }
+        )
+    out.sort(key=lambda h: h["start"])
+    return out
 
 
 def caption_at(words: list[dict], t0: float, t1: float) -> str:
@@ -355,7 +406,12 @@ def pick_scene(text: str, last: str | None, recent: list[str], idx: int) -> str:
 def build_beats() -> list[dict]:
     words = load_words()
     segments = load_segments()
-    whites = find_phrase_hits(words)
+    if BEATS_PATH.exists():
+        old = json.loads(BEATS_PATH.read_text(encoding="utf-8"))
+        old_w = [b for b in old if b.get("kind") == "white" and b.get("headline")]
+        whites = snap_existing_whites(words, old_w) if old_w else find_phrase_hits(words)
+    else:
+        whites = find_phrase_hits(words)
     cursor = OUR0
     beats: list[dict] = []
     last_scene = None
@@ -539,12 +595,18 @@ def encode_head(dest: Path, dur: float) -> None:
 
 
 def encode_scene(beat: dict, dest: Path, cap_png: Path) -> None:
-    if dest.exists() and dest.stat().st_size > 1000:
-        return
     dur = beat["end"] - beat["start"]
+    n = max(1, int(round(dur * FPS)))
+    exact = n / FPS
+    if dest.exists() and dest.stat().st_size > 1000:
+        try:
+            if abs(probe_dur(dest) - exact) <= (1.0 / FPS):
+                return
+        except Exception:
+            pass
     src = beat["path"]
     clip_dur = probe_dur(Path(src))
-    loops = max(1, int(dur // max(clip_dur, 0.5)) + 1)
+    loops = max(1, int(exact // max(clip_dur, 0.5)) + 1)
     vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}"
     dest.parent.mkdir(parents=True, exist_ok=True)
     run_ff(
@@ -554,7 +616,9 @@ def encode_scene(beat: dict, dest: Path, cap_png: Path) -> None:
             "-i",
             src,
             "-t",
-            f"{dur:.3f}",
+            f"{exact:.6f}",
+            "-frames:v",
+            str(n),
             "-an",
             "-vf",
             vf,
@@ -572,15 +636,13 @@ def encode_scene(beat: dict, dest: Path, cap_png: Path) -> None:
 
 
 def encode_white(beat: dict, dest: Path, png: Path) -> None:
-    if dest.exists() and dest.stat().st_size > 1000:
-        return
     dur = beat["end"] - beat["start"]
     dest.parent.mkdir(parents=True, exist_ok=True)
     cache = WORK / "gfx_white_cache"
     cache.mkdir(parents=True, exist_ok=True)
-    key = f"v4sync_{beat['headline'].replace(' ', '_')}_{int(round(dur * 10)):03d}.mp4"
+    key = f"v5anim_{beat['headline'].replace(' ', '_')}_{int(round(dur * 10)):03d}.mp4"
     cached = cache / key
-    if cached.exists() and cached.stat().st_size > 1000:
+    if cached.exists() and cached.stat().st_size > 35000:
         dest.write_bytes(cached.read_bytes())
         return
     sys.path.insert(0, str(WORK))
